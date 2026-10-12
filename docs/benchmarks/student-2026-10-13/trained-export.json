@@ -1,0 +1,202 @@
+{
+  "status": "trained_probe_exported_requires_quality_runtime_and_parity",
+  "stage": "complete",
+  "untrained": false,
+  "anonymization_quality_verified": false,
+  "production_candidate_accepted": false,
+  "batch_size": 8,
+  "sequence_length": 256,
+  "layer_count": 12,
+  "output_shape": [
+    8,
+    256,
+    11
+  ],
+  "head_seed": 17,
+  "precision": "float32",
+  "compute_units": "CPU_AND_GPU",
+  "minimum_deployment_target": "macOS15",
+  "trace_input_dtype": "int64",
+  "coreml_input_dtype": "int32",
+  "tracer_check_enabled": false,
+  "versions": {
+    "torch": "2.7.0",
+    "transformers": "4.51.3",
+    "coremltools": "9.0"
+  },
+  "warnings": [
+    {
+      "category": "DeprecationWarning",
+      "message": "Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)"
+    },
+    {
+      "category": "ResourceWarning",
+      "message": "Implicitly cleaning up <TemporaryDirectory '/var/folders/ld/j256fb5n2cn3sj4xsf25y8rr0000gn/T/tmpa5l075mw'>"
+    }
+  ],
+  "model": {
+    "model_id": "microsoft/Multilingual-MiniLM-L12-H384",
+    "revision": "6e8c1ec6b4ec4e3fc6eb7d2cd834fcd582b61daf",
+    "source_manifest_sha256": "74bd0a06a4c15c47aef4a6ecf77f3ce312080f447d6214f2983745d6d3c1f2c3",
+    "model_source_sha256": "cce170910f4d4f3b45be025508f51ef1ad6a1de69f2d46dce7e4603ad31aaaeb",
+    "config_sha256": "933c5fc9b49cf83934fb2e617cea837985a1b5f10db653ecd958c5736de357de",
+    "source_files_sha256": {
+      "config.json": "933c5fc9b49cf83934fb2e617cea837985a1b5f10db653ecd958c5736de357de",
+      "README.md": "b00de73ad9d05ed170233a4d6551d931142fae681547f24152c52738c3da1145",
+      "sentencepiece.bpe.model": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865",
+      "special_tokens_map.json": "7638f5bbbe86ef6d604ef28ad3647dc690d6d117c81c0d63e885416be8da1150",
+      "tokenizer_config.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "pytorch_model.bin": "cce170910f4d4f3b45be025508f51ef1ad6a1de69f2d46dce7e4603ad31aaaeb"
+    },
+    "pretrained_state_dict_strict": true,
+    "pretrained_parameters": 117653760,
+    "selected_layer_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "layer_selection_is_untrained": false,
+    "pooler_loaded_but_unused": true,
+    "verified_nonpersistent_buffers": [],
+    "attention_implementation": "eager",
+    "head_seed": 17,
+    "head_nonzero": true,
+    "head_classes": 11,
+    "bio_labels": [
+      "O",
+      "B-person",
+      "I-person",
+      "B-organization",
+      "I-organization",
+      "B-location",
+      "I-location",
+      "B-address",
+      "I-address",
+      "B-event",
+      "I-event"
+    ],
+    "head_untrained": false,
+    "anonymization_quality_verified": false,
+    "total_parameters": 117657995,
+    "checkpoint_sha256": "918636493f4cd7428c672c44bb3ea472033f5243cf17e3223f226c3b4773c5eb",
+    "training_report_sha256": "d21e593ec6dc6bedf3d77c1b8fb2c2bdb638eed4e27385726d9a7654a765adbd",
+    "encoder_supervised_training_applied": true,
+    "completed_supervised_steps": 200,
+    "teacher_applied": false,
+    "teacher_loss_applied": false,
+    "frozen_public_parameters_verified": [
+      "encoder.embeddings.word_embeddings.weight",
+      "encoder.embeddings.position_embeddings.weight",
+      "encoder.embeddings.token_type_embeddings.weight",
+      "encoder.embeddings.LayerNorm.weight",
+      "encoder.embeddings.LayerNorm.bias",
+      "encoder.pooler.dense.weight",
+      "encoder.pooler.dense.bias"
+    ],
+    "synthetic_smoke_only": true
+  },
+  "mil": {
+    "operator_counts": {
+      "const": 404,
+      "greater_equal": 1,
+      "add": 39,
+      "select": 1,
+      "gather": 1,
+      "layer_norm": 25,
+      "expand_dims": 2,
+      "cast": 1,
+      "sub": 1,
+      "mul": 13,
+      "linear": 73,
+      "reshape": 48,
+      "transpose": 48,
+      "matmul": 24,
+      "softmax": 12,
+      "gelu": 12
+    },
+    "input_dependent_operator_counts": {
+      "greater_equal": 1,
+      "add": 39,
+      "select": 1,
+      "gather": 1,
+      "layer_norm": 25,
+      "expand_dims": 2,
+      "cast": 1,
+      "sub": 1,
+      "mul": 13,
+      "linear": 73,
+      "reshape": 48,
+      "transpose": 48,
+      "matmul": 24,
+      "softmax": 12,
+      "gelu": 12
+    },
+    "output_dtype_counts_by_operator": {
+      "const": {
+        "FLOAT32": 214,
+        "INT32": 128,
+        "BOOL": 49,
+        "STRING": 13
+      },
+      "greater_equal": {
+        "BOOL": 1
+      },
+      "add": {
+        "INT32": 1,
+        "FLOAT32": 38
+      },
+      "select": {
+        "INT32": 1
+      },
+      "gather": {
+        "FLOAT32": 1
+      },
+      "layer_norm": {
+        "FLOAT32": 25
+      },
+      "expand_dims": {
+        "INT32": 2
+      },
+      "cast": {
+        "FLOAT32": 1
+      },
+      "sub": {
+        "FLOAT32": 1
+      },
+      "mul": {
+        "FLOAT32": 13
+      },
+      "linear": {
+        "FLOAT32": 73
+      },
+      "reshape": {
+        "FLOAT32": 48
+      },
+      "transpose": {
+        "FLOAT32": 48
+      },
+      "matmul": {
+        "FLOAT32": 24
+      },
+      "softmax": {
+        "FLOAT32": 12
+      },
+      "gelu": {
+        "FLOAT32": 12
+      }
+    },
+    "encoder_preserved_in_mil": true
+  },
+  "output_path": "/private/tmp/copy-ai-student-2026-10-13/minilm-12-trained-b8.mlpackage",
+  "diagnostic_output_characters": 1067,
+  "elapsed_seconds": 4.292843375005759
+}

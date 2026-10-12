@@ -1,0 +1,58 @@
+{
+  "encoder-256-fp32-v3.mlpackage": {
+    "Data/com.apple.CoreML/model.mlmodel": {
+      "bytes": 188781,
+      "sha256": "262337f3cb9ac5d665143cb38030dc196b178b0cc1bd885a1d1a036a291c40e0"
+    },
+    "Data/com.apple.CoreML/weights/weight.bin": {
+      "bytes": 1154176000,
+      "sha256": "44ace66ea7aeb475d866d8506e1a729cd54d5489763e75ddfd3446ca1627a6c1"
+    },
+    "Manifest.json": {
+      "bytes": 617,
+      "sha256": "50f12b02d4d1c2d9ca3202cbb4dca8324d4d59ed6fd2ca0401c37b8ae0c8124d"
+    }
+  },
+  "encoder-256-fp16.mlpackage": {
+    "Data/com.apple.CoreML/model.mlmodel": {
+      "bytes": 212393,
+      "sha256": "fa46345de91066ba2f541df765c9f95061df424081d730ed2adb64ee42424848"
+    },
+    "Data/com.apple.CoreML/weights/weight.bin": {
+      "bytes": 577095168,
+      "sha256": "3e2fd7c6fcaf1e39ff2b16af8b73bff5f11da239405f177c0111a87f743d4a21"
+    },
+    "Manifest.json": {
+      "bytes": 617,
+      "sha256": "9351003fcd03037531603bf5a0dc8383bda177cb5fd6c2056bdf87046a62e985"
+    }
+  },
+  "encoder-b8-256-fp32.mlpackage": {
+    "Data/com.apple.CoreML/model.mlmodel": {
+      "bytes": 188907,
+      "sha256": "3f784a75680a02abadfad86b32824becd4917636df28d43d6d329b849ea00742"
+    },
+    "Data/com.apple.CoreML/weights/weight.bin": {
+      "bytes": 1462457344,
+      "sha256": "57051ffab65edca32afb6eb193bf16727aa52295454c70a3237bc73e3a79f15c"
+    },
+    "Manifest.json": {
+      "bytes": 617,
+      "sha256": "808115bf8810f945e916d505b56a4d659349153df01d316a6c943eadfbf162cb"
+    }
+  },
+  "encoder-b8-256-mixed.mlpackage": {
+    "Data/com.apple.CoreML/model.mlmodel": {
+      "bytes": 232655,
+      "sha256": "c98437ffab37a3adb92e82efdf96567c869c3b2d7f0113e08e957c4e1decb7c6"
+    },
+    "Data/com.apple.CoreML/weights/weight.bin": {
+      "bytes": 1291634688,
+      "sha256": "951ace77235b3b11487c38514c8caca5aa88d95fad533a6a0f34b54b43ee2494"
+    },
+    "Manifest.json": {
+      "bytes": 617,
+      "sha256": "c2b8691e5bb9d90d0359f4069773acdbff67d1324cf9ab855b3756437bd03e5b"
+    }
+  }
+}

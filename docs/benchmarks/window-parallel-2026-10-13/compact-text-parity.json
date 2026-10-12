@@ -1,0 +1,270 @@
+{
+  "passed": true,
+  "gpu_used": false,
+  "model_weights_loaded": false,
+  "fixtures": [
+    {
+      "fixture_index": 0,
+      "bytes": 0,
+      "tokens": 0,
+      "windows": 0,
+      "offset_batch_ownership_equal": true,
+      "ordered_span_digest_equal": true,
+      "strict_final_range_rejected": false
+    },
+    {
+      "fixture_index": 1,
+      "bytes": 31,
+      "tokens": 8,
+      "windows": 1,
+      "offset_batch_ownership_equal": true,
+      "ordered_span_digest_equal": true,
+      "strict_final_range_rejected": false
+    },
+    {
+      "fixture_index": 2,
+      "bytes": 43,
+      "tokens": 9,
+      "windows": 1,
+      "offset_batch_ownership_equal": true,
+      "ordered_span_digest_equal": true,
+      "strict_final_range_rejected": false
+    },
+    {
+      "fixture_index": 3,
+      "bytes": 25,
+      "tokens": 7,
+      "windows": 1,
+      "offset_batch_ownership_equal": true,
+      "ordered_span_digest_equal": true,
+      "strict_final_range_rejected": false
+    },
+    {
+      "fixture_index": 4,
+      "bytes": 23,
+      "tokens": 2,
+      "windows": 1,
+      "offset_batch_ownership_equal": true,
+      "ordered_span_digest_equal": true,
+      "strict_final_range_rejected": false
+    },
+    {
+      "fixture_index": 5,
+      "bytes": 33,
+      "tokens": 7,
+      "windows": 1,
+      "offset_batch_ownership_equal": true,
+      "ordered_span_digest_equal": true,
+      "strict_final_range_rejected": false
+    },
+    {
+      "fixture_index": 6,
+      "bytes": 13,
+      "tokens": 5,
+      "windows": 1,
+      "offset_batch_ownership_equal": true,
+      "ordered_span_digest_equal": true,
+      "strict_final_range_rejected": false
+    },
+    {
+      "fixture_index": 7,
+      "bytes": 4500,
+      "tokens": 1260,
+      "windows": 6,
+      "offset_batch_ownership_equal": true,
+      "ordered_span_digest_equal": true,
+      "strict_final_range_rejected": false
+    }
+  ],
+  "utf8_prefix_block_boundary_cases": 2,
+  "duplicate_and_missing_ownership_rejected": true,
+  "reference": "AST extracted legacy encode/decode with ranges returned for digest",
+  "batch_boundary_and_varied_checks": [
+    {
+      "fixture_index": 0,
+      "input_bytes": 222,
+      "tokens": 222,
+      "windows": 1,
+      "batches": 1,
+      "parity": true
+    },
+    {
+      "fixture_index": 1,
+      "input_bytes": 254,
+      "tokens": 254,
+      "windows": 1,
+      "batches": 1,
+      "parity": true
+    },
+    {
+      "fixture_index": 2,
+      "input_bytes": 255,
+      "tokens": 255,
+      "windows": 2,
+      "batches": 1,
+      "parity": true
+    },
+    {
+      "fixture_index": 3,
+      "input_bytes": 476,
+      "tokens": 476,
+      "windows": 2,
+      "batches": 1,
+      "parity": true
+    },
+    {
+      "fixture_index": 4,
+      "input_bytes": 477,
+      "tokens": 477,
+      "windows": 3,
+      "batches": 1,
+      "parity": true
+    },
+    {
+      "fixture_index": 5,
+      "input_bytes": 2030,
+      "tokens": 2030,
+      "windows": 9,
+      "batches": 2,
+      "parity": true
+    },
+    {
+      "fixture_index": 6,
+      "input_bytes": 2031,
+      "tokens": 2031,
+      "windows": 10,
+      "batches": 2,
+      "parity": true
+    },
+    {
+      "fixture_index": 7,
+      "input_bytes": 4096,
+      "tokens": 809,
+      "windows": 4,
+      "batches": 1,
+      "parity": true
+    },
+    {
+      "fixture_index": 8,
+      "input_bytes": 65536,
+      "tokens": 12984,
+      "windows": 59,
+      "batches": 8,
+      "parity": true
+    }
+  ],
+  "feeds_read_only": true,
+  "helper_sha256": "281b13c39179e1173eaf1ec1e21f2c2d0c5167fb79af3767c366cca95045eac7",
+  "batch_8_16_32_checks": [
+    {
+      "batch": 8,
+      "fixture_index": 0,
+      "input_bytes": 1586,
+      "tokens": 1586,
+      "windows": 7,
+      "batches": 1,
+      "parity": true
+    },
+    {
+      "batch": 8,
+      "fixture_index": 1,
+      "input_bytes": 1808,
+      "tokens": 1808,
+      "windows": 8,
+      "batches": 1,
+      "parity": true
+    },
+    {
+      "batch": 8,
+      "fixture_index": 2,
+      "input_bytes": 2030,
+      "tokens": 2030,
+      "windows": 9,
+      "batches": 2,
+      "parity": true
+    },
+    {
+      "batch": 8,
+      "fixture_index": 3,
+      "input_bytes": 65536,
+      "tokens": 12984,
+      "windows": 59,
+      "batches": 8,
+      "parity": true
+    },
+    {
+      "batch": 16,
+      "fixture_index": 0,
+      "input_bytes": 3362,
+      "tokens": 3362,
+      "windows": 15,
+      "batches": 1,
+      "parity": true
+    },
+    {
+      "batch": 16,
+      "fixture_index": 1,
+      "input_bytes": 3584,
+      "tokens": 3584,
+      "windows": 16,
+      "batches": 1,
+      "parity": true
+    },
+    {
+      "batch": 16,
+      "fixture_index": 2,
+      "input_bytes": 3806,
+      "tokens": 3806,
+      "windows": 17,
+      "batches": 2,
+      "parity": true
+    },
+    {
+      "batch": 16,
+      "fixture_index": 3,
+      "input_bytes": 65536,
+      "tokens": 12984,
+      "windows": 59,
+      "batches": 4,
+      "parity": true
+    },
+    {
+      "batch": 32,
+      "fixture_index": 0,
+      "input_bytes": 6914,
+      "tokens": 6914,
+      "windows": 31,
+      "batches": 1,
+      "parity": true
+    },
+    {
+      "batch": 32,
+      "fixture_index": 1,
+      "input_bytes": 7136,
+      "tokens": 7136,
+      "windows": 32,
+      "batches": 1,
+      "parity": true
+    },
+    {
+      "batch": 32,
+      "fixture_index": 2,
+      "input_bytes": 7358,
+      "tokens": 7358,
+      "windows": 33,
+      "batches": 2,
+      "parity": true
+    },
+    {
+      "batch": 32,
+      "fixture_index": 3,
+      "input_bytes": 65536,
+      "tokens": 12984,
+      "windows": 59,
+      "batches": 2,
+      "parity": true
+    }
+  ],
+  "explicit_batch_mismatch_rejected": true,
+  "default_batch_8_preserved": true
+}

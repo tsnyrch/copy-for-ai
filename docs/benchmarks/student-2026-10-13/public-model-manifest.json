@@ -1,0 +1,44 @@
+{
+  "model_id": "microsoft/Multilingual-MiniLM-L12-H384",
+  "revision": "6e8c1ec6b4ec4e3fc6eb7d2cd834fcd582b61daf",
+  "files": {
+    "config.json": {
+      "sha256": "933c5fc9b49cf83934fb2e617cea837985a1b5f10db653ecd958c5736de357de",
+      "bytes": 430,
+      "url": "https://huggingface.co/microsoft/Multilingual-MiniLM-L12-H384/resolve/6e8c1ec6b4ec4e3fc6eb7d2cd834fcd582b61daf/config.json",
+      "lfs_sha256": null
+    },
+    "README.md": {
+      "sha256": "b00de73ad9d05ed170233a4d6551d931142fae681547f24152c52738c3da1145",
+      "bytes": 6289,
+      "url": "https://huggingface.co/microsoft/Multilingual-MiniLM-L12-H384/resolve/6e8c1ec6b4ec4e3fc6eb7d2cd834fcd582b61daf/README.md",
+      "lfs_sha256": null
+    },
+    "sentencepiece.bpe.model": {
+      "sha256": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865",
+      "bytes": 5069051,
+      "url": "https://huggingface.co/microsoft/Multilingual-MiniLM-L12-H384/resolve/6e8c1ec6b4ec4e3fc6eb7d2cd834fcd582b61daf/sentencepiece.bpe.model",
+      "lfs_sha256": null
+    },
+    "special_tokens_map.json": {
+      "sha256": "7638f5bbbe86ef6d604ef28ad3647dc690d6d117c81c0d63e885416be8da1150",
+      "bytes": 150,
+      "url": "https://huggingface.co/microsoft/Multilingual-MiniLM-L12-H384/resolve/6e8c1ec6b4ec4e3fc6eb7d2cd834fcd582b61daf/special_tokens_map.json",
+      "lfs_sha256": null
+    },
+    "tokenizer_config.json": {
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "bytes": 2,
+      "url": "https://huggingface.co/microsoft/Multilingual-MiniLM-L12-H384/resolve/6e8c1ec6b4ec4e3fc6eb7d2cd834fcd582b61daf/tokenizer_config.json",
+      "lfs_sha256": null
+    },
+    "pytorch_model.bin": {
+      "sha256": "cce170910f4d4f3b45be025508f51ef1ad6a1de69f2d46dce7e4603ad31aaaeb",
+      "bytes": 470657952,
+      "url": "https://huggingface.co/microsoft/Multilingual-MiniLM-L12-H384/resolve/6e8c1ec6b4ec4e3fc6eb7d2cd834fcd582b61daf/pytorch_model.bin",
+      "lfs_sha256": "cce170910f4d4f3b45be025508f51ef1ad6a1de69f2d46dce7e4603ad31aaaeb"
+    }
+  },
+  "verified": true,
+  "production_model_changed": false
+}

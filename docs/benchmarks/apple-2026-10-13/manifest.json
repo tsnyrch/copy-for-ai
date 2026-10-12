@@ -1,0 +1,246 @@
+{
+  "schema": 1,
+  "created_utc": "2026-10-13T10:36:44.905728+00:00",
+  "git_head": "6c7f678cc5bc08ec6721f07ce0576687ddc4d49f",
+  "scope": "isolated synthetic Apple window screening; no production switch, gold/core/document/native proof",
+  "scratch": "/private/tmp/copy-ai-apple-2026-10-13",
+  "large_models_archived": false,
+  "files": {
+    "b8-fp32-gate.json": {
+      "bytes": 11848,
+      "sha256": "e30b5232ac0e85cf3897e94fd3ec4d10e47c2074f1c715e2d330da0127d224a5"
+    },
+    "b8-fp32-gate.log.gz": {
+      "bytes": 100,
+      "sha256": "a82a634d4d60acfec050b3ee584335f16d75ab55ff3b4449deb20508199d03f4"
+    },
+    "b8-mixed-gate.json": {
+      "bytes": 11783,
+      "sha256": "59b29bae2f972d4f640e9ea8be76d8fd757231385d4c0a4ced33c6d5703cc3fa"
+    },
+    "b8-mixed-gate.log.gz": {
+      "bytes": 92,
+      "sha256": "3036c2d3adf1f1e98a5ad69ab110689aad92ac6f24c9791f84a3b1d8b8f5ecd8"
+    },
+    "configs/encoder-config.json": {
+      "bytes": 579,
+      "sha256": "bcffcd343dc5efa5ef2d5a58d2b405eed108f01cc45b48d0a907b333ec41801f"
+    },
+    "configs/encoder-metadata.json": {
+      "bytes": 125,
+      "sha256": "b4a270364c608468ca9eb2938814c1a1197c1c50c6efe00f05221187dc961180"
+    },
+    "configs/gliner-config.json": {
+      "bytes": 477,
+      "sha256": "e25f61d91620df84aae8076811ee592e926e94d341b82e7bc1be359718f83017"
+    },
+    "configs/gliner-metadata.json": {
+      "bytes": 131,
+      "sha256": "18d1d8d2fab7d83e38368a6ef80034f72abe2de7a246b28188a353112770921a"
+    },
+    "coreml-first.json": {
+      "bytes": 4963,
+      "sha256": "92e09d8bc5b66c4b1671af64ae0fdf4b36c9effd664dc8d9a298e664cde338c1"
+    },
+    "coreml-first.log.gz": {
+      "bytes": 866,
+      "sha256": "8b0f86883e30daec6aaac98f9bab15f7b6d6eb28d3421b7f95ab2223789fa402"
+    },
+    "coreml-fp16-gate.json": {
+      "bytes": 32607,
+      "sha256": "1fd7f2b4acc9bb7e18f9bc0c0436dbce6adad4d4ab6ed81b8791180fc19e5181"
+    },
+    "coreml-fp16-gate.log.gz": {
+      "bytes": 5855,
+      "sha256": "8d8bd83470f705915aa38ceb3d7e225750f6bc9b6072a5bcf7c392914855f5ed"
+    },
+    "coreml-gate.json": {
+      "bytes": 32245,
+      "sha256": "19f0184cf8a6205b5b64d88c84465acbeae845d4f13672df1fe69e47b2260ff5"
+    },
+    "coreml-gate.log.gz": {
+      "bytes": 5848,
+      "sha256": "382c061447b6347aa5d1a55f8fb072d6fb56ce9817727a8ed1a47be3eb0d154b"
+    },
+    "coreml-onnx-head-controlled.json": {
+      "bytes": 17432,
+      "sha256": "8056f86f6c04766914a337c05112424b0a4bcdfec8b7a348317eaf386a6ced35"
+    },
+    "coreml-onnx-head-controlled.log.gz": {
+      "bytes": 3140,
+      "sha256": "ca3deb64146fd77e1a8147af4360250b184e1a478d38f2143eba87d964208804"
+    },
+    "coreml-onnx-head-gate.json": {
+      "bytes": 32662,
+      "sha256": "afca72c5358dadafc391a77a9dbfeb39c5e3faee7d009101dfc82add5176af5c"
+    },
+    "coreml-onnx-head-gate.log.gz": {
+      "bytes": 5833,
+      "sha256": "f72473fe0a031efd7de39c3ed4734baa61b66734887eaab23334943c85e54b1d"
+    },
+    "cpu-first.json": {
+      "bytes": 1975,
+      "sha256": "c0b7390ab250ce3886164339f1276d11f43fa0cd9159da6d3defc7d9d0efe8b4"
+    },
+    "cpu-first.log.gz": {
+      "bytes": 324,
+      "sha256": "ae8c593ef424cd7234e90400a86e4bcf0b35c123b9b5e23e06651620fc7f71f3"
+    },
+    "cpu-gate.json": {
+      "bytes": 14038,
+      "sha256": "3b1f6cf5fdd7ef53bb4fe4cc9510eb5f67f58c9e0a9456c696efedb57b857496"
+    },
+    "cpu-gate.log.gz": {
+      "bytes": 2223,
+      "sha256": "d090cf2333dc1310fbded750a5c4175638a5d516916194076c557adcb0b0d979"
+    },
+    "encoder-256-export-fp16.json": {
+      "bytes": 27931,
+      "sha256": "9307b6dc586d709889be9b83bbabb432e8c52e1239b07fe340877ff6a4341590"
+    },
+    "encoder-256-export-fp16.log.gz": {
+      "bytes": 211,
+      "sha256": "2111d9780348e7a150b47c57861e07567d9870062e4bb3f52be7313869a8676c"
+    },
+    "encoder-256-export-v2.json": {
+      "bytes": 5562,
+      "sha256": "7fef9e4088d16b09af163fa014833ea9ea76e1ddb632092677a2ebab039ce04d"
+    },
+    "encoder-256-export-v2.log.gz": {
+      "bytes": 193,
+      "sha256": "61ca4dfb872f1dd94419f67a24360389d117b99017b3729a188bac95aa5e334b"
+    },
+    "encoder-256-export-v3.json": {
+      "bytes": 27457,
+      "sha256": "b88651250cce62afca71532542fc7cf60a9821ad4f835166a1c26e85351fcca9"
+    },
+    "encoder-256-export-v3.log.gz": {
+      "bytes": 212,
+      "sha256": "981e045d938ceb1a2bab2948d01ce530ef2f1781dc6810517f4b9229ffea5ebb"
+    },
+    "encoder-256-export.json": {
+      "bytes": 3811,
+      "sha256": "1e28656651792ef8191ecef83a6d492e1d3247f733d96acfd6a0108b30a906bd"
+    },
+    "encoder-256-export.log.gz": {
+      "bytes": 193,
+      "sha256": "9cc679c1586fd59d55f04c69a595cb11057b7e7cfc245fbb2743072a13f3f563"
+    },
+    "encoder-b8-256-export-mixed.json": {
+      "bytes": 29228,
+      "sha256": "0d90d3148c90c28fae2ef653c1595f2355e1b2f324f075423874da0022e490ad"
+    },
+    "encoder-b8-256-export-mixed.log.gz": {
+      "bytes": 212,
+      "sha256": "687dd4d7302c2c5c5960dfd03f532dc0deaa8b82d92c60ccd0d96ddf7a88ea87"
+    },
+    "encoder-b8-256-export.json": {
+      "bytes": 27476,
+      "sha256": "3f6344c07e0f37b85734f02f52aa03eb7cd61c700aeb6dc60ba1b83076be810f"
+    },
+    "encoder-b8-256-export.log.gz": {
+      "bytes": 210,
+      "sha256": "1457badb6cc9d889222e4077da41ddf65609b908249854072f66a57d793229e8"
+    },
+    "environment-final.json": {
+      "bytes": 302,
+      "sha256": "b1f1b1c581fae8c23df9ccdb604e83c8ab3af6c7e632d22d6710eaf2932b592b"
+    },
+    "hybrid-gate.json": {
+      "bytes": 30619,
+      "sha256": "a565340a460bfa57fe3702325025b97653829a54f16206d2f228c8523fa0a953"
+    },
+    "hybrid-gate.log.gz": {
+      "bytes": 5869,
+      "sha256": "b7bfc56c90769dd922f70f38483110fef44c0c4b17011e4999e6f79d1e98c957"
+    },
+    "mps-device.txt": {
+      "bytes": 57,
+      "sha256": "3e8bc625774b092288d99eafeef0f7c57dca820b2123eece0a9afcaa7eef6e3f"
+    },
+    "mps-first.json": {
+      "bytes": 2308,
+      "sha256": "1dd31768fca6035551bb83685d5f87f358611ebb00f1b5f29d64b5f85168930a"
+    },
+    "mps-first.log.gz": {
+      "bytes": 326,
+      "sha256": "fbc33b24fa9ec95d3c10076726b4f98f1cffea62ba433c1a1fcd305ce1b41f98"
+    },
+    "mps-gate.json": {
+      "bytes": 15905,
+      "sha256": "4273d17d22036d53b6c8ce008ddb3fcd19b24a0f55f54f0f35cb8b74954f7d31"
+    },
+    "mps-gate.log.gz": {
+      "bytes": 2776,
+      "sha256": "387028cf72e646d038a75ef0d529acca13da93be8ee96b32a31884b68fc0d2b9"
+    },
+    "onnx-head/manifest.json": {
+      "bytes": 2523,
+      "sha256": "06a614dba6ee254711b4a2e78ba8308021d92161fb8042b02ab7a4b85173fe00"
+    },
+    "onnx-head-batch/manifest.json": {
+      "bytes": 2732,
+      "sha256": "bc0909aad2ff38b1fac4f57baad48ce85bfcba0bc74d231c10c863591a2e6b99"
+    },
+    "onnx-head-batch.log.gz": {
+      "bytes": 282,
+      "sha256": "105f89aa34ed872c25a74c6a157ecb7a63ce1dc0fbccdc783b5259c27a84c8c5"
+    },
+    "onnx-head.log.gz": {
+      "bytes": 282,
+      "sha256": "105f89aa34ed872c25a74c6a157ecb7a63ce1dc0fbccdc783b5259c27a84c8c5"
+    },
+    "package-fingerprints.json": {
+      "bytes": 1996,
+      "sha256": "91428cc5c5ef1a927b839da5e1fa9f3252f04fb0177a56bafc3e0fc45799702f"
+    },
+    "requirements.txt": {
+      "bytes": 608,
+      "sha256": "4de6f04412f386fe03d587ed79a11915aa365cfd7d514115e0f5c923f0cc0adb"
+    },
+    "source/scripts/apple_probe_weights.py": {
+      "bytes": 11411,
+      "sha256": "8ae6ea5c23eda1754579b309b5e9433b64ded239860d671e65a2973b936acd65"
+    },
+    "source/scripts/benchmark-apple-batch-probe.py": {
+      "bytes": 12928,
+      "sha256": "04c4309a98b20cfbe4a3c6c163a1993f823cb8cffcb000b87c5020b0a0c568a0"
+    },
+    "source/scripts/benchmark-apple-probe.py": {
+      "bytes": 12743,
+      "sha256": "5e847a05f3ab8d6a9683fbf8303f4bef98d3bf7e133747ea7fc757fd1456bd56"
+    },
+    "source/scripts/evaluate-graph-probe.py": {
+      "bytes": 10421,
+      "sha256": "ebd828fb249a54dc376435a62e624353c51e0a252d93626ccf8bbfe9384108d5"
+    },
+    "source/scripts/prepare-apple-coreml-probe.py": {
+      "bytes": 11099,
+      "sha256": "361603a0b92a2e69379a8f7a0df62c236be66a87f68c5fa4918621e267c227b8"
+    },
+    "source/scripts/prepare-apple-head-probe.py": {
+      "bytes": 5587,
+      "sha256": "4c32e6c271a5c52d0b252508b3651c29dc0edcc646e61211d2f734329819004e"
+    },
+    "student-configs/README.md": {
+      "bytes": 6289,
+      "sha256": "b00de73ad9d05ed170233a4d6551d931142fae681547f24152c52738c3da1145"
+    },
+    "student-configs/config.json": {
+      "bytes": 430,
+      "sha256": "933c5fc9b49cf83934fb2e617cea837985a1b5f10db653ecd958c5736de357de"
+    },
+    "student-configs/manifest.json": {
+      "bytes": 699,
+      "sha256": "bae0750c959e6051595198b07d1296748a9c5f03a4c2d7681e6c20519efa1e5d"
+    },
+    "weights-map-loaded.json": {
+      "bytes": 54305,
+      "sha256": "c2bf645b5891336af128523d3a24d6317cf071a064c0b38157bae24d254e0e3b"
+    },
+    "weights-map.json": {
+      "bytes": 53996,
+      "sha256": "d98ade062b6617f868d6cd26bad9b4d31451532dd0ed94033e6b45ba7935f374"
+    }
+  }
+}

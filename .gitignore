@@ -1,0 +1,32 @@
+# Rust builds and local code indexes
+/target/
+**/target/
+/.codebase-memory/
+
+# Downloaded models and generated inference artifacts
+/models/
+*.onnx
+*.onnx.data
+*.safetensors
+*.pt
+*.pth
+*.mlmodel
+*.mlpackage/
+*.mlmodelc/
+
+# Python environments and bytecode
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Local configuration and temporary files
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log
+!/docs/benchmarks/**/*.log
+*.partial
+*.tmp

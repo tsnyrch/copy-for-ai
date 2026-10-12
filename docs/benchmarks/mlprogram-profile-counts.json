@@ -1,0 +1,12 @@
+{
+  "CPUExecutionProvider": {
+    "events": 29480,
+    "nodes": 1340,
+    "total_us": 948167
+  },
+  "CoreMLExecutionProvider": {
+    "events": 3630,
+    "nodes": 165,
+    "total_us": 11262077
+  }
+}

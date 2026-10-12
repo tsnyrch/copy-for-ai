@@ -1,0 +1,334 @@
+{
+  "schema": 1,
+  "candidate": "A",
+  "source": "/Users/tsnyrch/my-projects/copy-for-ai/models/gliner-multi/model.onnx",
+  "source_sha256": "57af7f3d8d72a3ca4e5619c247344b4b5ee362a5ebcf307c0634d67b65e721c0",
+  "model_sha256": "63cc924d4b18d3cdd3eb0abaccc4eee1108e3eaecb3dcc063ab0b04eadd8985e",
+  "weights_sha256": "4b05e92518c126a04381bfdc800e24c8ddcf3fec3f515a3b8511cf1fee4a99fd",
+  "source_graph": {
+    "nodes": 4958,
+    "initializers": 219,
+    "operators": {
+      "Abs": 1,
+      "Add": 237,
+      "And": 1,
+      "Cast": 163,
+      "Ceil": 1,
+      "Clip": 2,
+      "Concat": 211,
+      "Constant": 1830,
+      "ConstantOfShape": 61,
+      "Div": 88,
+      "Einsum": 1,
+      "Equal": 33,
+      "Erf": 12,
+      "Expand": 56,
+      "Flatten": 3,
+      "Gather": 178,
+      "GatherElements": 26,
+      "Greater": 2,
+      "Identity": 24,
+      "LSTM": 1,
+      "Less": 3,
+      "LessOrEqual": 1,
+      "Log": 1,
+      "MatMul": 153,
+      "Mul": 126,
+      "Neg": 1,
+      "NonZero": 3,
+      "Pow": 26,
+      "Range": 4,
+      "ReduceMax": 2,
+      "ReduceMean": 52,
+      "ReduceProd": 1,
+      "ReduceSum": 2,
+      "Relu": 5,
+      "Reshape": 206,
+      "ScatterElements": 1,
+      "ScatterND": 2,
+      "Shape": 391,
+      "Sign": 1,
+      "Slice": 162,
+      "Softmax": 12,
+      "Split": 3,
+      "Sqrt": 62,
+      "Squeeze": 166,
+      "Sub": 40,
+      "Tile": 24,
+      "TopK": 1,
+      "Transpose": 126,
+      "Unsqueeze": 392,
+      "Where": 58
+    },
+    "inputs": [
+      {
+        "name": "input_ids",
+        "type": "INT64",
+        "shape": [
+          "batch_size",
+          "sequence_length"
+        ]
+      },
+      {
+        "name": "attention_mask",
+        "type": "INT64",
+        "shape": [
+          "batch_size",
+          "sequence_length"
+        ]
+      },
+      {
+        "name": "words_mask",
+        "type": "INT64",
+        "shape": [
+          "batch_size",
+          "sequence_length"
+        ]
+      },
+      {
+        "name": "text_lengths",
+        "type": "INT64",
+        "shape": [
+          "batch_size",
+          "value"
+        ]
+      },
+      {
+        "name": "span_idx",
+        "type": "INT64",
+        "shape": [
+          "batch_size",
+          "num_spans",
+          "idx"
+        ]
+      },
+      {
+        "name": "span_mask",
+        "type": "BOOL",
+        "shape": [
+          "batch_size",
+          "num_spans"
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "logits",
+        "type": "FLOAT",
+        "shape": [
+          "batch_size",
+          "sequence_length",
+          "num_spans",
+          "num_classes"
+        ]
+      },
+      {
+        "name": "prompts_embedding",
+        "type": "FLOAT",
+        "shape": [
+          "Addprompts_embedding_dim_0",
+          "Addprompts_embedding_dim_1",
+          512
+        ]
+      },
+      {
+        "name": "5715",
+        "type": "INT64",
+        "shape": [
+          "Cast5715_dim_0",
+          "Cast5715_dim_1"
+        ]
+      },
+      {
+        "name": "onnx::Shape_6029",
+        "type": "FLOAT",
+        "shape": [
+          "Gatheronnx::Shape_6029_dim_0",
+          "Gatheronnx::Shape_6029_dim_1",
+          512
+        ]
+      },
+      {
+        "name": "onnx::Cast_5857",
+        "type": "BOOL",
+        "shape": [
+          "Lessonnx::Cast_5857_dim_0",
+          "Gatheronnx::Shape_6029_dim_1"
+        ]
+      }
+    ]
+  },
+  "candidate_graph": {
+    "nodes": 4912,
+    "initializers": 224,
+    "operators": {
+      "Add": 236,
+      "Cast": 158,
+      "Clip": 2,
+      "Concat": 212,
+      "Constant": 1809,
+      "ConstantOfShape": 61,
+      "Div": 86,
+      "Einsum": 1,
+      "Equal": 33,
+      "Erf": 12,
+      "Expand": 56,
+      "Flatten": 3,
+      "Gather": 179,
+      "GatherElements": 26,
+      "Greater": 1,
+      "Identity": 24,
+      "LSTM": 1,
+      "Less": 2,
+      "MatMul": 153,
+      "Mul": 124,
+      "Neg": 1,
+      "NonZero": 3,
+      "Pow": 26,
+      "Range": 3,
+      "ReduceMax": 2,
+      "ReduceMean": 52,
+      "ReduceProd": 1,
+      "ReduceSum": 2,
+      "Relu": 5,
+      "Reshape": 206,
+      "ScatterElements": 1,
+      "ScatterND": 2,
+      "Shape": 391,
+      "Slice": 161,
+      "Softmax": 12,
+      "Split": 3,
+      "Sqrt": 62,
+      "Squeeze": 165,
+      "Sub": 39,
+      "Tile": 24,
+      "TopK": 1,
+      "Transpose": 126,
+      "Unsqueeze": 389,
+      "Where": 56
+    },
+    "inputs": [
+      {
+        "name": "input_ids",
+        "type": "INT64",
+        "shape": [
+          1,
+          "sequence_length"
+        ]
+      },
+      {
+        "name": "attention_mask",
+        "type": "INT64",
+        "shape": [
+          1,
+          "sequence_length"
+        ]
+      },
+      {
+        "name": "words_mask",
+        "type": "INT64",
+        "shape": [
+          1,
+          "sequence_length"
+        ]
+      },
+      {
+        "name": "text_lengths",
+        "type": "INT64",
+        "shape": [
+          1,
+          1
+        ]
+      },
+      {
+        "name": "span_idx",
+        "type": "INT64",
+        "shape": [
+          1,
+          "num_spans",
+          2
+        ]
+      },
+      {
+        "name": "span_mask",
+        "type": "BOOL",
+        "shape": [
+          1,
+          "num_spans"
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "logits",
+        "type": "FLOAT",
+        "shape": [
+          1,
+          "sequence_length",
+          "num_spans",
+          "num_classes"
+        ]
+      },
+      {
+        "name": "prompts_embedding",
+        "type": "FLOAT",
+        "shape": [
+          "Addprompts_embedding_dim_0",
+          "Addprompts_embedding_dim_1",
+          512
+        ]
+      },
+      {
+        "name": "5715",
+        "type": "INT64",
+        "shape": [
+          "Cast5715_dim_0",
+          "Cast5715_dim_1"
+        ]
+      },
+      {
+        "name": "onnx::Shape_6029",
+        "type": "FLOAT",
+        "shape": [
+          "Gatheronnx::Shape_6029_dim_0",
+          "Gatheronnx::Shape_6029_dim_1",
+          512
+        ]
+      },
+      {
+        "name": "onnx::Cast_5857",
+        "type": "BOOL",
+        "shape": [
+          "Lessonnx::Cast_5857_dim_0",
+          "Gatheronnx::Shape_6029_dim_1"
+        ]
+      }
+    ]
+  },
+  "contract": {
+    "fixed_symbols": {
+      "batch_size": 1,
+      "value": 1,
+      "idx": 2
+    },
+    "changed_dimensions": 9
+  },
+  "positions": {
+    "maximum_sequence_length": 512,
+    "table_shape": [
+      1,
+      512,
+      512
+    ],
+    "table_sha256": "fe001d3dad2fd2b7b99e032fb66acf6304c3229e7ebd7c40f3b4543b388749d6",
+    "evaluation": "Original ONNX position-only branch, reference evaluator; model not run"
+  },
+  "qkv": null,
+  "pruned_nodes": 50,
+  "weights": "Original FP32 weights, no quantization or retraining",
+  "validation": {
+    "onnx_checker": "passed",
+    "full_model_inference": "not run"
+  },
+  "limit": "Experiment only: batch=1; reject any input sequence exceeding table maximum"
+}

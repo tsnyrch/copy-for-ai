@@ -1,0 +1,8 @@
+{
+  "input_bytes": 1048576,
+  "source": "previous verified trained sequential wholetext evaluator",
+  "span_count": 20456,
+  "span_digest_little_endian_QQB": "6fcc5287370a931588fa28f6d9add36a12c6908a3a34b50355d788ce444587b1",
+  "source_log_sha256": "8bf0127146da02d6a3a71557cc42ecd3d54d819c74a5bf70be20f1389f6e07da",
+  "quality_accepted": false
+}

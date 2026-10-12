@@ -1,0 +1,40 @@
+[workspace]
+members = ["crates/core", "crates/desktop", "crates/cli", "crates/ner"]
+resolver = "3"
+default-members = ["crates/desktop"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+rust-version = "1.90"
+repository = "https://github.com/tsnyrch/copy-for-ai"
+description = "Local reversible text pseudonymization with a native desktop interface"
+
+[workspace.dependencies]
+copy-for-ai-core = { path = "crates/core" }
+copy-for-ai-ner = { path = "crates/ner" }
+regex = "1.12"
+thiserror = "2"
+uuid = { version = "1", features = ["v4"] }
+zeroize = "1"
+
+[workspace.lints.rust]
+unsafe_code = "deny"
+unused_must_use = "deny"
+
+[workspace.lints.clippy]
+all = { level = "warn", priority = -1 }
+undocumented_unsafe_blocks = "deny"
+dbg_macro = "deny"
+todo = "deny"
+
+
+[profile.release]
+lto = "thin"
+strip = true
+
+
+# Keep full checksum verification practical in development builds.
+[profile.dev.package.sha2]
+opt-level = 3

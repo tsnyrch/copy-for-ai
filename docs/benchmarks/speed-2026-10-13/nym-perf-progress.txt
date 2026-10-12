@@ -1,0 +1,1 @@
+varied-102400 5048 {'tokenize_ms': 20.027624967042357, 'inference_ms': 5007.757670071442, 'decode_ms': 18.92216457054019, 'windows': 52, 'raw_tokens': 21608, 'inferred_tokens': 24872}

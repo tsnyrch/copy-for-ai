@@ -1,0 +1,9 @@
+{"stage": "worker_initialization", "workers": 1, "input_bytes": 0, "run": 0, "completed_batches": 0, "sampled_aggregate_rss_bytes": 667369472}
+{"stage": "worker_initialization", "workers": 1, "input_bytes": 0, "run": 0, "completed_batches": 0, "sampled_aggregate_rss_bytes": 1602125824}
+{"stage": "whole_text_tokenization", "workers": 1, "input_bytes": 1048576, "run": 1, "completed_batches": 0, "sampled_aggregate_rss_bytes": 1334624256}
+{"stage": "ordered_span_decode", "workers": 1, "input_bytes": 1048576, "run": 1, "completed_batches": 119, "sampled_aggregate_rss_bytes": 1323548672}
+{"stage": "whole_text_tokenization", "workers": 1, "input_bytes": 1048576, "run": 2, "completed_batches": 0, "sampled_aggregate_rss_bytes": 1434042368}
+{"stage": "ordered_span_decode", "workers": 1, "input_bytes": 1048576, "run": 2, "completed_batches": 119, "sampled_aggregate_rss_bytes": 1434157056}
+{"stage": "whole_text_tokenization", "workers": 1, "input_bytes": 1048576, "run": 3, "completed_batches": 0, "sampled_aggregate_rss_bytes": 1506082816}
+{"stage": "ordered_span_decode", "workers": 1, "input_bytes": 1048576, "run": 3, "completed_batches": 119, "sampled_aggregate_rss_bytes": 1506115584}
+{"workers": 1, "bytes": 1048576, "median_wall_ms": 4901.313958980609, "decoded_span_count": 20456, "span_sha256": "6fcc5287370a931588fa28f6d9add36a12c6908a3a34b50355d788ce444587b1"}

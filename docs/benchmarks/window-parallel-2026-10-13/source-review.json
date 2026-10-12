@@ -1,0 +1,21 @@
+{
+  "ast_passed": true,
+  "source_sha256": {
+    "scripts/benchmark-student-parallel.py": "33cc537464f67ccfe4f5e4f63e131b407af52d367026465f86733728e5dcdfc7",
+    "scripts/student_parallel_runtime.py": "a8c91c3a39229ff5a2cc7587760d0dc76c861d1a9eb0af9b8b26634c387e0386",
+    "scripts/student_parallel_text.py": "281b13c39179e1173eaf1ec1e21f2c2d0c5167fb79af3767c366cca95045eac7",
+    "scripts/prepare-student-coreml.py": "e2591aa2621e84ffd4c86188d10a83d9fe5b012b82d1d130131ee66f3c07dbef"
+  },
+  "independent_read_only_review_passed": true,
+  "gpu_workloads_by_reviewers": 0,
+  "review_issues": [],
+  "review_scope": [
+    "all real windows executed",
+    "exactly one owner per token",
+    "ordered byte-span/category merge",
+    "sampled RSS proof boundary",
+    "readonly input copy values preserved"
+  ],
+  "structural_graph_tool_error": "Transport closed",
+  "git_diff_check_passed": true
+}

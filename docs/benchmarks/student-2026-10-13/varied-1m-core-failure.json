@@ -1,0 +1,21 @@
+{
+  "synthetic_only": true,
+  "input_bytes": 1048576,
+  "entities_before_core": 20456,
+  "core_validate_exit_code": 1,
+  "error_code": "validation_processing_failed",
+  "round_trip": false,
+  "core_timing_ms_failed_run": 40.111917012836784,
+  "full_anonymization_latency_proven": false,
+  "unique_model_mappings_before_core": 8820,
+  "unique_person_mappings_before_core": 8816,
+  "unique_person_mappings_with_digits": 8814,
+  "unique_original_bytes_before_core": 172872,
+  "default_vault_mapping_limit": 4096,
+  "default_vault_original_byte_limit": 8388608,
+  "range_utf8_bounds_failures": 0,
+  "range_overlap_failures": 0,
+  "probable_error": "VaultFull",
+  "typed_error_confirmed": false,
+  "limits_changed": false
+}

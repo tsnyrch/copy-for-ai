@@ -1,0 +1,4 @@
+load verify_ms=2416 model_ms=2304
+run=0 bytes=10240 status=ok detect_ms=6408 windows=11 inferred=11 reused=0 window_ms=0 tokenize_ms=0 pre_ms=0 infer_ms=6406 decode_ms=1 entities=265 core_ms=0 restore_ms=0 bytes_s=1598
+run=1 bytes=10240 status=ok detect_ms=6303 windows=11 inferred=11 reused=0 window_ms=0 tokenize_ms=1 pre_ms=0 infer_ms=6300 decode_ms=1 entities=265 core_ms=0 restore_ms=0 bytes_s=1625
+cancel_ms=597 cancelled=true

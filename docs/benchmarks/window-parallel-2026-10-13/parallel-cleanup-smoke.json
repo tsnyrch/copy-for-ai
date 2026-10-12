@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "gpu_used": false,
+  "model_weights_loaded": false,
+  "timeout_elapsed_ms": 50.64216599566862,
+  "cleanup_elapsed_ms": 0.9394169901497662,
+  "cleanup": {
+    "mode": "owned_process_terminate_then_kill",
+    "owned_process_count": 2,
+    "terminate_signals": 2,
+    "kill_signals": 0,
+    "remaining_live_processes": 0,
+    "join_budget_seconds": 5
+  },
+  "smoke_start_method": "fork",
+  "production_benchmark_start_method": "spawn",
+  "scope": "Python owned-process cleanup and never-completing Future; not CoreML native-hang integration proof",
+  "non_executor_control_child_survived": true,
+  "scope_check_cleanup_elapsed_ms": 4.005624970886856,
+  "scope_check_owned_count": 2,
+  "scope_check_remaining_owned_live": 0
+}

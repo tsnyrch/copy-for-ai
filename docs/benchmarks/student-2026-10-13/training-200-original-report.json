@@ -1,0 +1,2800 @@
+{
+  "status": "completed_supervised_trial",
+  "synthetic_smoke_only": true,
+  "production_accepted": false,
+  "teacher_loss_applied": false,
+  "heldout_acceptance_fixtures_used": false,
+  "source": {
+    "model_id": "microsoft/Multilingual-MiniLM-L12-H384",
+    "revision": "6e8c1ec6b4ec4e3fc6eb7d2cd834fcd582b61daf",
+    "source_manifest_sha256": "74bd0a06a4c15c47aef4a6ecf77f3ce312080f447d6214f2983745d6d3c1f2c3",
+    "model_source_sha256": "cce170910f4d4f3b45be025508f51ef1ad6a1de69f2d46dce7e4603ad31aaaeb",
+    "config_sha256": "933c5fc9b49cf83934fb2e617cea837985a1b5f10db653ecd958c5736de357de",
+    "source_files_sha256": {
+      "config.json": "933c5fc9b49cf83934fb2e617cea837985a1b5f10db653ecd958c5736de357de",
+      "README.md": "b00de73ad9d05ed170233a4d6551d931142fae681547f24152c52738c3da1145",
+      "sentencepiece.bpe.model": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865",
+      "special_tokens_map.json": "7638f5bbbe86ef6d604ef28ad3647dc690d6d117c81c0d63e885416be8da1150",
+      "tokenizer_config.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "pytorch_model.bin": "cce170910f4d4f3b45be025508f51ef1ad6a1de69f2d46dce7e4603ad31aaaeb"
+    },
+    "pretrained_state_dict_strict": true,
+    "pretrained_parameters": 117653760,
+    "selected_layer_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "layer_selection_is_untrained": false,
+    "pooler_loaded_but_unused": true,
+    "verified_nonpersistent_buffers": [],
+    "attention_implementation": "eager",
+    "head_seed": 17,
+    "head_nonzero": true,
+    "head_classes": 11,
+    "bio_labels": [
+      "O",
+      "B-person",
+      "I-person",
+      "B-organization",
+      "I-organization",
+      "B-location",
+      "I-location",
+      "B-address",
+      "I-address",
+      "B-event",
+      "I-event"
+    ],
+    "head_untrained": true,
+    "anonymization_quality_verified": false,
+    "total_parameters": 117657995
+  },
+  "corpus": {
+    "schema": 1,
+    "seed": 731904,
+    "synthetic_only": true,
+    "existing_acceptance_fixtures_imported": false,
+    "dev_generalization_proof": false,
+    "flat_nonoverlapping_spans": true,
+    "train_dev_surface_intersections": 0,
+    "train_dev_group_key_intersections": 0,
+    "train_dev_text_intersections": 0,
+    "train": {
+      "rows": 840,
+      "groups": 84,
+      "bytes": 1350622,
+      "sha256": "285a17b4443b06fbfb1fd368b47849581076600f6d42d5073ffe938677af3430",
+      "languages": {
+        "cs": 120,
+        "en": 120,
+        "de": 120,
+        "fr": 120,
+        "ru": 120,
+        "ja": 120,
+        "zh": 120
+      },
+      "categories": {
+        "person": 504,
+        "organization": 504,
+        "event": 504,
+        "location": 504,
+        "address": 504
+      },
+      "template_families": {
+        "complete": 84,
+        "repeat": 84,
+        "mixed": 84,
+        "person": 84,
+        "organization": 84,
+        "location": 84,
+        "address": 84,
+        "event": 84,
+        "negative": 84,
+        "ambiguous": 84
+      },
+      "annotation_status": {
+        "synthetic_gold": 756,
+        "review": 84
+      }
+    },
+    "dev": {
+      "rows": 280,
+      "groups": 28,
+      "bytes": 447855,
+      "sha256": "ce1abfcdeaef562abd63c9a797d339fc414abcf3c8d21c2529135c547764150a",
+      "languages": {
+        "cs": 40,
+        "en": 40,
+        "de": 40,
+        "fr": 40,
+        "ru": 40,
+        "ja": 40,
+        "zh": 40
+      },
+      "categories": {
+        "person": 168,
+        "organization": 168,
+        "event": 168,
+        "location": 168,
+        "address": 168
+      },
+      "template_families": {
+        "complete": 28,
+        "repeat": 28,
+        "mixed": 28,
+        "person": 28,
+        "organization": 28,
+        "location": 28,
+        "address": 28,
+        "event": 28,
+        "negative": 28,
+        "ambiguous": 28
+      },
+      "annotation_status": {
+        "synthetic_gold": 252,
+        "review": 28
+      }
+    }
+  },
+  "settings": {
+    "model": "/private/tmp/copy-ai-student-2026-10-13/model",
+    "corpus": "/private/tmp/copy-ai-student-2026-10-13/corpus-v1",
+    "output": "/private/tmp/copy-ai-student-2026-10-13/train-12-200",
+    "steps": 200,
+    "batch_size": 8,
+    "layers": 12,
+    "max_length": 256,
+    "max_seconds": 600.0,
+    "learning_rate": 2e-05,
+    "seed": 17
+  },
+  "corpus_hashes": {
+    "train.jsonl": "285a17b4443b06fbfb1fd368b47849581076600f6d42d5073ffe938677af3430",
+    "dev.jsonl": "ce1abfcdeaef562abd63c9a797d339fc414abcf3c8d21c2529135c547764150a",
+    "manifest.json": "db2a646abf2d307522c60f7dd113e4f8626bfe6761221e222bed0c388ac3a2d4"
+  },
+  "frozen_embeddings": true,
+  "frozen_unused_pooler": true,
+  "dtype": "float32",
+  "device": "mps",
+  "trainable_parameters": 21297803,
+  "memory_scope": "Current allocator/driver snapshots; these are not a measured peak",
+  "training_script_sha256": "c49fe743847faf3883533b636cab5e43f6c76aa1218cab5f4cfa7777f47fffb6",
+  "train_excluded_reasons": {
+    "review_required": 84,
+    "token_crosses_gold_boundary": 8
+  },
+  "train_examples": 748,
+  "memory_before_training": {
+    "allocated_bytes": 470640384,
+    "driver_allocated_bytes": 1107771392
+  },
+  "losses": [
+    2.4402801990509033,
+    2.410980463027954,
+    2.385927438735962,
+    2.352224349975586,
+    2.321213960647583,
+    2.326744318008423,
+    2.299848794937134,
+    2.268590211868286,
+    2.2295584678649902,
+    2.2269957065582275,
+    2.166346788406372,
+    2.2250025272369385,
+    2.0864782333374023,
+    2.090852737426758,
+    2.056718111038208,
+    2.1750664710998535,
+    2.0938477516174316,
+    1.9963152408599854,
+    1.9354639053344727,
+    1.8880701065063477,
+    2.1144943237304688,
+    1.7925714254379272,
+    2.022366523742676,
+    1.8725532293319702,
+    1.7964372634887695,
+    1.9950766563415527,
+    1.961604118347168,
+    1.9421894550323486,
+    1.764404058456421,
+    1.9445682764053345,
+    1.8290547132492065,
+    1.9739874601364136,
+    1.9174525737762451,
+    1.639134168624878,
+    1.751753807067871,
+    1.873715877532959,
+    1.8405836820602417,
+    1.5794906616210938,
+    1.7427864074707031,
+    1.7674442529678345,
+    1.6810450553894043,
+    1.7411363124847412,
+    1.7893304824829102,
+    1.4687696695327759,
+    1.6781375408172607,
+    1.5527456998825073,
+    1.6734046936035156,
+    1.653141736984253,
+    1.6986355781555176,
+    1.6443978548049927,
+    1.235146403312683,
+    1.6380435228347778,
+    1.5121372938156128,
+    1.4892131090164185,
+    1.5167447328567505,
+    1.6256920099258423,
+    1.583945393562317,
+    1.5987147092819214,
+    1.587284803390503,
+    1.6051044464111328,
+    1.5096004009246826,
+    1.5013680458068848,
+    1.5222936868667603,
+    1.5415533781051636,
+    1.4347245693206787,
+    1.5026147365570068,
+    1.5002743005752563,
+    1.488572597503662,
+    1.428110122680664,
+    1.3780238628387451,
+    1.4206604957580566,
+    1.3424948453903198,
+    1.3884656429290771,
+    1.427786111831665,
+    1.0737580060958862,
+    1.3263462781906128,
+    1.3871235847473145,
+    1.3229008913040161,
+    1.2193338871002197,
+    1.1954741477966309,
+    1.2772589921951294,
+    1.2666072845458984,
+    1.2321339845657349,
+    1.338848352432251,
+    1.3067591190338135,
+    1.0063835382461548,
+    1.2838016748428345,
+    1.2727638483047485,
+    1.3235810995101929,
+    1.1010351181030273,
+    1.2160407304763794,
+    1.2215248346328735,
+    1.2080755233764648,
+    1.1367260217666626,
+    1.2178781032562256,
+    1.215661883354187,
+    1.2392774820327759,
+    1.1844464540481567,
+    1.1444491147994995,
+    1.2129948139190674,
+    1.1639617681503296,
+    1.1097596883773804,
+    1.072378396987915,
+    1.1937289237976074,
+    1.0953381061553955,
+    1.091180682182312,
+    1.1603924036026,
+    1.1782244443893433,
+    1.155901312828064,
+    1.1585365533828735,
+    1.152023434638977,
+    1.147055745124817,
+    1.1207849979400635,
+    1.125909447669983,
+    1.1443612575531006,
+    1.1317464113235474,
+    1.0816991329193115,
+    1.0867249965667725,
+    1.083161473274231,
+    1.1354445219039917,
+    1.077773928642273,
+    1.0952414274215698,
+    1.0529398918151855,
+    1.059895634651184,
+    1.0727876424789429,
+    1.0940163135528564,
+    1.0878174304962158,
+    1.047456979751587,
+    1.0798841714859009,
+    1.004804253578186,
+    1.0500248670578003,
+    1.0425893068313599,
+    1.0799850225448608,
+    0.9898994565010071,
+    0.9932374954223633,
+    1.0024951696395874,
+    1.0429980754852295,
+    1.0219272375106812,
+    0.9843494296073914,
+    1.0035806894302368,
+    0.9735437035560608,
+    1.0356043577194214,
+    1.030523657798767,
+    0.9540114998817444,
+    0.9742038249969482,
+    0.9917283654212952,
+    1.016611933708191,
+    0.9954403042793274,
+    0.9854530692100525,
+    0.9596232771873474,
+    0.982244610786438,
+    0.9850828647613525,
+    0.9899250268936157,
+    0.9636120200157166,
+    0.9890550374984741,
+    0.9611101150512695,
+    0.9566640853881836,
+    0.9712387323379517,
+    0.9477460980415344,
+    0.9751138091087341,
+    0.9375642538070679,
+    0.9412583708763123,
+    0.9725496768951416,
+    0.9615870714187622,
+    0.9343240857124329,
+    0.8903613090515137,
+    0.951742947101593,
+    0.9519725441932678,
+    0.9240338206291199,
+    0.9026954174041748,
+    0.9204418063163757,
+    0.939400851726532,
+    0.9407602548599243,
+    0.8906210660934448,
+    0.9191077351570129,
+    0.890511155128479,
+    0.9300444722175598,
+    0.8862602710723877,
+    0.8742753863334656,
+    0.8971897959709167,
+    0.9199775457382202,
+    0.8990895748138428,
+    0.9108467102050781,
+    0.9076036810874939,
+    0.873728334903717,
+    0.9020481705665588,
+    0.9044299125671387,
+    0.8788924813270569,
+    0.877669632434845,
+    0.8697139620780945,
+    0.8478017449378967,
+    0.8868016004562378,
+    0.8887618184089661,
+    0.8527679443359375,
+    0.8588963150978088,
+    0.878565788269043,
+    0.8593564033508301,
+    0.8793255090713501,
+    0.8127756714820862,
+    0.8687371015548706
+  ],
+  "first_backward": {
+    "finite": true,
+    "gradient_norm": 2.2789266109466553,
+    "active_modules": {
+      "encoder_layer_0": true,
+      "encoder_layer_1": true,
+      "encoder_layer_2": true,
+      "encoder_layer_3": true,
+      "encoder_layer_4": true,
+      "encoder_layer_5": true,
+      "encoder_layer_6": true,
+      "encoder_layer_7": true,
+      "encoder_layer_8": true,
+      "encoder_layer_9": true,
+      "encoder_layer_10": true,
+      "encoder_layer_11": true,
+      "head": true
+    },
+    "memory": {
+      "allocated_bytes": 575694592,
+      "driver_allocated_bytes": 3382935552
+    }
+  },
+  "memory_after_optimizer_state": {
+    "allocated_bytes": 783826944,
+    "driver_allocated_bytes": 3441672192
+  },
+  "completed_steps": 200,
+  "training_seconds": 55.29474379203748,
+  "memory_after_training": {
+    "allocated_bytes": 891840000,
+    "driver_allocated_bytes": 3441655808
+  },
+  "dev": {
+    "documents": 280,
+    "exact_documents": 204,
+    "unresolved_documents": 28,
+    "tp": 732,
+    "fp": 216,
+    "fn": 108,
+    "precision": 0.7721518987341772,
+    "recall": 0.8714285714285714,
+    "f1": 0.8187919463087249,
+    "exact_document_fraction": 0.7285714285714285,
+    "all_dev_documents_in_denominator": true,
+    "unresolved_reason_counts": {
+      "review_required": 28
+    },
+    "by_category": {
+      "person": {
+        "tp": 168,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "organization": {
+        "tp": 120,
+        "fp": 96,
+        "fn": 48,
+        "precision": 0.5555555555555556,
+        "recall": 0.7142857142857143,
+        "f1": 0.625
+      },
+      "location": {
+        "tp": 168,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "address": {
+        "tp": 156,
+        "fp": 24,
+        "fn": 12,
+        "precision": 0.8666666666666667,
+        "recall": 0.9285714285714286,
+        "f1": 0.896551724137931
+      },
+      "event": {
+        "tp": 120,
+        "fp": 96,
+        "fn": 48,
+        "precision": 0.5555555555555556,
+        "recall": 0.7142857142857143,
+        "f1": 0.625
+      }
+    },
+    "by_language": {
+      "cs": {
+        "documents": 40,
+        "exact_documents": 32,
+        "unresolved_documents": 4,
+        "tp": 114,
+        "fp": 12,
+        "fn": 6,
+        "precision": 0.9047619047619048,
+        "recall": 0.95,
+        "f1": 0.926829268292683
+      },
+      "en": {
+        "documents": 40,
+        "exact_documents": 36,
+        "unresolved_documents": 4,
+        "tp": 120,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "de": {
+        "documents": 40,
+        "exact_documents": 32,
+        "unresolved_documents": 4,
+        "tp": 114,
+        "fp": 12,
+        "fn": 6,
+        "precision": 0.9047619047619048,
+        "recall": 0.95,
+        "f1": 0.926829268292683
+      },
+      "fr": {
+        "documents": 40,
+        "exact_documents": 36,
+        "unresolved_documents": 4,
+        "tp": 120,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "ru": {
+        "documents": 40,
+        "exact_documents": 36,
+        "unresolved_documents": 4,
+        "tp": 120,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "ja": {
+        "documents": 40,
+        "exact_documents": 16,
+        "unresolved_documents": 4,
+        "tp": 72,
+        "fp": 96,
+        "fn": 48,
+        "precision": 0.42857142857142855,
+        "recall": 0.6,
+        "f1": 0.5
+      },
+      "zh": {
+        "documents": 40,
+        "exact_documents": 16,
+        "unresolved_documents": 4,
+        "tp": 72,
+        "fp": 96,
+        "fn": 48,
+        "precision": 0.42857142857142855,
+        "recall": 0.6,
+        "f1": 0.5
+      }
+    },
+    "document_results": [
+      {
+        "id": "student-v1-dev-cs-00000-complete",
+        "language": "cs",
+        "reason": null,
+        "gold_spans": 5,
+        "predicted_spans": 5,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-cs-00000-repeat",
+        "language": "cs",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 10,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-cs-00000-mixed",
+        "language": "cs",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 10,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-cs-00000-person",
+        "language": "cs",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-cs-00000-organization",
+        "language": "cs",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-cs-00000-location",
+        "language": "cs",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-cs-00000-address",
+        "language": "cs",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-cs-00000-event",
+        "language": "cs",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-cs-00000-negative",
+        "language": "cs",
+        "reason": null,
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-cs-00000-ambiguous",
+        "language": "cs",
+        "reason": "review_required",
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-cs-00001-complete",
+        "language": "cs",
+        "reason": null,
+        "gold_spans": 5,
+        "predicted_spans": 5,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-cs-00001-repeat",
+        "language": "cs",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 10,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-cs-00001-mixed",
+        "language": "cs",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 10,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-cs-00001-person",
+        "language": "cs",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-cs-00001-organization",
+        "language": "cs",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-cs-00001-location",
+        "language": "cs",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-cs-00001-address",
+        "language": "cs",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-cs-00001-event",
+        "language": "cs",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-cs-00001-negative",
+        "language": "cs",
+        "reason": null,
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-cs-00001-ambiguous",
+        "language": "cs",
+        "reason": "review_required",
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-cs-00002-complete",
+        "language": "cs",
+        "reason": null,
+        "gold_spans": 5,
+        "predicted_spans": 6,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-cs-00002-repeat",
+        "language": "cs",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 12,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-cs-00002-mixed",
+        "language": "cs",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 12,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-cs-00002-person",
+        "language": "cs",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-cs-00002-organization",
+        "language": "cs",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-cs-00002-location",
+        "language": "cs",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-cs-00002-address",
+        "language": "cs",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 2,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-cs-00002-event",
+        "language": "cs",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-cs-00002-negative",
+        "language": "cs",
+        "reason": null,
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-cs-00002-ambiguous",
+        "language": "cs",
+        "reason": "review_required",
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-cs-00003-complete",
+        "language": "cs",
+        "reason": null,
+        "gold_spans": 5,
+        "predicted_spans": 5,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-cs-00003-repeat",
+        "language": "cs",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 10,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-cs-00003-mixed",
+        "language": "cs",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 10,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-cs-00003-person",
+        "language": "cs",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-cs-00003-organization",
+        "language": "cs",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-cs-00003-location",
+        "language": "cs",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-cs-00003-address",
+        "language": "cs",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-cs-00003-event",
+        "language": "cs",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-cs-00003-negative",
+        "language": "cs",
+        "reason": null,
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-cs-00003-ambiguous",
+        "language": "cs",
+        "reason": "review_required",
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-en-00000-complete",
+        "language": "en",
+        "reason": null,
+        "gold_spans": 5,
+        "predicted_spans": 5,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-en-00000-repeat",
+        "language": "en",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 10,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-en-00000-mixed",
+        "language": "en",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 10,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-en-00000-person",
+        "language": "en",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-en-00000-organization",
+        "language": "en",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-en-00000-location",
+        "language": "en",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-en-00000-address",
+        "language": "en",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-en-00000-event",
+        "language": "en",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-en-00000-negative",
+        "language": "en",
+        "reason": null,
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-en-00000-ambiguous",
+        "language": "en",
+        "reason": "review_required",
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-en-00001-complete",
+        "language": "en",
+        "reason": null,
+        "gold_spans": 5,
+        "predicted_spans": 5,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-en-00001-repeat",
+        "language": "en",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 10,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-en-00001-mixed",
+        "language": "en",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 10,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-en-00001-person",
+        "language": "en",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-en-00001-organization",
+        "language": "en",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-en-00001-location",
+        "language": "en",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-en-00001-address",
+        "language": "en",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-en-00001-event",
+        "language": "en",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-en-00001-negative",
+        "language": "en",
+        "reason": null,
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-en-00001-ambiguous",
+        "language": "en",
+        "reason": "review_required",
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-en-00002-complete",
+        "language": "en",
+        "reason": null,
+        "gold_spans": 5,
+        "predicted_spans": 5,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-en-00002-repeat",
+        "language": "en",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 10,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-en-00002-mixed",
+        "language": "en",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 10,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-en-00002-person",
+        "language": "en",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-en-00002-organization",
+        "language": "en",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-en-00002-location",
+        "language": "en",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-en-00002-address",
+        "language": "en",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-en-00002-event",
+        "language": "en",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-en-00002-negative",
+        "language": "en",
+        "reason": null,
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-en-00002-ambiguous",
+        "language": "en",
+        "reason": "review_required",
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-en-00003-complete",
+        "language": "en",
+        "reason": null,
+        "gold_spans": 5,
+        "predicted_spans": 5,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-en-00003-repeat",
+        "language": "en",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 10,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-en-00003-mixed",
+        "language": "en",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 10,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-en-00003-person",
+        "language": "en",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-en-00003-organization",
+        "language": "en",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-en-00003-location",
+        "language": "en",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-en-00003-address",
+        "language": "en",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-en-00003-event",
+        "language": "en",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-en-00003-negative",
+        "language": "en",
+        "reason": null,
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-en-00003-ambiguous",
+        "language": "en",
+        "reason": "review_required",
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-de-00000-complete",
+        "language": "de",
+        "reason": null,
+        "gold_spans": 5,
+        "predicted_spans": 6,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-de-00000-repeat",
+        "language": "de",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 12,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-de-00000-mixed",
+        "language": "de",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 12,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-de-00000-person",
+        "language": "de",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-de-00000-organization",
+        "language": "de",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-de-00000-location",
+        "language": "de",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-de-00000-address",
+        "language": "de",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 2,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-de-00000-event",
+        "language": "de",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-de-00000-negative",
+        "language": "de",
+        "reason": null,
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-de-00000-ambiguous",
+        "language": "de",
+        "reason": "review_required",
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-de-00001-complete",
+        "language": "de",
+        "reason": null,
+        "gold_spans": 5,
+        "predicted_spans": 5,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-de-00001-repeat",
+        "language": "de",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 10,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-de-00001-mixed",
+        "language": "de",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 10,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-de-00001-person",
+        "language": "de",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-de-00001-organization",
+        "language": "de",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-de-00001-location",
+        "language": "de",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-de-00001-address",
+        "language": "de",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-de-00001-event",
+        "language": "de",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-de-00001-negative",
+        "language": "de",
+        "reason": null,
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-de-00001-ambiguous",
+        "language": "de",
+        "reason": "review_required",
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-de-00002-complete",
+        "language": "de",
+        "reason": null,
+        "gold_spans": 5,
+        "predicted_spans": 5,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-de-00002-repeat",
+        "language": "de",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 10,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-de-00002-mixed",
+        "language": "de",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 10,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-de-00002-person",
+        "language": "de",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-de-00002-organization",
+        "language": "de",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-de-00002-location",
+        "language": "de",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-de-00002-address",
+        "language": "de",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-de-00002-event",
+        "language": "de",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-de-00002-negative",
+        "language": "de",
+        "reason": null,
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-de-00002-ambiguous",
+        "language": "de",
+        "reason": "review_required",
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-de-00003-complete",
+        "language": "de",
+        "reason": null,
+        "gold_spans": 5,
+        "predicted_spans": 5,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-de-00003-repeat",
+        "language": "de",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 10,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-de-00003-mixed",
+        "language": "de",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 10,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-de-00003-person",
+        "language": "de",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-de-00003-organization",
+        "language": "de",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-de-00003-location",
+        "language": "de",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-de-00003-address",
+        "language": "de",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-de-00003-event",
+        "language": "de",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-de-00003-negative",
+        "language": "de",
+        "reason": null,
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-de-00003-ambiguous",
+        "language": "de",
+        "reason": "review_required",
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-fr-00000-complete",
+        "language": "fr",
+        "reason": null,
+        "gold_spans": 5,
+        "predicted_spans": 5,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-fr-00000-repeat",
+        "language": "fr",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 10,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-fr-00000-mixed",
+        "language": "fr",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 10,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-fr-00000-person",
+        "language": "fr",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-fr-00000-organization",
+        "language": "fr",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-fr-00000-location",
+        "language": "fr",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-fr-00000-address",
+        "language": "fr",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-fr-00000-event",
+        "language": "fr",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-fr-00000-negative",
+        "language": "fr",
+        "reason": null,
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-fr-00000-ambiguous",
+        "language": "fr",
+        "reason": "review_required",
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-fr-00001-complete",
+        "language": "fr",
+        "reason": null,
+        "gold_spans": 5,
+        "predicted_spans": 5,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-fr-00001-repeat",
+        "language": "fr",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 10,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-fr-00001-mixed",
+        "language": "fr",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 10,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-fr-00001-person",
+        "language": "fr",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-fr-00001-organization",
+        "language": "fr",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-fr-00001-location",
+        "language": "fr",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-fr-00001-address",
+        "language": "fr",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-fr-00001-event",
+        "language": "fr",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-fr-00001-negative",
+        "language": "fr",
+        "reason": null,
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-fr-00001-ambiguous",
+        "language": "fr",
+        "reason": "review_required",
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-fr-00002-complete",
+        "language": "fr",
+        "reason": null,
+        "gold_spans": 5,
+        "predicted_spans": 5,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-fr-00002-repeat",
+        "language": "fr",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 10,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-fr-00002-mixed",
+        "language": "fr",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 10,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-fr-00002-person",
+        "language": "fr",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-fr-00002-organization",
+        "language": "fr",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-fr-00002-location",
+        "language": "fr",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-fr-00002-address",
+        "language": "fr",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-fr-00002-event",
+        "language": "fr",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-fr-00002-negative",
+        "language": "fr",
+        "reason": null,
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-fr-00002-ambiguous",
+        "language": "fr",
+        "reason": "review_required",
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-fr-00003-complete",
+        "language": "fr",
+        "reason": null,
+        "gold_spans": 5,
+        "predicted_spans": 5,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-fr-00003-repeat",
+        "language": "fr",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 10,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-fr-00003-mixed",
+        "language": "fr",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 10,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-fr-00003-person",
+        "language": "fr",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-fr-00003-organization",
+        "language": "fr",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-fr-00003-location",
+        "language": "fr",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-fr-00003-address",
+        "language": "fr",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-fr-00003-event",
+        "language": "fr",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-fr-00003-negative",
+        "language": "fr",
+        "reason": null,
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-fr-00003-ambiguous",
+        "language": "fr",
+        "reason": "review_required",
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-ru-00000-complete",
+        "language": "ru",
+        "reason": null,
+        "gold_spans": 5,
+        "predicted_spans": 5,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ru-00000-repeat",
+        "language": "ru",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 10,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ru-00000-mixed",
+        "language": "ru",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 10,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ru-00000-person",
+        "language": "ru",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ru-00000-organization",
+        "language": "ru",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ru-00000-location",
+        "language": "ru",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ru-00000-address",
+        "language": "ru",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ru-00000-event",
+        "language": "ru",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ru-00000-negative",
+        "language": "ru",
+        "reason": null,
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ru-00000-ambiguous",
+        "language": "ru",
+        "reason": "review_required",
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-ru-00001-complete",
+        "language": "ru",
+        "reason": null,
+        "gold_spans": 5,
+        "predicted_spans": 5,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ru-00001-repeat",
+        "language": "ru",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 10,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ru-00001-mixed",
+        "language": "ru",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 10,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ru-00001-person",
+        "language": "ru",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ru-00001-organization",
+        "language": "ru",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ru-00001-location",
+        "language": "ru",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ru-00001-address",
+        "language": "ru",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ru-00001-event",
+        "language": "ru",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ru-00001-negative",
+        "language": "ru",
+        "reason": null,
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ru-00001-ambiguous",
+        "language": "ru",
+        "reason": "review_required",
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-ru-00002-complete",
+        "language": "ru",
+        "reason": null,
+        "gold_spans": 5,
+        "predicted_spans": 5,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ru-00002-repeat",
+        "language": "ru",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 10,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ru-00002-mixed",
+        "language": "ru",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 10,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ru-00002-person",
+        "language": "ru",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ru-00002-organization",
+        "language": "ru",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ru-00002-location",
+        "language": "ru",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ru-00002-address",
+        "language": "ru",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ru-00002-event",
+        "language": "ru",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ru-00002-negative",
+        "language": "ru",
+        "reason": null,
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ru-00002-ambiguous",
+        "language": "ru",
+        "reason": "review_required",
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-ru-00003-complete",
+        "language": "ru",
+        "reason": null,
+        "gold_spans": 5,
+        "predicted_spans": 5,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ru-00003-repeat",
+        "language": "ru",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 10,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ru-00003-mixed",
+        "language": "ru",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 10,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ru-00003-person",
+        "language": "ru",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ru-00003-organization",
+        "language": "ru",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ru-00003-location",
+        "language": "ru",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ru-00003-address",
+        "language": "ru",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ru-00003-event",
+        "language": "ru",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ru-00003-negative",
+        "language": "ru",
+        "reason": null,
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ru-00003-ambiguous",
+        "language": "ru",
+        "reason": "review_required",
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-ja-00000-complete",
+        "language": "ja",
+        "reason": null,
+        "gold_spans": 5,
+        "predicted_spans": 7,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-ja-00000-repeat",
+        "language": "ja",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 14,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-ja-00000-mixed",
+        "language": "ja",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 14,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-ja-00000-person",
+        "language": "ja",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ja-00000-organization",
+        "language": "ja",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 2,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-ja-00000-location",
+        "language": "ja",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ja-00000-address",
+        "language": "ja",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ja-00000-event",
+        "language": "ja",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 2,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-ja-00000-negative",
+        "language": "ja",
+        "reason": null,
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ja-00000-ambiguous",
+        "language": "ja",
+        "reason": "review_required",
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-ja-00001-complete",
+        "language": "ja",
+        "reason": null,
+        "gold_spans": 5,
+        "predicted_spans": 7,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-ja-00001-repeat",
+        "language": "ja",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 14,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-ja-00001-mixed",
+        "language": "ja",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 14,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-ja-00001-person",
+        "language": "ja",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ja-00001-organization",
+        "language": "ja",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 2,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-ja-00001-location",
+        "language": "ja",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ja-00001-address",
+        "language": "ja",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ja-00001-event",
+        "language": "ja",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 2,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-ja-00001-negative",
+        "language": "ja",
+        "reason": null,
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ja-00001-ambiguous",
+        "language": "ja",
+        "reason": "review_required",
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-ja-00002-complete",
+        "language": "ja",
+        "reason": null,
+        "gold_spans": 5,
+        "predicted_spans": 7,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-ja-00002-repeat",
+        "language": "ja",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 14,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-ja-00002-mixed",
+        "language": "ja",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 14,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-ja-00002-person",
+        "language": "ja",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ja-00002-organization",
+        "language": "ja",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 2,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-ja-00002-location",
+        "language": "ja",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ja-00002-address",
+        "language": "ja",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ja-00002-event",
+        "language": "ja",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 2,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-ja-00002-negative",
+        "language": "ja",
+        "reason": null,
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ja-00002-ambiguous",
+        "language": "ja",
+        "reason": "review_required",
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-ja-00003-complete",
+        "language": "ja",
+        "reason": null,
+        "gold_spans": 5,
+        "predicted_spans": 7,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-ja-00003-repeat",
+        "language": "ja",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 14,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-ja-00003-mixed",
+        "language": "ja",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 14,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-ja-00003-person",
+        "language": "ja",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ja-00003-organization",
+        "language": "ja",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 2,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-ja-00003-location",
+        "language": "ja",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ja-00003-address",
+        "language": "ja",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ja-00003-event",
+        "language": "ja",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 2,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-ja-00003-negative",
+        "language": "ja",
+        "reason": null,
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-ja-00003-ambiguous",
+        "language": "ja",
+        "reason": "review_required",
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-zh-00000-complete",
+        "language": "zh",
+        "reason": null,
+        "gold_spans": 5,
+        "predicted_spans": 7,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-zh-00000-repeat",
+        "language": "zh",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 14,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-zh-00000-mixed",
+        "language": "zh",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 14,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-zh-00000-person",
+        "language": "zh",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-zh-00000-organization",
+        "language": "zh",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 2,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-zh-00000-location",
+        "language": "zh",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-zh-00000-address",
+        "language": "zh",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-zh-00000-event",
+        "language": "zh",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 2,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-zh-00000-negative",
+        "language": "zh",
+        "reason": null,
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-zh-00000-ambiguous",
+        "language": "zh",
+        "reason": "review_required",
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-zh-00001-complete",
+        "language": "zh",
+        "reason": null,
+        "gold_spans": 5,
+        "predicted_spans": 7,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-zh-00001-repeat",
+        "language": "zh",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 14,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-zh-00001-mixed",
+        "language": "zh",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 14,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-zh-00001-person",
+        "language": "zh",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-zh-00001-organization",
+        "language": "zh",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 2,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-zh-00001-location",
+        "language": "zh",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-zh-00001-address",
+        "language": "zh",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-zh-00001-event",
+        "language": "zh",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 2,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-zh-00001-negative",
+        "language": "zh",
+        "reason": null,
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-zh-00001-ambiguous",
+        "language": "zh",
+        "reason": "review_required",
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-zh-00002-complete",
+        "language": "zh",
+        "reason": null,
+        "gold_spans": 5,
+        "predicted_spans": 7,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-zh-00002-repeat",
+        "language": "zh",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 14,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-zh-00002-mixed",
+        "language": "zh",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 14,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-zh-00002-person",
+        "language": "zh",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-zh-00002-organization",
+        "language": "zh",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 2,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-zh-00002-location",
+        "language": "zh",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-zh-00002-address",
+        "language": "zh",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-zh-00002-event",
+        "language": "zh",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 2,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-zh-00002-negative",
+        "language": "zh",
+        "reason": null,
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-zh-00002-ambiguous",
+        "language": "zh",
+        "reason": "review_required",
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-zh-00003-complete",
+        "language": "zh",
+        "reason": null,
+        "gold_spans": 5,
+        "predicted_spans": 7,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-zh-00003-repeat",
+        "language": "zh",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 14,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-zh-00003-mixed",
+        "language": "zh",
+        "reason": null,
+        "gold_spans": 10,
+        "predicted_spans": 14,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-zh-00003-person",
+        "language": "zh",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-zh-00003-organization",
+        "language": "zh",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 2,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-zh-00003-location",
+        "language": "zh",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-zh-00003-address",
+        "language": "zh",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 1,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-zh-00003-event",
+        "language": "zh",
+        "reason": null,
+        "gold_spans": 1,
+        "predicted_spans": 2,
+        "exact": false
+      },
+      {
+        "id": "student-v1-dev-zh-00003-negative",
+        "language": "zh",
+        "reason": null,
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": true
+      },
+      {
+        "id": "student-v1-dev-zh-00003-ambiguous",
+        "language": "zh",
+        "reason": "review_required",
+        "gold_spans": 0,
+        "predicted_spans": 0,
+        "exact": false
+      }
+    ],
+    "review_cases_have_no_entity_gold": true,
+    "unrepresentable_gold_spans_count_as_false_negatives": true
+  },
+  "checkpoint_sha256": "918636493f4cd7428c672c44bb3ea472033f5243cf17e3223f226c3b4773c5eb",
+  "checkpoint_head_trained": true,
+  "dev_generalization_proof": false
+}

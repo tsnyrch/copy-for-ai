@@ -1,0 +1,1673 @@
+{
+  "artifacts": {
+    "models/gliner-multi/model.onnx": "57af7f3d8d72a3ca4e5619c247344b4b5ee362a5ebcf307c0634d67b65e721c0",
+    "/private/tmp/copy-ai-apple-2026-10-13/configs/gliner-config.json": "e25f61d91620df84aae8076811ee592e926e94d341b82e7bc1be359718f83017",
+    "/private/tmp/copy-ai-apple-2026-10-13/configs/encoder-config.json": "bcffcd343dc5efa5ef2d5a58d2b405eed108f01cc45b48d0a907b333ec41801f",
+    "models/gliner-multi/tokenizer.json": "914bd3c8fb7b525af9e23b60d0ec7b1248ddb2b99014efd9c02ebeb022f8cab7"
+  },
+  "onnx_initializers": 219,
+  "pytorch_parameters": 224,
+  "missing_parameters": [],
+  "unused_initializers": [],
+  "identity_aliases": 24,
+  "loaded": false,
+  "vocabulary_size": 250105,
+  "entity_marker_id": 250103,
+  "mapping": {
+    "token_rep_layer.bert_layer.model.embeddings.word_embeddings.weight": {
+      "initializer": "token_rep_layer.bert_layer.model.embeddings.word_embeddings.weight",
+      "operation": "identity",
+      "shape": [
+        250105,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.embeddings.LayerNorm.weight": {
+      "initializer": "token_rep_layer.bert_layer.model.embeddings.LayerNorm.weight",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.embeddings.LayerNorm.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.embeddings.LayerNorm.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.0.attention.self.query_proj.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.0.attention.self.query_proj.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.0.attention.self.key_proj.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.0.attention.self.key_proj.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.0.attention.self.value_proj.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.0.attention.self.value_proj.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.0.attention.output.dense.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.0.attention.output.dense.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.0.attention.output.LayerNorm.weight": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.0.attention.output.LayerNorm.weight",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.0.attention.output.LayerNorm.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.0.attention.output.LayerNorm.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.0.intermediate.dense.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.0.intermediate.dense.bias",
+      "operation": "identity",
+      "shape": [
+        3072
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.0.output.dense.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.0.output.dense.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.0.output.LayerNorm.weight": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.0.output.LayerNorm.weight",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.0.output.LayerNorm.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.0.output.LayerNorm.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.1.attention.self.query_proj.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.1.attention.self.query_proj.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.1.attention.self.key_proj.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.1.attention.self.key_proj.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.1.attention.self.value_proj.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.1.attention.self.value_proj.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.1.attention.output.dense.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.1.attention.output.dense.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.1.attention.output.LayerNorm.weight": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.1.attention.output.LayerNorm.weight",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.1.attention.output.LayerNorm.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.1.attention.output.LayerNorm.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.1.intermediate.dense.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.1.intermediate.dense.bias",
+      "operation": "identity",
+      "shape": [
+        3072
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.1.output.dense.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.1.output.dense.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.1.output.LayerNorm.weight": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.1.output.LayerNorm.weight",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.1.output.LayerNorm.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.1.output.LayerNorm.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.2.attention.self.query_proj.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.2.attention.self.query_proj.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.2.attention.self.key_proj.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.2.attention.self.key_proj.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.2.attention.self.value_proj.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.2.attention.self.value_proj.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.2.attention.output.dense.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.2.attention.output.dense.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.2.attention.output.LayerNorm.weight": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.2.attention.output.LayerNorm.weight",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.2.attention.output.LayerNorm.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.2.attention.output.LayerNorm.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.2.intermediate.dense.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.2.intermediate.dense.bias",
+      "operation": "identity",
+      "shape": [
+        3072
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.2.output.dense.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.2.output.dense.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.2.output.LayerNorm.weight": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.2.output.LayerNorm.weight",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.2.output.LayerNorm.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.2.output.LayerNorm.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.3.attention.self.query_proj.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.3.attention.self.query_proj.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.3.attention.self.key_proj.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.3.attention.self.key_proj.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.3.attention.self.value_proj.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.3.attention.self.value_proj.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.3.attention.output.dense.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.3.attention.output.dense.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.3.attention.output.LayerNorm.weight": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.3.attention.output.LayerNorm.weight",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.3.attention.output.LayerNorm.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.3.attention.output.LayerNorm.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.3.intermediate.dense.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.3.intermediate.dense.bias",
+      "operation": "identity",
+      "shape": [
+        3072
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.3.output.dense.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.3.output.dense.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.3.output.LayerNorm.weight": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.3.output.LayerNorm.weight",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.3.output.LayerNorm.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.3.output.LayerNorm.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.4.attention.self.query_proj.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.4.attention.self.query_proj.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.4.attention.self.key_proj.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.4.attention.self.key_proj.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.4.attention.self.value_proj.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.4.attention.self.value_proj.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.4.attention.output.dense.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.4.attention.output.dense.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.4.attention.output.LayerNorm.weight": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.4.attention.output.LayerNorm.weight",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.4.attention.output.LayerNorm.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.4.attention.output.LayerNorm.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.4.intermediate.dense.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.4.intermediate.dense.bias",
+      "operation": "identity",
+      "shape": [
+        3072
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.4.output.dense.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.4.output.dense.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.4.output.LayerNorm.weight": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.4.output.LayerNorm.weight",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.4.output.LayerNorm.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.4.output.LayerNorm.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.5.attention.self.query_proj.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.5.attention.self.query_proj.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.5.attention.self.key_proj.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.5.attention.self.key_proj.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.5.attention.self.value_proj.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.5.attention.self.value_proj.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.5.attention.output.dense.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.5.attention.output.dense.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.5.attention.output.LayerNorm.weight": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.5.attention.output.LayerNorm.weight",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.5.attention.output.LayerNorm.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.5.attention.output.LayerNorm.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.5.intermediate.dense.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.5.intermediate.dense.bias",
+      "operation": "identity",
+      "shape": [
+        3072
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.5.output.dense.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.5.output.dense.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.5.output.LayerNorm.weight": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.5.output.LayerNorm.weight",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.5.output.LayerNorm.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.5.output.LayerNorm.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.6.attention.self.query_proj.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.6.attention.self.query_proj.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.6.attention.self.key_proj.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.6.attention.self.key_proj.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.6.attention.self.value_proj.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.6.attention.self.value_proj.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.6.attention.output.dense.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.6.attention.output.dense.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.6.attention.output.LayerNorm.weight": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.6.attention.output.LayerNorm.weight",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.6.attention.output.LayerNorm.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.6.attention.output.LayerNorm.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.6.intermediate.dense.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.6.intermediate.dense.bias",
+      "operation": "identity",
+      "shape": [
+        3072
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.6.output.dense.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.6.output.dense.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.6.output.LayerNorm.weight": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.6.output.LayerNorm.weight",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.6.output.LayerNorm.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.6.output.LayerNorm.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.7.attention.self.query_proj.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.7.attention.self.query_proj.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.7.attention.self.key_proj.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.7.attention.self.key_proj.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.7.attention.self.value_proj.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.7.attention.self.value_proj.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.7.attention.output.dense.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.7.attention.output.dense.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.7.attention.output.LayerNorm.weight": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.7.attention.output.LayerNorm.weight",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.7.attention.output.LayerNorm.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.7.attention.output.LayerNorm.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.7.intermediate.dense.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.7.intermediate.dense.bias",
+      "operation": "identity",
+      "shape": [
+        3072
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.7.output.dense.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.7.output.dense.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.7.output.LayerNorm.weight": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.7.output.LayerNorm.weight",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.7.output.LayerNorm.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.7.output.LayerNorm.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.8.attention.self.query_proj.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.8.attention.self.query_proj.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.8.attention.self.key_proj.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.8.attention.self.key_proj.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.8.attention.self.value_proj.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.8.attention.self.value_proj.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.8.attention.output.dense.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.8.attention.output.dense.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.8.attention.output.LayerNorm.weight": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.8.attention.output.LayerNorm.weight",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.8.attention.output.LayerNorm.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.8.attention.output.LayerNorm.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.8.intermediate.dense.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.8.intermediate.dense.bias",
+      "operation": "identity",
+      "shape": [
+        3072
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.8.output.dense.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.8.output.dense.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.8.output.LayerNorm.weight": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.8.output.LayerNorm.weight",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.8.output.LayerNorm.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.8.output.LayerNorm.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.9.attention.self.query_proj.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.9.attention.self.query_proj.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.9.attention.self.key_proj.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.9.attention.self.key_proj.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.9.attention.self.value_proj.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.9.attention.self.value_proj.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.9.attention.output.dense.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.9.attention.output.dense.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.9.attention.output.LayerNorm.weight": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.9.attention.output.LayerNorm.weight",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.9.attention.output.LayerNorm.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.9.attention.output.LayerNorm.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.9.intermediate.dense.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.9.intermediate.dense.bias",
+      "operation": "identity",
+      "shape": [
+        3072
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.9.output.dense.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.9.output.dense.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.9.output.LayerNorm.weight": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.9.output.LayerNorm.weight",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.9.output.LayerNorm.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.9.output.LayerNorm.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.10.attention.self.query_proj.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.10.attention.self.query_proj.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.10.attention.self.key_proj.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.10.attention.self.key_proj.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.10.attention.self.value_proj.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.10.attention.self.value_proj.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.10.attention.output.dense.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.10.attention.output.dense.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.10.attention.output.LayerNorm.weight": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.10.attention.output.LayerNorm.weight",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.10.attention.output.LayerNorm.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.10.attention.output.LayerNorm.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.10.intermediate.dense.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.10.intermediate.dense.bias",
+      "operation": "identity",
+      "shape": [
+        3072
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.10.output.dense.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.10.output.dense.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.10.output.LayerNorm.weight": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.10.output.LayerNorm.weight",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.10.output.LayerNorm.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.10.output.LayerNorm.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.11.attention.self.query_proj.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.11.attention.self.query_proj.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.11.attention.self.key_proj.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.11.attention.self.key_proj.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.11.attention.self.value_proj.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.11.attention.self.value_proj.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.11.attention.output.dense.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.11.attention.output.dense.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.11.attention.output.LayerNorm.weight": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.11.attention.output.LayerNorm.weight",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.11.attention.output.LayerNorm.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.11.attention.output.LayerNorm.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.11.intermediate.dense.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.11.intermediate.dense.bias",
+      "operation": "identity",
+      "shape": [
+        3072
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.11.output.dense.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.11.output.dense.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.11.output.LayerNorm.weight": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.11.output.LayerNorm.weight",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.11.output.LayerNorm.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.layer.11.output.LayerNorm.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.rel_embeddings.weight": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.rel_embeddings.weight",
+      "operation": "identity",
+      "shape": [
+        512,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.LayerNorm.weight": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.LayerNorm.weight",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.LayerNorm.bias": {
+      "initializer": "token_rep_layer.bert_layer.model.encoder.LayerNorm.bias",
+      "operation": "identity",
+      "shape": [
+        768
+      ]
+    },
+    "token_rep_layer.projection.bias": {
+      "initializer": "token_rep_layer.projection.bias",
+      "operation": "identity",
+      "shape": [
+        512
+      ]
+    },
+    "span_rep_layer.span_rep_layer.project_start.0.bias": {
+      "initializer": "span_rep_layer.span_rep_layer.project_start.0.bias",
+      "operation": "identity",
+      "shape": [
+        2048
+      ]
+    },
+    "span_rep_layer.span_rep_layer.project_start.3.bias": {
+      "initializer": "span_rep_layer.span_rep_layer.project_start.3.bias",
+      "operation": "identity",
+      "shape": [
+        512
+      ]
+    },
+    "span_rep_layer.span_rep_layer.project_end.0.bias": {
+      "initializer": "span_rep_layer.span_rep_layer.project_end.0.bias",
+      "operation": "identity",
+      "shape": [
+        2048
+      ]
+    },
+    "span_rep_layer.span_rep_layer.project_end.3.bias": {
+      "initializer": "span_rep_layer.span_rep_layer.project_end.3.bias",
+      "operation": "identity",
+      "shape": [
+        512
+      ]
+    },
+    "span_rep_layer.span_rep_layer.out_project.0.bias": {
+      "initializer": "span_rep_layer.span_rep_layer.out_project.0.bias",
+      "operation": "identity",
+      "shape": [
+        2048
+      ]
+    },
+    "span_rep_layer.span_rep_layer.out_project.3.bias": {
+      "initializer": "span_rep_layer.span_rep_layer.out_project.3.bias",
+      "operation": "identity",
+      "shape": [
+        512
+      ]
+    },
+    "prompt_rep_layer.0.bias": {
+      "initializer": "prompt_rep_layer.0.bias",
+      "operation": "identity",
+      "shape": [
+        2048
+      ]
+    },
+    "prompt_rep_layer.3.bias": {
+      "initializer": "prompt_rep_layer.3.bias",
+      "operation": "identity",
+      "shape": [
+        512
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.0.attention.self.query_proj.weight": {
+      "initializer": "onnx::MatMul_6135",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.0.attention.self.key_proj.weight": {
+      "initializer": "onnx::MatMul_6139",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.0.attention.self.value_proj.weight": {
+      "initializer": "onnx::MatMul_6143",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.0.attention.output.dense.weight": {
+      "initializer": "onnx::MatMul_6189",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.0.intermediate.dense.weight": {
+      "initializer": "onnx::MatMul_6190",
+      "operation": "transpose",
+      "shape": [
+        3072,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.0.output.dense.weight": {
+      "initializer": "onnx::MatMul_6191",
+      "operation": "transpose",
+      "shape": [
+        768,
+        3072
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.1.attention.self.query_proj.weight": {
+      "initializer": "onnx::MatMul_6192",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.1.attention.self.key_proj.weight": {
+      "initializer": "onnx::MatMul_6196",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.1.attention.self.value_proj.weight": {
+      "initializer": "onnx::MatMul_6200",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.1.attention.output.dense.weight": {
+      "initializer": "onnx::MatMul_6238",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.1.intermediate.dense.weight": {
+      "initializer": "onnx::MatMul_6239",
+      "operation": "transpose",
+      "shape": [
+        3072,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.1.output.dense.weight": {
+      "initializer": "onnx::MatMul_6240",
+      "operation": "transpose",
+      "shape": [
+        768,
+        3072
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.2.attention.self.query_proj.weight": {
+      "initializer": "onnx::MatMul_6241",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.2.attention.self.key_proj.weight": {
+      "initializer": "onnx::MatMul_6245",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.2.attention.self.value_proj.weight": {
+      "initializer": "onnx::MatMul_6249",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.2.attention.output.dense.weight": {
+      "initializer": "onnx::MatMul_6287",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.2.intermediate.dense.weight": {
+      "initializer": "onnx::MatMul_6288",
+      "operation": "transpose",
+      "shape": [
+        3072,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.2.output.dense.weight": {
+      "initializer": "onnx::MatMul_6289",
+      "operation": "transpose",
+      "shape": [
+        768,
+        3072
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.3.attention.self.query_proj.weight": {
+      "initializer": "onnx::MatMul_6290",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.3.attention.self.key_proj.weight": {
+      "initializer": "onnx::MatMul_6294",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.3.attention.self.value_proj.weight": {
+      "initializer": "onnx::MatMul_6298",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.3.attention.output.dense.weight": {
+      "initializer": "onnx::MatMul_6336",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.3.intermediate.dense.weight": {
+      "initializer": "onnx::MatMul_6337",
+      "operation": "transpose",
+      "shape": [
+        3072,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.3.output.dense.weight": {
+      "initializer": "onnx::MatMul_6338",
+      "operation": "transpose",
+      "shape": [
+        768,
+        3072
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.4.attention.self.query_proj.weight": {
+      "initializer": "onnx::MatMul_6339",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.4.attention.self.key_proj.weight": {
+      "initializer": "onnx::MatMul_6343",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.4.attention.self.value_proj.weight": {
+      "initializer": "onnx::MatMul_6347",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.4.attention.output.dense.weight": {
+      "initializer": "onnx::MatMul_6385",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.4.intermediate.dense.weight": {
+      "initializer": "onnx::MatMul_6386",
+      "operation": "transpose",
+      "shape": [
+        3072,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.4.output.dense.weight": {
+      "initializer": "onnx::MatMul_6387",
+      "operation": "transpose",
+      "shape": [
+        768,
+        3072
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.5.attention.self.query_proj.weight": {
+      "initializer": "onnx::MatMul_6388",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.5.attention.self.key_proj.weight": {
+      "initializer": "onnx::MatMul_6392",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.5.attention.self.value_proj.weight": {
+      "initializer": "onnx::MatMul_6396",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.5.attention.output.dense.weight": {
+      "initializer": "onnx::MatMul_6434",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.5.intermediate.dense.weight": {
+      "initializer": "onnx::MatMul_6435",
+      "operation": "transpose",
+      "shape": [
+        3072,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.5.output.dense.weight": {
+      "initializer": "onnx::MatMul_6436",
+      "operation": "transpose",
+      "shape": [
+        768,
+        3072
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.6.attention.self.query_proj.weight": {
+      "initializer": "onnx::MatMul_6437",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.6.attention.self.key_proj.weight": {
+      "initializer": "onnx::MatMul_6441",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.6.attention.self.value_proj.weight": {
+      "initializer": "onnx::MatMul_6445",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.6.attention.output.dense.weight": {
+      "initializer": "onnx::MatMul_6483",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.6.intermediate.dense.weight": {
+      "initializer": "onnx::MatMul_6484",
+      "operation": "transpose",
+      "shape": [
+        3072,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.6.output.dense.weight": {
+      "initializer": "onnx::MatMul_6485",
+      "operation": "transpose",
+      "shape": [
+        768,
+        3072
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.7.attention.self.query_proj.weight": {
+      "initializer": "onnx::MatMul_6486",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.7.attention.self.key_proj.weight": {
+      "initializer": "onnx::MatMul_6490",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.7.attention.self.value_proj.weight": {
+      "initializer": "onnx::MatMul_6494",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.7.attention.output.dense.weight": {
+      "initializer": "onnx::MatMul_6532",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.7.intermediate.dense.weight": {
+      "initializer": "onnx::MatMul_6533",
+      "operation": "transpose",
+      "shape": [
+        3072,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.7.output.dense.weight": {
+      "initializer": "onnx::MatMul_6534",
+      "operation": "transpose",
+      "shape": [
+        768,
+        3072
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.8.attention.self.query_proj.weight": {
+      "initializer": "onnx::MatMul_6535",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.8.attention.self.key_proj.weight": {
+      "initializer": "onnx::MatMul_6539",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.8.attention.self.value_proj.weight": {
+      "initializer": "onnx::MatMul_6543",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.8.attention.output.dense.weight": {
+      "initializer": "onnx::MatMul_6581",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.8.intermediate.dense.weight": {
+      "initializer": "onnx::MatMul_6582",
+      "operation": "transpose",
+      "shape": [
+        3072,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.8.output.dense.weight": {
+      "initializer": "onnx::MatMul_6583",
+      "operation": "transpose",
+      "shape": [
+        768,
+        3072
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.9.attention.self.query_proj.weight": {
+      "initializer": "onnx::MatMul_6584",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.9.attention.self.key_proj.weight": {
+      "initializer": "onnx::MatMul_6588",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.9.attention.self.value_proj.weight": {
+      "initializer": "onnx::MatMul_6592",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.9.attention.output.dense.weight": {
+      "initializer": "onnx::MatMul_6630",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.9.intermediate.dense.weight": {
+      "initializer": "onnx::MatMul_6631",
+      "operation": "transpose",
+      "shape": [
+        3072,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.9.output.dense.weight": {
+      "initializer": "onnx::MatMul_6632",
+      "operation": "transpose",
+      "shape": [
+        768,
+        3072
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.10.attention.self.query_proj.weight": {
+      "initializer": "onnx::MatMul_6633",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.10.attention.self.key_proj.weight": {
+      "initializer": "onnx::MatMul_6637",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.10.attention.self.value_proj.weight": {
+      "initializer": "onnx::MatMul_6641",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.10.attention.output.dense.weight": {
+      "initializer": "onnx::MatMul_6679",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.10.intermediate.dense.weight": {
+      "initializer": "onnx::MatMul_6680",
+      "operation": "transpose",
+      "shape": [
+        3072,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.10.output.dense.weight": {
+      "initializer": "onnx::MatMul_6681",
+      "operation": "transpose",
+      "shape": [
+        768,
+        3072
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.11.attention.self.query_proj.weight": {
+      "initializer": "onnx::MatMul_6682",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.11.attention.self.key_proj.weight": {
+      "initializer": "onnx::MatMul_6686",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.11.attention.self.value_proj.weight": {
+      "initializer": "onnx::MatMul_6690",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.11.attention.output.dense.weight": {
+      "initializer": "onnx::MatMul_6728",
+      "operation": "transpose",
+      "shape": [
+        768,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.11.intermediate.dense.weight": {
+      "initializer": "onnx::MatMul_6729",
+      "operation": "transpose",
+      "shape": [
+        3072,
+        768
+      ]
+    },
+    "token_rep_layer.bert_layer.model.encoder.layer.11.output.dense.weight": {
+      "initializer": "onnx::MatMul_6730",
+      "operation": "transpose",
+      "shape": [
+        768,
+        3072
+      ]
+    },
+    "token_rep_layer.projection.weight": {
+      "initializer": "onnx::MatMul_6731",
+      "operation": "transpose",
+      "shape": [
+        512,
+        768
+      ]
+    },
+    "span_rep_layer.span_rep_layer.project_start.0.weight": {
+      "initializer": "onnx::MatMul_6783",
+      "operation": "transpose",
+      "shape": [
+        2048,
+        512
+      ]
+    },
+    "span_rep_layer.span_rep_layer.project_start.3.weight": {
+      "initializer": "onnx::MatMul_6784",
+      "operation": "transpose",
+      "shape": [
+        512,
+        2048
+      ]
+    },
+    "span_rep_layer.span_rep_layer.project_end.0.weight": {
+      "initializer": "onnx::MatMul_6785",
+      "operation": "transpose",
+      "shape": [
+        2048,
+        512
+      ]
+    },
+    "span_rep_layer.span_rep_layer.project_end.3.weight": {
+      "initializer": "onnx::MatMul_6786",
+      "operation": "transpose",
+      "shape": [
+        512,
+        2048
+      ]
+    },
+    "span_rep_layer.span_rep_layer.out_project.0.weight": {
+      "initializer": "onnx::MatMul_6791",
+      "operation": "transpose",
+      "shape": [
+        2048,
+        1024
+      ]
+    },
+    "span_rep_layer.span_rep_layer.out_project.3.weight": {
+      "initializer": "onnx::MatMul_6792",
+      "operation": "transpose",
+      "shape": [
+        512,
+        2048
+      ]
+    },
+    "prompt_rep_layer.0.weight": {
+      "initializer": "onnx::MatMul_6794",
+      "operation": "transpose",
+      "shape": [
+        2048,
+        512
+      ]
+    },
+    "prompt_rep_layer.3.weight": {
+      "initializer": "onnx::MatMul_6795",
+      "operation": "transpose",
+      "shape": [
+        512,
+        2048
+      ]
+    },
+    "rnn.lstm.weight_ih_l0": {
+      "initializer": "onnx::LSTM_6781",
+      "operation": "lstm-gates-direction-0",
+      "shape": [
+        1024,
+        512
+      ]
+    },
+    "rnn.lstm.weight_ih_l0_reverse": {
+      "initializer": "onnx::LSTM_6781",
+      "operation": "lstm-gates-direction-1",
+      "shape": [
+        1024,
+        512
+      ]
+    },
+    "rnn.lstm.weight_hh_l0": {
+      "initializer": "onnx::LSTM_6782",
+      "operation": "lstm-gates-direction-0",
+      "shape": [
+        1024,
+        256
+      ]
+    },
+    "rnn.lstm.weight_hh_l0_reverse": {
+      "initializer": "onnx::LSTM_6782",
+      "operation": "lstm-gates-direction-1",
+      "shape": [
+        1024,
+        256
+      ]
+    },
+    "rnn.lstm.bias_ih_l0": {
+      "initializer": "onnx::LSTM_6780",
+      "operation": "lstm-gates-direction-0-bias-0",
+      "shape": [
+        1024
+      ]
+    },
+    "rnn.lstm.bias_hh_l0": {
+      "initializer": "onnx::LSTM_6780",
+      "operation": "lstm-gates-direction-0-bias-1",
+      "shape": [
+        1024
+      ]
+    },
+    "rnn.lstm.bias_ih_l0_reverse": {
+      "initializer": "onnx::LSTM_6780",
+      "operation": "lstm-gates-direction-1-bias-0",
+      "shape": [
+        1024
+      ]
+    },
+    "rnn.lstm.bias_hh_l0_reverse": {
+      "initializer": "onnx::LSTM_6780",
+      "operation": "lstm-gates-direction-1-bias-1",
+      "shape": [
+        1024
+      ]
+    }
+  }
+}

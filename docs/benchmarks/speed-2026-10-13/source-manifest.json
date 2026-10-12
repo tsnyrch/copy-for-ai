@@ -1,0 +1,34 @@
+{
+  "source_root": "/Users/tsnyrch/my-projects/copy-for-ai",
+  "source_files": {
+    "crates/core/examples/regex_adversarial.rs": "3e8e2cda33dcfbc9507a86facf2d9d369ea3c100fccf6bc6e23e855e4e40187c",
+    "crates/core/src/detector.rs": "b482c7b7134b7d7d33a545d810eac35554782c3ed85b6e4898667e6c82fbae4a",
+    "crates/core/src/lib.rs": "779987471489686618e0c4a20746bb9ddc2ea465993da31db56658f54b23450a",
+    "crates/core/src/marker.rs": "6636d3bb134b926c218d04fc5b1745651879ef59540ddd6498cda6e4104a5478",
+    "crates/core/src/session.rs": "fb455741002c2447585b70acec0fd9f81c320edb6a4fcd9963d3fac5ff79af81",
+    "crates/core/src/types.rs": "1c4b0d9fa05b646b81d382c21bba0f72d9029a68bb1f315620651f38b55a3aa9",
+    "crates/core/src/validators.rs": "becd8376d37a1b52c8cab6f49c7f00cf5add978afb7cc6552fd7877e96cb3a18",
+    "crates/core/src/vault.rs": "2d7267f79ba325aa63ab9791c10d96abd7166d2578005636b1d55f48c0f9ab2e",
+    "crates/core/tests/generic_processing.rs": "b28e24d62dfc1732c42de8f1eb99e45f7530468b1d82bfd6ad84e73c6bb490c7",
+    "crates/core/tests/limits.rs": "6b9a5d6e65ddffa60f9b6e143217c55debd59fa5be7a3f20d1012f5aca3017a5",
+    "crates/core/tests/long_documents.rs": "a37cd5d4125c6f4ec9e311ad02e772f94583676cf624b81bdda18246bb73bf75",
+    "crates/core/tests/protected_markers.rs": "8562ac64b796a1b8ca01ecfe5a08640f60e59bdecd717f10afc2284936327f79",
+    "crates/core/tests/workflow.rs": "f94bc826cc2834af0e713974befd0c0943d08c6cb4149d2a468407a30fa2bd28",
+    "crates/ner/build.rs": "012d77f065bc8df304400e55bd0cb72c2faded3db075d5452587d54530eded50",
+    "crates/ner/examples/benchmark.rs": "6af579e6be27149ff130eb8f649308de2839a31add1bb34926b76b8cc3bb45da",
+    "crates/ner/examples/coreml_probe.rs": "14ef0159eb8e8f70bf803006e49256523de40bed8ca0ca17b15b5dc493416775",
+    "crates/ner/examples/quality_compare.rs": "7275ad825f1172be3675cf94b10a7f8085d5102f6d745ee411502cbed6c5d9ed",
+    "crates/ner/examples/speed_probe.rs": "add0356f131176cddb5e803a5d0f3ab194b4e0cf3d23e99ffd6172cac27e759a",
+    "crates/ner/src/assets.rs": "f87ba6cb1edd6a3cb1274fefec93168d7c63c87511e3a4d1cbe23dba8990bd70",
+    "crates/ner/src/chunks.rs": "ab245ba2242f2960a6079d49b9e3261e10546f8cd168ef041d46855ead5f0ffc",
+    "crates/ner/src/config.rs": "9e6721cd41ec4798e957f1d1bde1901679623f006565d9ce9bbe3232ffff550c",
+    "crates/ner/src/lib.rs": "18049463e97f985bc2ba0148f5340018fb28ce96bf9aa079176625e1e4160621",
+    "crates/ner/src/pipeline.rs": "8241439a3699fbb3a4eb7af5dff4ae9154efdb8b8198b3833c244a79d93f42ad",
+    "crates/ner/src/progress.rs": "78578254101a5e6ee02bd91a8700ff6f981a06280d3faf8c7e135e23f7ea515e",
+    "crates/ner/tests/multilingual.rs": "12d97ccb608634af2243ced0f06f1b6beb9bd3ca6304e9699890503a73ebd29d"
+  },
+  "probe_delta": {
+    "original": ".commit_from_file(directory.join(config.variant.file_name()))",
+    "replacement": ".commit_from_file(std::env::var_os(\"COPY_FOR_AI_GRAPH_PROBE\").map_or_else(|| directory.join(config.variant.file_name()), std::path::PathBuf::from))"
+  }
+}

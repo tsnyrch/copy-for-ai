@@ -1,0 +1,2 @@
+   Compiling copy-for-ai-ner v0.1.0 (/Users/tsnyrch/my-projects/copy-for-ai/crates/ner)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 2.83s

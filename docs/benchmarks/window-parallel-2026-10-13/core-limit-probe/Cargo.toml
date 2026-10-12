@@ -1,0 +1,9 @@
+[package]
+name = "copy-ai-core-limit-probe"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+copy-for-ai-core = { path = "/Users/tsnyrch/my-projects/copy-for-ai/crates/core" }
+
+[workspace]

@@ -1,0 +1,12 @@
+{"stage": "worker_initialization", "workers": 1, "input_bytes": 0, "run": 0, "completed_batches": 0, "sampled_aggregate_rss_bytes": 616415232}
+{"stage": "worker_initialization", "workers": 1, "input_bytes": 0, "run": 0, "completed_batches": 0, "sampled_aggregate_rss_bytes": 1518125056}
+{"stage": "whole_text_tokenization", "workers": 1, "input_bytes": 1048576, "run": 1, "completed_batches": 0, "sampled_aggregate_rss_bytes": 1258586112}
+Error: value type not convertible:
+[[     0  66083  72085 ...    963  66083      2]
+ [     0 133888     70 ...    136 133888      2]
+ [     0      5    581 ...   9020      5      2]
+ ...
+ [     0    297     70 ...   8347    297      2]
+ [     0     99   7244 ...  43240     99      2]
+ [     0 117989      5 ...  11737 117989      2]]
+{"completed": false, "error_type": "RuntimeError", "failed_stage": "window_predictions"}

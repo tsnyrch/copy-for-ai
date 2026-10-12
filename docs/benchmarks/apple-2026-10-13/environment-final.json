@@ -1,0 +1,14 @@
+{
+  "python": "3.13.16",
+  "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+  "packages": {
+    "torch": "2.7.0",
+    "coremltools": "9.0",
+    "gliner": "0.2.21",
+    "transformers": "4.51.3",
+    "onnx": "1.20.1",
+    "onnxruntime": "1.24.4",
+    "numpy": "2.2.6",
+    "tokenizers": "0.21.4"
+  }
+}

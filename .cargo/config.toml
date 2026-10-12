@@ -1,0 +1,5 @@
+[alias]
+check-core = "check -p copy-for-ai-core -p copy-for-ai-cli"
+test-core = "test -p copy-for-ai-core -p copy-for-ai-cli"
+desktop = "run -p copy-for-ai-desktop"
+

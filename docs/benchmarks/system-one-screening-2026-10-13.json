@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "checked_date": "2026-10-13",
+  "scope": "Primary-source architecture and local-weights screening; no new model runtime benchmark",
+  "production_changes": false,
+  "model_downloads": false,
+  "inference_runs": 0,
+  "pii_quality_evaluation_runs": 0,
+  "sources": [
+    "https://github.com/NandhaKishorM/laya",
+    "https://huggingface.co/convaiinnovations/laya",
+    "https://huggingface.co/convaiinnovations/laya-multilingual",
+    "https://github.com/NandhaKishorM/laya/blob/main/laya/common.py#L524-L605",
+    "https://github.com/NandhaKishorM/laya/blob/main/laya/agent.py#L1053-L1120",
+    "https://nandhakishorm.github.io/laya/structured/",
+    "https://docs.typesafe.ai/models",
+    "https://docs.typesafe.ai/api",
+    "https://docs.typesafe.ai/cookbooks/pre_parsed_value_extraction_cookbook",
+    "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+    "https://github.com/Contrastive-LM/CLM",
+    "https://github.com/Contrastive-LM/CLM/blob/main/src/clm/engine.py",
+    "https://github.com/Contrastive-LM/CLM/blob/main/src/clm/schema.py",
+    "https://huggingface.co/Contrastive-LM/CLM-v0.1-8B"
+  ],
+  "models": [
+    {
+      "name": "Laya",
+      "local_weights_advertised": true,
+      "weights_downloaded_or_hash_verified": false,
+      "license_declared": "Apache-2.0",
+      "english": {
+        "architecture": "ModernBERT-large plus decision head",
+        "parameters_millions": 421,
+        "input_tokens": 512
+      },
+      "multilingual": {
+        "architecture": "mmBERT-base plus decision head",
+        "parameters_millions": 322,
+        "default_input_tokens": 1024,
+        "configurable_max_input_tokens": 8192
+      },
+      "output": "Logits gathered at option marker positions, not document token BIO labels",
+      "question_batching": "Separate encoder sequence per question in a batch; state tokenization can be shared",
+      "structured_output": "Choice, boolean Noul, bounded ordinal Score; no dynamic list of arbitrary PII byte spans",
+      "drop_in_ner": false
+    },
+    {
+      "name": "Jev",
+      "provider": "TypeSafe AI",
+      "version_documented": "jev-1.13.0",
+      "access_documented": "Hosted /v1/systemone API",
+      "public_local_weights_found": false,
+      "full_network_architecture_publicly_verified": false,
+      "single_forward_network_implementation_verified": false,
+      "output": "One typed Choice/Score/Noul answer per declared question",
+      "extraction_cookbook": "Selection among pre-parsed candidate values, not discovery of all unknown PII spans",
+      "drop_in_ner": false,
+      "context_documented_tokens": "64k per request; 32k for state plus longest question"
+    },
+    {
+      "name": "CLM",
+      "expanded_name": "Contrastive Language Model",
+      "version": "CLM-v0.1-8B",
+      "local_weights_advertised": true,
+      "weights_downloaded_or_hash_verified": false,
+      "license_declared": "Apache-2.0",
+      "architecture": "Frozen Qwen3-8B, last-token pooling, state/action projection heads, contrastive candidate scoring",
+      "head_checkpoint_megabytes_approximately": 75.6,
+      "head_requires_full_encoder": true,
+      "default_server_max_tokens": 2048,
+      "documented_raised_limits": 8192,
+      "question_batching": "Context plus each question embedded separately; candidate embeddings can be cached",
+      "output": "Candidate probabilities, not per-token BIO or byte spans",
+      "drop_in_ner": false
+    }
+  ],
+  "decision": {
+    "existing_student": "Already computes all token BIO labels in a window in one forward pass; no autoregressive generation",
+    "context_limit": "A single forward pass applies to a bounded model input, not all of 1 MiB or 50 MiB",
+    "local_candidate": "Laya multilingual/mmBERT encoder with a separately trained token/span head",
+    "candidate_is_new_ner_model": true,
+    "measured_speedup_over_current_student": false,
+    "quality_gate_passed": false,
+    "required_acceptance": "Hash-verified pinned weights, no losses or benign regressions on frozen multilingual PII suite, successful actual Vault/Session workflow and measured 1 MiB within10seconds",
+    "production_model_and_limits_unchanged": true
+  }
+}

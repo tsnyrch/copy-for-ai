@@ -1,0 +1,7 @@
+load verify_ms=37481 model_ms=1298
+
+thread 'main' (35661412) panicked at crates/ner/examples/benchmark.rs:39:64:
+called `Result::unwrap()` on an `Err` value: InputTooLarge
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+      100.53 real       275.42 user         0.98 sys
+time: sysctl kern.clockrate: Operation not permitted

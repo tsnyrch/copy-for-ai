@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "seed": 731904,
+  "synthetic_only": true,
+  "existing_acceptance_fixtures_imported": false,
+  "dev_generalization_proof": false,
+  "flat_nonoverlapping_spans": true,
+  "train_dev_surface_intersections": 0,
+  "train_dev_group_key_intersections": 0,
+  "train_dev_text_intersections": 0,
+  "train": {
+    "rows": 840,
+    "groups": 84,
+    "bytes": 1350622,
+    "sha256": "285a17b4443b06fbfb1fd368b47849581076600f6d42d5073ffe938677af3430",
+    "languages": {
+      "cs": 120,
+      "en": 120,
+      "de": 120,
+      "fr": 120,
+      "ru": 120,
+      "ja": 120,
+      "zh": 120
+    },
+    "categories": {
+      "person": 504,
+      "organization": 504,
+      "event": 504,
+      "location": 504,
+      "address": 504
+    },
+    "template_families": {
+      "complete": 84,
+      "repeat": 84,
+      "mixed": 84,
+      "person": 84,
+      "organization": 84,
+      "location": 84,
+      "address": 84,
+      "event": 84,
+      "negative": 84,
+      "ambiguous": 84
+    },
+    "annotation_status": {
+      "synthetic_gold": 756,
+      "review": 84
+    }
+  },
+  "dev": {
+    "rows": 280,
+    "groups": 28,
+    "bytes": 447855,
+    "sha256": "ce1abfcdeaef562abd63c9a797d339fc414abcf3c8d21c2529135c547764150a",
+    "languages": {
+      "cs": 40,
+      "en": 40,
+      "de": 40,
+      "fr": 40,
+      "ru": 40,
+      "ja": 40,
+      "zh": 40
+    },
+    "categories": {
+      "person": 168,
+      "organization": 168,
+      "event": 168,
+      "location": 168,
+      "address": 168
+    },
+    "template_families": {
+      "complete": 28,
+      "repeat": 28,
+      "mixed": 28,
+      "person": 28,
+      "organization": 28,
+      "location": 28,
+      "address": 28,
+      "event": 28,
+      "negative": 28,
+      "ambiguous": 28
+    },
+    "annotation_status": {
+      "synthetic_gold": 252,
+      "review": 28
+    }
+  }
+}

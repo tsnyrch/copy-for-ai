@@ -1,0 +1,14 @@
+{
+  "source_sha256": "942ae056ec30c94a9c4539acdc00a749fb0df3b1f256eb49262782d073b2e9ef",
+  "executable_sha256": "e14aac341789126eebb982d79503d6ae2382d39a7f94d83b176555e4d28dd013",
+  "documents_per_variant": 93,
+  "variants": [
+    "baseline",
+    "A",
+    "B",
+    "C",
+    "nym"
+  ],
+  "inference_run": false,
+  "core_path": "Detector.anonymize_with_entities and fresh Vault.process; count and both round trips verified"
+}

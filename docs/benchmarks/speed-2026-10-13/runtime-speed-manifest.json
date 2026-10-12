@@ -1,0 +1,30 @@
+{
+  "library": "/private/tmp/copy-ai-ort-experiment/verified/onnxruntime-osx-arm64-1.31.0/lib/libonnxruntime.1.31.0.dylib",
+  "library_sha256": "2a50a63e7f41f8d4d551d3ee47248df3864f6540109fce8ad520ca3b51af4b70",
+  "model_dir": "/Users/tsnyrch/my-projects/copy-for-ai/models/gliner-multi",
+  "mode": "benchmark",
+  "candidates": [
+    "/private/tmp/copy-ai-speed-2026-10-13/graph-candidates/A/model.onnx",
+    "/private/tmp/copy-ai-speed-2026-10-13/graph-candidates/B/model.onnx",
+    "/private/tmp/copy-ai-speed-2026-10-13/graph-candidates/C/model.onnx"
+  ],
+  "executable_sha256": "978fa7997246e6d55037fa44c49ab3cb5c9a2549cd8690b8339143cccfd13e6d",
+  "runs": [
+    {
+      "name": "baseline",
+      "exit_code": 0
+    },
+    {
+      "name": "A",
+      "exit_code": 0
+    },
+    {
+      "name": "B",
+      "exit_code": 0
+    },
+    {
+      "name": "C",
+      "exit_code": 0
+    }
+  ]
+}

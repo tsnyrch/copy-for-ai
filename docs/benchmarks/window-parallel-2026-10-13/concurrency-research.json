@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "client_date": "2026-10-13",
+  "scope": "Read-only source and documentation review; no parallel benchmark speed claims",
+  "coreml_sync": {
+    "version": "coremltools 9.0",
+    "shared_mlmodel_sync_prediction_thread_safe": false,
+    "python_predict_releases_gil": false,
+    "binding_line": 1069,
+    "implementation_lines": [
+      536,
+      565
+    ],
+    "gil_scoped_release_occurrences": 0,
+    "call_guard_occurrences": 0,
+    "PyEval_SaveThread_occurrences": 0,
+    "python_version": "3.13.16",
+    "Py_GIL_DISABLED": 0,
+    "source_copy": "/private/tmp/copy-ai-window-parallel-2026-10-13/CoreMLPython-9.0.mm",
+    "source_sha256": "b242c766aa556d21a74e2b0152c5e50abddc5cf7d44b6a051a1d922246782c45",
+    "source_url": "https://raw.githubusercontent.com/apple/coremltools/9.0/coremlpython/CoreMLPython.mm",
+    "pybind_gil_documentation": "https://pybind11.readthedocs.io/en/stable/advanced/misc.html#global-interpreter-lock-gil",
+    "thread_safety_documentation": "https://developer.apple.com/videos/play/wwdc2023/10049/",
+    "thread_benchmark_interpretation": "Separate persistent models avoid unsafe sharing, but synchronous Python proxy retains the GIL. A thread slowdown does not disprove native GPU concurrency."
+  },
+  "coreml_native_async": {
+    "swift_async_prediction_thread_safe": true,
+    "source_url": "https://developer.apple.com/videos/play/wwdc2023/10049/",
+    "measured_for_this_model": false
+  },
+  "process_candidate": {
+    "measured": false,
+    "start_method": "spawn",
+    "persistent_model_owned_by_each_child": true,
+    "fork_live_coreml_or_metal_context": false,
+    "bounded_outstanding_requests_required": true,
+    "ordered_result_merge_required": true,
+    "same_fp32_package_checkpoint_and_window_inputs_required": true,
+    "digest_proof": "Compare ordered exact byte span/category digests and full token ownership against workers=1; this does not independently prove detection quality.",
+    "memory_measurement": "Track parent and child RSS and model initialization separately. Per-process weight/cache sharing is not assumed."
+  },
+  "torch_mps": {
+    "version": "2.7.0",
+    "current_stream_is_default_singleton": true,
+    "serial_dispatch_queue": true,
+    "independent_cuda_style_streams_from_python_threads": false,
+    "source_url": "https://github.com/pytorch/pytorch/blob/v2.7.0/aten/src/ATen/mps/MPSStream.mm",
+    "local_header": "/private/tmp/copy-ai-apple-2026-10-13/venv/lib/python3.13/site-packages/torch/include/ATen/mps/MPSStream.h",
+    "interpretation": "More threads do not create independent MPS streams. No throughput inference is made from this source review."
+  },
+  "ort_cpu": {
+    "default_intra_op_uses_physical_cpu_cores": true,
+    "default_thread_spinning": true,
+    "worker_count_times_default_intra_threads_may_oversubscribe": true,
+    "candidate_controls": [
+      "Fixed intra_op_num_threads=1",
+      "Explicit core budget divided across workers",
+      "session.intra_op.allow_spinning=0"
+    ],
+    "source_url": "https://onnxruntime.ai/docs/performance/tune-performance/threading.html",
+    "controls_measured_here": false,
+    "oversubscription_scope": "The worker-times-thread-count warning applies to separate sessions with separate default pools. Concurrent runs on one CPU session share its intra-op pool; a global intra-op pool can also bound multiple sessions."
+  },
+  "compact_50mib_memory_estimate": {
+    "estimate_only": true,
+    "text_utf8_bytes": 52428800,
+    "assumed_token_count": 10500000,
+    "id_bytes_per_token": 4,
+    "two_offset_bytes_per_token": 8,
+    "label_plus_assignment_bytes_per_token": 2,
+    "persistent_token_arrays_bytes": 147000000,
+    "character_prefix_upper_bound_bytes": 209715204,
+    "python_offset_getter_estimate_bytes": 1260000000,
+    "python_getters_and_rust_normalization_add_transient_memory": true,
+    "sampled_rss_guard_is_allocator_hard_limit": false,
+    "additional_notes": "Python Unicode width and flatnonzero int64 temporaries contribute further allocations; these figures are not measured RSS or a measured peak."
+  },
+  "runner_read_only_review": {
+    "completed": true,
+    "gpu_inference_or_training_runs_by_reviewer": 0,
+    "source_sha256": {
+      "scripts/benchmark-student-parallel.py": "ecbfa3417238090fcc3b00871be52bc6eb5163772f3e4d7cc36c7d22befc3135",
+      "scripts/student_parallel_runtime.py": "b95fbc4b4cd093ee6e7de575a7725114134aca352b937ba60a288a9454e2cb7b"
+    },
+    "spawn_context_explicit": true,
+    "each_executor_has_one_serial_worker_and_model": true,
+    "outstanding_batches_bounded_by_worker_count": true,
+    "input_buffers_retained_until_future_completes": true,
+    "result_index_checked_before_ordered_merge": true,
+    "output_dtype_and_finiteness_checked": true,
+    "input_int32_output_float32_spec_checked": true,
+    "parallel_runs_compared_to_completed_one_worker_reference": true,
+    "previous_one_mib_span_reference_checked": true,
+    "failure_reports_completed_false": true,
+    "executor_cleanup_in_finally": true,
+    "rss_init_pid_queue": true,
+    "gpu_overlap_claimed": false,
+    "internal_cross_benchmark_gpu_lease": false,
+    "lease_scope": "Root orchestration owns the exclusive benchmark GPU slot; bounded workers are inside that slot.",
+    "compact_text_review_owner": "pipeline_audit"
+  }
+}

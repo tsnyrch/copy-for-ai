@@ -1,0 +1,159 @@
+{
+  "schema": 1,
+  "created_utc": "2026-10-13T11:38:26.367703+00:00",
+  "git_head": "6c7f678cc5bc08ec6721f07ce0576687ddc4d49f",
+  "scope": "first supervised FP32 MiniLM checkpoint: model speed passes; frozen quality and varied 1MiB core gate fail; no production switch/native/UI/paste proof",
+  "scratch": "/private/tmp/copy-ai-student-2026-10-13",
+  "large_models_archived": false,
+  "production_model_changed": false,
+  "checkpoint_sha256": "918636493f4cd7428c672c44bb3ea472033f5243cf17e3223f226c3b4773c5eb",
+  "original_training_source_sha256": "c49fe743847faf3883533b636cab5e43f6c76aa1218cab5f4cfa7777f47fffb6",
+  "archived_trainer_source_is_after_decoder_repair": true,
+  "original_training_source_snapshot_retained": false,
+  "files": {
+    "corpus-manifest.json": {
+      "bytes": 1830,
+      "sha256": "db2a646abf2d307522c60f7dd113e4f8626bfe6761221e222bed0c388ac3a2d4"
+    },
+    "dev-decoder-recheck.json": {
+      "bytes": 61492,
+      "sha256": "1d8624172bc4758c99336e746828a02b77eec760f4d52c1ff32c38c1d194dca8"
+    },
+    "dev-synthetic.jsonl.gz": {
+      "bytes": 27447,
+      "sha256": "1990502457c466ae31495f0ae13952035f715d31fd14c2e36a45bd6ae5f86645"
+    },
+    "padding-single-case-diagnostic.json": {
+      "bytes": 1493,
+      "sha256": "7750a392b2aa2b8a0128a2d9fc037c7b0a5f4df8780c1dab9e83e50fd54691d3"
+    },
+    "public-model-card.md": {
+      "bytes": 6289,
+      "sha256": "b00de73ad9d05ed170233a4d6551d931142fae681547f24152c52738c3da1145"
+    },
+    "public-model-config.json": {
+      "bytes": 430,
+      "sha256": "933c5fc9b49cf83934fb2e617cea837985a1b5f10db653ecd958c5736de357de"
+    },
+    "public-model-manifest.json": {
+      "bytes": 2114,
+      "sha256": "74bd0a06a4c15c47aef4a6ecf77f3ce312080f447d6214f2983745d6d3c1f2c3"
+    },
+    "quality-93-core-ranges.txt.gz": {
+      "bytes": 3828,
+      "sha256": "7385c1c74ae8688897c2459f4452513e18033b44927e6b4f1888f56154c1880b"
+    },
+    "quality-93-core.json": {
+      "bytes": 18537,
+      "sha256": "5b76711bbcbb4dc2137fb962f531db29d9fde57de5935af5db2376905e725618"
+    },
+    "quality-93-ner-ranges.txt.gz": {
+      "bytes": 3782,
+      "sha256": "1553a363c24858011fc8b584027e1ca5a8677bf0ceae3902ec954cd345ce14dc"
+    },
+    "quality-93-ner.json": {
+      "bytes": 18475,
+      "sha256": "fdc99a3a529de6e78f2314685eaa68577203aa66e8449dcbe24ff75e86426e65"
+    },
+    "quality-93-owned.json": {
+      "bytes": 87061,
+      "sha256": "1836cbcf0abcc2ceb26958b8b19251c038b0be7878a288d708e29df04cb450ae"
+    },
+    "quality-initial-padding-gate-failure.json": {
+      "bytes": 34072,
+      "sha256": "7b5b0a29541c140fa4574edbd42f95be14b7690f99ec9e408685e57eb0a9bf99"
+    },
+    "source/benchmark-student-probe.py": {
+      "bytes": 11225,
+      "sha256": "46ca66fe671eec83e69f9d1dc835aa91403b66f2408d9aab433f4654fbdac0c2"
+    },
+    "source/diagnose-case-13.py": {
+      "bytes": 4864,
+      "sha256": "922379f305f6503b0de54ae2be55228c07537deed68ef84dbcafaec9a7d3a9c4"
+    },
+    "source/evaluate-student-quality.py": {
+      "bytes": 16351,
+      "sha256": "59087b8a207ce347b40126aa2cf1e5e8659b0ffb9aee4df7aef4286031c4efc6"
+    },
+    "source/prepare-student-coreml.py": {
+      "bytes": 8540,
+      "sha256": "5fc96ab0aaa28483c3c7bc482e68c0d35d3810c6dedb37d02da416899e016ebb"
+    },
+    "source/prepare-student-corpus.py": {
+      "bytes": 12361,
+      "sha256": "21ec2998308cc3bef0e04b661e42bd5878cc42a63c8d8f89b1d03f7a1c2774f8"
+    },
+    "source/speed_probe.rs": {
+      "bytes": 7014,
+      "sha256": "942ae056ec30c94a9c4539acdc00a749fb0df3b1f256eb49262782d073b2e9ef"
+    },
+    "source/student_probe_model.py": {
+      "bytes": 11070,
+      "sha256": "479120b336e017ce9191063a58f5cd61450e7f0aa9efdd4af7f8d8559d2772b1"
+    },
+    "source/test-student-decoder.py": {
+      "bytes": 1836,
+      "sha256": "f5c6fbdc770d58d51687be5923e98d9d17cdbfc464e0cf3104134537d38e6282"
+    },
+    "source/train-student-probe.py": {
+      "bytes": 18048,
+      "sha256": "82065b6f3d10fe5c3cc3ba9524174e10e5d7c42e82db72958adc44499b14776a"
+    },
+    "train-synthetic.jsonl.gz": {
+      "bytes": 77178,
+      "sha256": "7c7fc755fbd3157d577be494dd7d60aa6e7de3ec4eaae9ce1dc6c793f9f1452a"
+    },
+    "trained-1m.json": {
+      "bytes": 7516,
+      "sha256": "ba3463120e15b665ca040177619c59aaf1fcb7416224f48b91caa05a8709eff4"
+    },
+    "trained-export.json": {
+      "bytes": 5524,
+      "sha256": "efea954b053ef8850729f7aaaf3cbb21cdd19e120d2902ca26ee262bdb0eddff"
+    },
+    "trained-export.log.gz": {
+      "bytes": 197,
+      "sha256": "3c5d9500500b92e63dd781c6057b6a5976c864c267cf124a94a9c8cd3ee759c0"
+    },
+    "training-200-original-report.json": {
+      "bytes": 68983,
+      "sha256": "d21e593ec6dc6bedf3d77c1b8fb2c2bdb638eed4e27385726d9a7654a765adbd"
+    },
+    "training-200.log.gz": {
+      "bytes": 380,
+      "sha256": "1100ffcfa0eaf4962353b59d071920913e607e74a4107341108b6184eb36956d"
+    },
+    "untrained-100k.json": {
+      "bytes": 6227,
+      "sha256": "0a4bb3f0092f8b7321c97f13dd571ac3e368410ef3e59c698625bc1d1219b9eb"
+    },
+    "untrained-1m.json": {
+      "bytes": 6251,
+      "sha256": "97d5916e7c752c78440407f9acf16eb0441ca15d0cbf312ec3610f09fc09f6c2"
+    },
+    "untrained-export.json": {
+      "bytes": 4767,
+      "sha256": "31b861b116ca470ec0e76e0c1d8091072454092d2245d61c2d9af4042ca4ece8"
+    },
+    "untrained-export.log.gz": {
+      "bytes": 198,
+      "sha256": "439018ed09f850d65eb01146da063f47481db33cb01c38a11ed5d2d5b95127c6"
+    },
+    "varied-1m-core-failure.json": {
+      "bytes": 719,
+      "sha256": "75bcaf2b6bae61e21a23b2eb71d87cb34d85ac51a5757e64183d7f556c7e1a98"
+    },
+    "varied-1m-ner-ranges.txt.gz": {
+      "bytes": 149214,
+      "sha256": "c365da491edf89d155ef1550a8b8e3930526bfd792baf0897b6e7d8332c051ca"
+    },
+    "varied-1m-quality-process.json": {
+      "bytes": 4793,
+      "sha256": "aa042aa29a4a663b0eebf94c85e73a2458008f0804396332188719d48bb688fb"
+    },
+    "varied-performance-manifest.json": {
+      "bytes": 155,
+      "sha256": "3a33dc5d6c730b21bcb079f0f172dbd13832cb47d7eff611e6d828efff7dba3c"
+    }
+  }
+}

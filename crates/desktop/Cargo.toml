@@ -1,0 +1,28 @@
+[package]
+name = "copy-for-ai-desktop"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+repository.workspace = true
+description.workspace = true
+
+[dependencies]
+copy-for-ai-core.workspace = true
+copy-for-ai-ner.workspace = true
+gpui-kit = "=0.7.3"
+global-hotkey = "0.8"
+smol = "2"
+zeroize.workspace = true
+
+[dev-dependencies]
+gpui-test = { package = "gpui-pre", version = "=0.3.9", features = ["test-support"] }
+
+[target.'cfg(target_os = "macos")'.dependencies]
+objc2 = "0.6"
+objc2-foundation = "0.3"
+objc2-app-kit = { version = "0.3", features = ["NSRunningApplication", "NSWorkspace", "NSPasteboard"] }
+
+[lints]
+workspace = true
+

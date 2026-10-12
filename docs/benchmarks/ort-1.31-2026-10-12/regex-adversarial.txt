@@ -1,0 +1,12 @@
+case=email_missing_domain bytes=65536 median_us=253 min_us=247 max_us=390 replacements=0 round_trip=true
+case=pem_missing_end bytes=65536 median_us=404 min_us=403 max_us=419 replacements=0 round_trip=true
+case=credentials_missing_value bytes=65536 median_us=166 min_us=165 max_us=177 replacements=0 round_trip=true
+case=credential_long_value bytes=65536 median_us=2920 min_us=2004 max_us=4502 replacements=1 round_trip=true
+case=email_missing_domain bytes=262144 median_us=1790 min_us=1771 max_us=1923 replacements=0 round_trip=true
+case=pem_missing_end bytes=262144 median_us=1565 min_us=1551 max_us=2578 replacements=0 round_trip=true
+case=credentials_missing_value bytes=262144 median_us=1293 min_us=725 max_us=1294 replacements=0 round_trip=true
+case=credential_long_value bytes=262144 median_us=16928 min_us=8228 max_us=17297 replacements=1 round_trip=true
+case=email_missing_domain bytes=1048576 median_us=7561 min_us=7431 max_us=7600 replacements=0 round_trip=true
+case=pem_missing_end bytes=1048576 median_us=7658 min_us=7388 max_us=9401 replacements=0 round_trip=true
+case=credentials_missing_value bytes=1048576 median_us=5486 min_us=2909 max_us=5671 replacements=0 round_trip=true
+case=credential_long_value bytes=1048576 median_us=62333 min_us=56282 max_us=63681 replacements=1 round_trip=true

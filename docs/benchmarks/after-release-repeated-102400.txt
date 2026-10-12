@@ -1,0 +1,5 @@
+load verify_ms=2255 model_ms=742
+run=0 bytes=102400 status=ok detect_ms=640 windows=110 inferred=4 reused=106 window_ms=1 tokenize_ms=0 pre_ms=0 infer_ms=638 decode_ms=0 entities=2956 core_ms=2 restore_ms=0 bytes_s=159928
+run=1 bytes=102400 status=ok detect_ms=705 windows=110 inferred=4 reused=106 window_ms=1 tokenize_ms=0 pre_ms=0 infer_ms=703 decode_ms=0 entities=2956 core_ms=2 restore_ms=0 bytes_s=145190
+cancel_ms=443 cancelled=true
+peak_rss_bytes=3321102336 exit_code=0

@@ -1,0 +1,2653 @@
+{
+  "case-00-00": {
+    "language": "cs",
+    "bytes": 90,
+    "gold": [
+      {
+        "start": 1,
+        "end": 14,
+        "category": "person"
+      },
+      {
+        "start": 46,
+        "end": 59,
+        "category": "person"
+      },
+      {
+        "start": 27,
+        "end": 36,
+        "category": "organization"
+      },
+      {
+        "start": 72,
+        "end": 81,
+        "category": "organization"
+      },
+      {
+        "start": 39,
+        "end": 44,
+        "category": "location"
+      },
+      {
+        "start": 84,
+        "end": 89,
+        "category": "location"
+      }
+    ]
+  },
+  "case-00-27": {
+    "language": "cs",
+    "bytes": 792,
+    "gold": [
+      {
+        "start": 703,
+        "end": 716,
+        "category": "person"
+      },
+      {
+        "start": 748,
+        "end": 761,
+        "category": "person"
+      },
+      {
+        "start": 729,
+        "end": 738,
+        "category": "organization"
+      },
+      {
+        "start": 774,
+        "end": 783,
+        "category": "organization"
+      },
+      {
+        "start": 741,
+        "end": 746,
+        "category": "location"
+      },
+      {
+        "start": 786,
+        "end": 791,
+        "category": "location"
+      }
+    ]
+  },
+  "case-00-31": {
+    "language": "cs",
+    "bytes": 896,
+    "gold": [
+      {
+        "start": 807,
+        "end": 820,
+        "category": "person"
+      },
+      {
+        "start": 852,
+        "end": 865,
+        "category": "person"
+      },
+      {
+        "start": 833,
+        "end": 842,
+        "category": "organization"
+      },
+      {
+        "start": 878,
+        "end": 887,
+        "category": "organization"
+      },
+      {
+        "start": 845,
+        "end": 850,
+        "category": "location"
+      },
+      {
+        "start": 890,
+        "end": 895,
+        "category": "location"
+      }
+    ]
+  },
+  "case-00-35": {
+    "language": "cs",
+    "bytes": 1000,
+    "gold": [
+      {
+        "start": 911,
+        "end": 924,
+        "category": "person"
+      },
+      {
+        "start": 956,
+        "end": 969,
+        "category": "person"
+      },
+      {
+        "start": 937,
+        "end": 946,
+        "category": "organization"
+      },
+      {
+        "start": 982,
+        "end": 991,
+        "category": "organization"
+      },
+      {
+        "start": 949,
+        "end": 954,
+        "category": "location"
+      },
+      {
+        "start": 994,
+        "end": 999,
+        "category": "location"
+      }
+    ]
+  },
+  "case-01-00": {
+    "language": "en",
+    "bytes": 86,
+    "gold": [
+      {
+        "start": 1,
+        "end": 13,
+        "category": "person"
+      },
+      {
+        "start": 44,
+        "end": 56,
+        "category": "person"
+      },
+      {
+        "start": 23,
+        "end": 32,
+        "category": "organization"
+      },
+      {
+        "start": 66,
+        "end": 75,
+        "category": "organization"
+      },
+      {
+        "start": 36,
+        "end": 42,
+        "category": "location"
+      },
+      {
+        "start": 79,
+        "end": 85,
+        "category": "location"
+      }
+    ]
+  },
+  "case-01-27": {
+    "language": "en",
+    "bytes": 788,
+    "gold": [
+      {
+        "start": 703,
+        "end": 715,
+        "category": "person"
+      },
+      {
+        "start": 746,
+        "end": 758,
+        "category": "person"
+      },
+      {
+        "start": 725,
+        "end": 734,
+        "category": "organization"
+      },
+      {
+        "start": 768,
+        "end": 777,
+        "category": "organization"
+      },
+      {
+        "start": 738,
+        "end": 744,
+        "category": "location"
+      },
+      {
+        "start": 781,
+        "end": 787,
+        "category": "location"
+      }
+    ]
+  },
+  "case-01-31": {
+    "language": "en",
+    "bytes": 892,
+    "gold": [
+      {
+        "start": 807,
+        "end": 819,
+        "category": "person"
+      },
+      {
+        "start": 850,
+        "end": 862,
+        "category": "person"
+      },
+      {
+        "start": 829,
+        "end": 838,
+        "category": "organization"
+      },
+      {
+        "start": 872,
+        "end": 881,
+        "category": "organization"
+      },
+      {
+        "start": 842,
+        "end": 848,
+        "category": "location"
+      },
+      {
+        "start": 885,
+        "end": 891,
+        "category": "location"
+      }
+    ]
+  },
+  "case-01-35": {
+    "language": "en",
+    "bytes": 996,
+    "gold": [
+      {
+        "start": 911,
+        "end": 923,
+        "category": "person"
+      },
+      {
+        "start": 954,
+        "end": 966,
+        "category": "person"
+      },
+      {
+        "start": 933,
+        "end": 942,
+        "category": "organization"
+      },
+      {
+        "start": 976,
+        "end": 985,
+        "category": "organization"
+      },
+      {
+        "start": 946,
+        "end": 952,
+        "category": "location"
+      },
+      {
+        "start": 989,
+        "end": 995,
+        "category": "location"
+      }
+    ]
+  },
+  "case-02-00": {
+    "language": "de",
+    "bytes": 94,
+    "gold": [
+      {
+        "start": 1,
+        "end": 13,
+        "category": "person"
+      },
+      {
+        "start": 48,
+        "end": 60,
+        "category": "person"
+      },
+      {
+        "start": 40,
+        "end": 46,
+        "category": "location"
+      },
+      {
+        "start": 87,
+        "end": 93,
+        "category": "location"
+      }
+    ]
+  },
+  "case-02-27": {
+    "language": "de",
+    "bytes": 796,
+    "gold": [
+      {
+        "start": 703,
+        "end": 715,
+        "category": "person"
+      },
+      {
+        "start": 750,
+        "end": 762,
+        "category": "person"
+      },
+      {
+        "start": 742,
+        "end": 748,
+        "category": "location"
+      },
+      {
+        "start": 789,
+        "end": 795,
+        "category": "location"
+      }
+    ]
+  },
+  "case-02-31": {
+    "language": "de",
+    "bytes": 900,
+    "gold": [
+      {
+        "start": 807,
+        "end": 819,
+        "category": "person"
+      },
+      {
+        "start": 854,
+        "end": 866,
+        "category": "person"
+      },
+      {
+        "start": 846,
+        "end": 852,
+        "category": "location"
+      },
+      {
+        "start": 893,
+        "end": 899,
+        "category": "location"
+      }
+    ]
+  },
+  "case-02-35": {
+    "language": "de",
+    "bytes": 1004,
+    "gold": [
+      {
+        "start": 911,
+        "end": 923,
+        "category": "person"
+      },
+      {
+        "start": 958,
+        "end": 970,
+        "category": "person"
+      },
+      {
+        "start": 950,
+        "end": 956,
+        "category": "location"
+      },
+      {
+        "start": 997,
+        "end": 1003,
+        "category": "location"
+      }
+    ]
+  },
+  "case-03-00": {
+    "language": "fr",
+    "bytes": 98,
+    "gold": [
+      {
+        "start": 1,
+        "end": 14,
+        "category": "person"
+      },
+      {
+        "start": 50,
+        "end": 63,
+        "category": "person"
+      },
+      {
+        "start": 43,
+        "end": 48,
+        "category": "location"
+      },
+      {
+        "start": 92,
+        "end": 97,
+        "category": "location"
+      }
+    ]
+  },
+  "case-03-27": {
+    "language": "fr",
+    "bytes": 800,
+    "gold": [
+      {
+        "start": 703,
+        "end": 716,
+        "category": "person"
+      },
+      {
+        "start": 752,
+        "end": 765,
+        "category": "person"
+      },
+      {
+        "start": 745,
+        "end": 750,
+        "category": "location"
+      },
+      {
+        "start": 794,
+        "end": 799,
+        "category": "location"
+      }
+    ]
+  },
+  "case-03-31": {
+    "language": "fr",
+    "bytes": 904,
+    "gold": [
+      {
+        "start": 807,
+        "end": 820,
+        "category": "person"
+      },
+      {
+        "start": 856,
+        "end": 869,
+        "category": "person"
+      },
+      {
+        "start": 849,
+        "end": 854,
+        "category": "location"
+      },
+      {
+        "start": 898,
+        "end": 903,
+        "category": "location"
+      }
+    ]
+  },
+  "case-03-35": {
+    "language": "fr",
+    "bytes": 1008,
+    "gold": [
+      {
+        "start": 911,
+        "end": 924,
+        "category": "person"
+      },
+      {
+        "start": 960,
+        "end": 973,
+        "category": "person"
+      },
+      {
+        "start": 953,
+        "end": 958,
+        "category": "location"
+      },
+      {
+        "start": 1002,
+        "end": 1007,
+        "category": "location"
+      }
+    ]
+  },
+  "case-04-00": {
+    "language": "ru",
+    "bytes": 142,
+    "gold": [
+      {
+        "start": 1,
+        "end": 24,
+        "category": "person"
+      },
+      {
+        "start": 72,
+        "end": 95,
+        "category": "person"
+      },
+      {
+        "start": 58,
+        "end": 70,
+        "category": "location"
+      },
+      {
+        "start": 129,
+        "end": 141,
+        "category": "location"
+      }
+    ]
+  },
+  "case-04-27": {
+    "language": "ru",
+    "bytes": 844,
+    "gold": [
+      {
+        "start": 703,
+        "end": 726,
+        "category": "person"
+      },
+      {
+        "start": 774,
+        "end": 797,
+        "category": "person"
+      },
+      {
+        "start": 760,
+        "end": 772,
+        "category": "location"
+      },
+      {
+        "start": 831,
+        "end": 843,
+        "category": "location"
+      }
+    ]
+  },
+  "case-04-31": {
+    "language": "ru",
+    "bytes": 948,
+    "gold": [
+      {
+        "start": 807,
+        "end": 830,
+        "category": "person"
+      },
+      {
+        "start": 878,
+        "end": 901,
+        "category": "person"
+      },
+      {
+        "start": 864,
+        "end": 876,
+        "category": "location"
+      },
+      {
+        "start": 935,
+        "end": 947,
+        "category": "location"
+      }
+    ]
+  },
+  "case-04-35": {
+    "language": "ru",
+    "bytes": 1052,
+    "gold": [
+      {
+        "start": 911,
+        "end": 934,
+        "category": "person"
+      },
+      {
+        "start": 982,
+        "end": 1005,
+        "category": "person"
+      },
+      {
+        "start": 968,
+        "end": 980,
+        "category": "location"
+      },
+      {
+        "start": 1039,
+        "end": 1051,
+        "category": "location"
+      }
+    ]
+  },
+  "case-05-00": {
+    "language": "ja",
+    "bytes": 122,
+    "gold": [
+      {
+        "start": 1,
+        "end": 13,
+        "category": "person"
+      },
+      {
+        "start": 62,
+        "end": 74,
+        "category": "person"
+      },
+      {
+        "start": 16,
+        "end": 22,
+        "category": "location"
+      },
+      {
+        "start": 77,
+        "end": 83,
+        "category": "location"
+      }
+    ]
+  },
+  "case-05-27": {
+    "language": "ja",
+    "bytes": 824,
+    "gold": [
+      {
+        "start": 703,
+        "end": 715,
+        "category": "person"
+      },
+      {
+        "start": 764,
+        "end": 776,
+        "category": "person"
+      },
+      {
+        "start": 718,
+        "end": 724,
+        "category": "location"
+      },
+      {
+        "start": 779,
+        "end": 785,
+        "category": "location"
+      }
+    ]
+  },
+  "case-05-31": {
+    "language": "ja",
+    "bytes": 928,
+    "gold": [
+      {
+        "start": 807,
+        "end": 819,
+        "category": "person"
+      },
+      {
+        "start": 868,
+        "end": 880,
+        "category": "person"
+      },
+      {
+        "start": 822,
+        "end": 828,
+        "category": "location"
+      },
+      {
+        "start": 883,
+        "end": 889,
+        "category": "location"
+      }
+    ]
+  },
+  "case-05-35": {
+    "language": "ja",
+    "bytes": 1032,
+    "gold": [
+      {
+        "start": 911,
+        "end": 923,
+        "category": "person"
+      },
+      {
+        "start": 972,
+        "end": 984,
+        "category": "person"
+      },
+      {
+        "start": 926,
+        "end": 932,
+        "category": "location"
+      },
+      {
+        "start": 987,
+        "end": 993,
+        "category": "location"
+      }
+    ]
+  },
+  "case-06-00": {
+    "language": "zh",
+    "bytes": 74,
+    "gold": [
+      {
+        "start": 1,
+        "end": 7,
+        "category": "person"
+      },
+      {
+        "start": 38,
+        "end": 44,
+        "category": "person"
+      },
+      {
+        "start": 10,
+        "end": 16,
+        "category": "location"
+      },
+      {
+        "start": 47,
+        "end": 53,
+        "category": "location"
+      }
+    ]
+  },
+  "case-06-27": {
+    "language": "zh",
+    "bytes": 776,
+    "gold": [
+      {
+        "start": 703,
+        "end": 709,
+        "category": "person"
+      },
+      {
+        "start": 740,
+        "end": 746,
+        "category": "person"
+      },
+      {
+        "start": 712,
+        "end": 718,
+        "category": "location"
+      },
+      {
+        "start": 749,
+        "end": 755,
+        "category": "location"
+      }
+    ]
+  },
+  "case-06-31": {
+    "language": "zh",
+    "bytes": 880,
+    "gold": [
+      {
+        "start": 807,
+        "end": 813,
+        "category": "person"
+      },
+      {
+        "start": 844,
+        "end": 850,
+        "category": "person"
+      },
+      {
+        "start": 816,
+        "end": 822,
+        "category": "location"
+      },
+      {
+        "start": 853,
+        "end": 859,
+        "category": "location"
+      }
+    ]
+  },
+  "case-06-35": {
+    "language": "zh",
+    "bytes": 984,
+    "gold": [
+      {
+        "start": 911,
+        "end": 917,
+        "category": "person"
+      },
+      {
+        "start": 948,
+        "end": 954,
+        "category": "person"
+      },
+      {
+        "start": 920,
+        "end": 926,
+        "category": "location"
+      },
+      {
+        "start": 957,
+        "end": 963,
+        "category": "location"
+      }
+    ]
+  },
+  "case-07-00": {
+    "language": "cs",
+    "bytes": 156,
+    "gold": [
+      {
+        "start": 1,
+        "end": 12,
+        "category": "person"
+      },
+      {
+        "start": 79,
+        "end": 90,
+        "category": "person"
+      },
+      {
+        "start": 15,
+        "end": 26,
+        "category": "person"
+      },
+      {
+        "start": 93,
+        "end": 104,
+        "category": "person"
+      },
+      {
+        "start": 52,
+        "end": 64,
+        "category": "organization"
+      },
+      {
+        "start": 130,
+        "end": 142,
+        "category": "organization"
+      },
+      {
+        "start": 67,
+        "end": 77,
+        "category": "location"
+      },
+      {
+        "start": 145,
+        "end": 155,
+        "category": "location"
+      }
+    ]
+  },
+  "case-07-27": {
+    "language": "cs",
+    "bytes": 858,
+    "gold": [
+      {
+        "start": 703,
+        "end": 714,
+        "category": "person"
+      },
+      {
+        "start": 781,
+        "end": 792,
+        "category": "person"
+      },
+      {
+        "start": 717,
+        "end": 728,
+        "category": "person"
+      },
+      {
+        "start": 795,
+        "end": 806,
+        "category": "person"
+      },
+      {
+        "start": 754,
+        "end": 766,
+        "category": "organization"
+      },
+      {
+        "start": 832,
+        "end": 844,
+        "category": "organization"
+      },
+      {
+        "start": 769,
+        "end": 779,
+        "category": "location"
+      },
+      {
+        "start": 847,
+        "end": 857,
+        "category": "location"
+      }
+    ]
+  },
+  "case-07-31": {
+    "language": "cs",
+    "bytes": 962,
+    "gold": [
+      {
+        "start": 807,
+        "end": 818,
+        "category": "person"
+      },
+      {
+        "start": 885,
+        "end": 896,
+        "category": "person"
+      },
+      {
+        "start": 821,
+        "end": 832,
+        "category": "person"
+      },
+      {
+        "start": 899,
+        "end": 910,
+        "category": "person"
+      },
+      {
+        "start": 858,
+        "end": 870,
+        "category": "organization"
+      },
+      {
+        "start": 936,
+        "end": 948,
+        "category": "organization"
+      },
+      {
+        "start": 873,
+        "end": 883,
+        "category": "location"
+      },
+      {
+        "start": 951,
+        "end": 961,
+        "category": "location"
+      }
+    ]
+  },
+  "case-07-35": {
+    "language": "cs",
+    "bytes": 1066,
+    "gold": [
+      {
+        "start": 911,
+        "end": 922,
+        "category": "person"
+      },
+      {
+        "start": 989,
+        "end": 1000,
+        "category": "person"
+      },
+      {
+        "start": 925,
+        "end": 936,
+        "category": "person"
+      },
+      {
+        "start": 1003,
+        "end": 1014,
+        "category": "person"
+      },
+      {
+        "start": 962,
+        "end": 974,
+        "category": "organization"
+      },
+      {
+        "start": 1040,
+        "end": 1052,
+        "category": "organization"
+      },
+      {
+        "start": 977,
+        "end": 987,
+        "category": "location"
+      },
+      {
+        "start": 1055,
+        "end": 1065,
+        "category": "location"
+      }
+    ]
+  },
+  "case-08-00": {
+    "language": "cs",
+    "bytes": 86,
+    "gold": [
+      {
+        "start": 6,
+        "end": 24,
+        "category": "event"
+      },
+      {
+        "start": 49,
+        "end": 67,
+        "category": "event"
+      }
+    ]
+  },
+  "case-08-27": {
+    "language": "cs",
+    "bytes": 788,
+    "gold": [
+      {
+        "start": 708,
+        "end": 726,
+        "category": "event"
+      },
+      {
+        "start": 751,
+        "end": 769,
+        "category": "event"
+      }
+    ]
+  },
+  "case-08-31": {
+    "language": "cs",
+    "bytes": 892,
+    "gold": [
+      {
+        "start": 812,
+        "end": 830,
+        "category": "event"
+      },
+      {
+        "start": 855,
+        "end": 873,
+        "category": "event"
+      }
+    ]
+  },
+  "case-08-35": {
+    "language": "cs",
+    "bytes": 996,
+    "gold": [
+      {
+        "start": 916,
+        "end": 934,
+        "category": "event"
+      },
+      {
+        "start": 959,
+        "end": 977,
+        "category": "event"
+      }
+    ]
+  },
+  "case-09-00": {
+    "language": "en",
+    "bytes": 94,
+    "gold": [
+      {
+        "start": 1,
+        "end": 13,
+        "category": "person"
+      },
+      {
+        "start": 48,
+        "end": 60,
+        "category": "person"
+      },
+      {
+        "start": 23,
+        "end": 38,
+        "category": "address"
+      },
+      {
+        "start": 70,
+        "end": 85,
+        "category": "address"
+      }
+    ]
+  },
+  "case-09-27": {
+    "language": "en",
+    "bytes": 796,
+    "gold": [
+      {
+        "start": 703,
+        "end": 715,
+        "category": "person"
+      },
+      {
+        "start": 750,
+        "end": 762,
+        "category": "person"
+      },
+      {
+        "start": 725,
+        "end": 740,
+        "category": "address"
+      },
+      {
+        "start": 772,
+        "end": 787,
+        "category": "address"
+      }
+    ]
+  },
+  "case-09-31": {
+    "language": "en",
+    "bytes": 900,
+    "gold": [
+      {
+        "start": 807,
+        "end": 819,
+        "category": "person"
+      },
+      {
+        "start": 854,
+        "end": 866,
+        "category": "person"
+      },
+      {
+        "start": 829,
+        "end": 844,
+        "category": "address"
+      },
+      {
+        "start": 876,
+        "end": 891,
+        "category": "address"
+      }
+    ]
+  },
+  "case-09-35": {
+    "language": "en",
+    "bytes": 1004,
+    "gold": [
+      {
+        "start": 911,
+        "end": 923,
+        "category": "person"
+      },
+      {
+        "start": 958,
+        "end": 970,
+        "category": "person"
+      },
+      {
+        "start": 933,
+        "end": 948,
+        "category": "address"
+      },
+      {
+        "start": 980,
+        "end": 995,
+        "category": "address"
+      }
+    ]
+  },
+  "case-10-00": {
+    "language": "cs",
+    "bytes": 100,
+    "gold": [
+      {
+        "start": 1,
+        "end": 14,
+        "category": "person"
+      },
+      {
+        "start": 51,
+        "end": 64,
+        "category": "person"
+      },
+      {
+        "start": 32,
+        "end": 42,
+        "category": "address"
+      },
+      {
+        "start": 82,
+        "end": 92,
+        "category": "address"
+      }
+    ]
+  },
+  "case-10-27": {
+    "language": "cs",
+    "bytes": 802,
+    "gold": [
+      {
+        "start": 703,
+        "end": 716,
+        "category": "person"
+      },
+      {
+        "start": 753,
+        "end": 766,
+        "category": "person"
+      },
+      {
+        "start": 734,
+        "end": 744,
+        "category": "address"
+      },
+      {
+        "start": 784,
+        "end": 794,
+        "category": "address"
+      }
+    ]
+  },
+  "case-10-31": {
+    "language": "cs",
+    "bytes": 906,
+    "gold": [
+      {
+        "start": 807,
+        "end": 820,
+        "category": "person"
+      },
+      {
+        "start": 857,
+        "end": 870,
+        "category": "person"
+      },
+      {
+        "start": 838,
+        "end": 848,
+        "category": "address"
+      },
+      {
+        "start": 888,
+        "end": 898,
+        "category": "address"
+      }
+    ]
+  },
+  "case-10-35": {
+    "language": "cs",
+    "bytes": 1010,
+    "gold": [
+      {
+        "start": 911,
+        "end": 924,
+        "category": "person"
+      },
+      {
+        "start": 961,
+        "end": 974,
+        "category": "person"
+      },
+      {
+        "start": 942,
+        "end": 952,
+        "category": "address"
+      },
+      {
+        "start": 992,
+        "end": 1002,
+        "category": "address"
+      }
+    ]
+  },
+  "case-11-00": {
+    "language": "de",
+    "bytes": 102,
+    "gold": [
+      {
+        "start": 1,
+        "end": 13,
+        "category": "person"
+      },
+      {
+        "start": 52,
+        "end": 64,
+        "category": "person"
+      },
+      {
+        "start": 27,
+        "end": 42,
+        "category": "address"
+      },
+      {
+        "start": 78,
+        "end": 93,
+        "category": "address"
+      }
+    ]
+  },
+  "case-11-27": {
+    "language": "de",
+    "bytes": 804,
+    "gold": [
+      {
+        "start": 703,
+        "end": 715,
+        "category": "person"
+      },
+      {
+        "start": 754,
+        "end": 766,
+        "category": "person"
+      },
+      {
+        "start": 729,
+        "end": 744,
+        "category": "address"
+      },
+      {
+        "start": 780,
+        "end": 795,
+        "category": "address"
+      }
+    ]
+  },
+  "case-11-31": {
+    "language": "de",
+    "bytes": 908,
+    "gold": [
+      {
+        "start": 807,
+        "end": 819,
+        "category": "person"
+      },
+      {
+        "start": 858,
+        "end": 870,
+        "category": "person"
+      },
+      {
+        "start": 833,
+        "end": 848,
+        "category": "address"
+      },
+      {
+        "start": 884,
+        "end": 899,
+        "category": "address"
+      }
+    ]
+  },
+  "case-11-35": {
+    "language": "de",
+    "bytes": 1012,
+    "gold": [
+      {
+        "start": 911,
+        "end": 923,
+        "category": "person"
+      },
+      {
+        "start": 962,
+        "end": 974,
+        "category": "person"
+      },
+      {
+        "start": 937,
+        "end": 952,
+        "category": "address"
+      },
+      {
+        "start": 988,
+        "end": 1003,
+        "category": "address"
+      }
+    ]
+  },
+  "case-12-00": {
+    "language": "fr",
+    "bytes": 100,
+    "gold": [
+      {
+        "start": 1,
+        "end": 14,
+        "category": "person"
+      },
+      {
+        "start": 51,
+        "end": 64,
+        "category": "person"
+      },
+      {
+        "start": 25,
+        "end": 42,
+        "category": "address"
+      },
+      {
+        "start": 75,
+        "end": 92,
+        "category": "address"
+      }
+    ]
+  },
+  "case-12-27": {
+    "language": "fr",
+    "bytes": 802,
+    "gold": [
+      {
+        "start": 703,
+        "end": 716,
+        "category": "person"
+      },
+      {
+        "start": 753,
+        "end": 766,
+        "category": "person"
+      },
+      {
+        "start": 727,
+        "end": 744,
+        "category": "address"
+      },
+      {
+        "start": 777,
+        "end": 794,
+        "category": "address"
+      }
+    ]
+  },
+  "case-12-31": {
+    "language": "fr",
+    "bytes": 906,
+    "gold": [
+      {
+        "start": 807,
+        "end": 820,
+        "category": "person"
+      },
+      {
+        "start": 857,
+        "end": 870,
+        "category": "person"
+      },
+      {
+        "start": 831,
+        "end": 848,
+        "category": "address"
+      },
+      {
+        "start": 881,
+        "end": 898,
+        "category": "address"
+      }
+    ]
+  },
+  "case-12-35": {
+    "language": "fr",
+    "bytes": 1010,
+    "gold": [
+      {
+        "start": 911,
+        "end": 924,
+        "category": "person"
+      },
+      {
+        "start": 961,
+        "end": 974,
+        "category": "person"
+      },
+      {
+        "start": 935,
+        "end": 952,
+        "category": "address"
+      },
+      {
+        "start": 985,
+        "end": 1002,
+        "category": "address"
+      }
+    ]
+  },
+  "case-13-00": {
+    "language": "ru",
+    "bytes": 214,
+    "gold": [
+      {
+        "start": 1,
+        "end": 24,
+        "category": "person"
+      },
+      {
+        "start": 108,
+        "end": 131,
+        "category": "person"
+      },
+      {
+        "start": 54,
+        "end": 92,
+        "category": "address"
+      },
+      {
+        "start": 161,
+        "end": 199,
+        "category": "address"
+      }
+    ]
+  },
+  "case-13-27": {
+    "language": "ru",
+    "bytes": 916,
+    "gold": [
+      {
+        "start": 703,
+        "end": 726,
+        "category": "person"
+      },
+      {
+        "start": 810,
+        "end": 833,
+        "category": "person"
+      },
+      {
+        "start": 756,
+        "end": 794,
+        "category": "address"
+      },
+      {
+        "start": 863,
+        "end": 901,
+        "category": "address"
+      }
+    ]
+  },
+  "case-13-31": {
+    "language": "ru",
+    "bytes": 1020,
+    "gold": [
+      {
+        "start": 807,
+        "end": 830,
+        "category": "person"
+      },
+      {
+        "start": 914,
+        "end": 937,
+        "category": "person"
+      },
+      {
+        "start": 860,
+        "end": 898,
+        "category": "address"
+      },
+      {
+        "start": 967,
+        "end": 1005,
+        "category": "address"
+      }
+    ]
+  },
+  "case-13-35": {
+    "language": "ru",
+    "bytes": 1124,
+    "gold": [
+      {
+        "start": 911,
+        "end": 934,
+        "category": "person"
+      },
+      {
+        "start": 1018,
+        "end": 1041,
+        "category": "person"
+      },
+      {
+        "start": 964,
+        "end": 1002,
+        "category": "address"
+      },
+      {
+        "start": 1071,
+        "end": 1109,
+        "category": "address"
+      }
+    ]
+  },
+  "case-14-00": {
+    "language": "ja",
+    "bytes": 134,
+    "gold": [
+      {
+        "start": 1,
+        "end": 13,
+        "category": "person"
+      },
+      {
+        "start": 68,
+        "end": 80,
+        "category": "person"
+      },
+      {
+        "start": 25,
+        "end": 58,
+        "category": "address"
+      },
+      {
+        "start": 92,
+        "end": 125,
+        "category": "address"
+      }
+    ]
+  },
+  "case-14-27": {
+    "language": "ja",
+    "bytes": 836,
+    "gold": [
+      {
+        "start": 703,
+        "end": 715,
+        "category": "person"
+      },
+      {
+        "start": 770,
+        "end": 782,
+        "category": "person"
+      },
+      {
+        "start": 727,
+        "end": 760,
+        "category": "address"
+      },
+      {
+        "start": 794,
+        "end": 827,
+        "category": "address"
+      }
+    ]
+  },
+  "case-14-31": {
+    "language": "ja",
+    "bytes": 940,
+    "gold": [
+      {
+        "start": 807,
+        "end": 819,
+        "category": "person"
+      },
+      {
+        "start": 874,
+        "end": 886,
+        "category": "person"
+      },
+      {
+        "start": 831,
+        "end": 864,
+        "category": "address"
+      },
+      {
+        "start": 898,
+        "end": 931,
+        "category": "address"
+      }
+    ]
+  },
+  "case-14-35": {
+    "language": "ja",
+    "bytes": 1044,
+    "gold": [
+      {
+        "start": 911,
+        "end": 923,
+        "category": "person"
+      },
+      {
+        "start": 978,
+        "end": 990,
+        "category": "person"
+      },
+      {
+        "start": 935,
+        "end": 968,
+        "category": "address"
+      },
+      {
+        "start": 1002,
+        "end": 1035,
+        "category": "address"
+      }
+    ]
+  },
+  "case-15-00": {
+    "language": "zh",
+    "bytes": 96,
+    "gold": [
+      {
+        "start": 1,
+        "end": 7,
+        "category": "person"
+      },
+      {
+        "start": 49,
+        "end": 55,
+        "category": "person"
+      },
+      {
+        "start": 13,
+        "end": 45,
+        "category": "address"
+      },
+      {
+        "start": 61,
+        "end": 93,
+        "category": "address"
+      }
+    ]
+  },
+  "case-15-27": {
+    "language": "zh",
+    "bytes": 798,
+    "gold": [
+      {
+        "start": 703,
+        "end": 709,
+        "category": "person"
+      },
+      {
+        "start": 751,
+        "end": 757,
+        "category": "person"
+      },
+      {
+        "start": 715,
+        "end": 747,
+        "category": "address"
+      },
+      {
+        "start": 763,
+        "end": 795,
+        "category": "address"
+      }
+    ]
+  },
+  "case-15-31": {
+    "language": "zh",
+    "bytes": 902,
+    "gold": [
+      {
+        "start": 807,
+        "end": 813,
+        "category": "person"
+      },
+      {
+        "start": 855,
+        "end": 861,
+        "category": "person"
+      },
+      {
+        "start": 819,
+        "end": 851,
+        "category": "address"
+      },
+      {
+        "start": 867,
+        "end": 899,
+        "category": "address"
+      }
+    ]
+  },
+  "case-15-35": {
+    "language": "zh",
+    "bytes": 1006,
+    "gold": [
+      {
+        "start": 911,
+        "end": 917,
+        "category": "person"
+      },
+      {
+        "start": 959,
+        "end": 965,
+        "category": "person"
+      },
+      {
+        "start": 923,
+        "end": 955,
+        "category": "address"
+      },
+      {
+        "start": 971,
+        "end": 1003,
+        "category": "address"
+      }
+    ]
+  },
+  "case-16-00": {
+    "language": "cs",
+    "bytes": 176,
+    "gold": [
+      {
+        "start": 1,
+        "end": 14,
+        "category": "person"
+      },
+      {
+        "start": 89,
+        "end": 102,
+        "category": "person"
+      },
+      {
+        "start": 28,
+        "end": 45,
+        "category": "person"
+      },
+      {
+        "start": 116,
+        "end": 133,
+        "category": "person"
+      },
+      {
+        "start": 53,
+        "end": 64,
+        "category": "organization"
+      },
+      {
+        "start": 141,
+        "end": 152,
+        "category": "organization"
+      }
+    ]
+  },
+  "case-16-27": {
+    "language": "cs",
+    "bytes": 878,
+    "gold": [
+      {
+        "start": 703,
+        "end": 716,
+        "category": "person"
+      },
+      {
+        "start": 791,
+        "end": 804,
+        "category": "person"
+      },
+      {
+        "start": 730,
+        "end": 747,
+        "category": "person"
+      },
+      {
+        "start": 818,
+        "end": 835,
+        "category": "person"
+      },
+      {
+        "start": 755,
+        "end": 766,
+        "category": "organization"
+      },
+      {
+        "start": 843,
+        "end": 854,
+        "category": "organization"
+      }
+    ]
+  },
+  "case-16-31": {
+    "language": "cs",
+    "bytes": 982,
+    "gold": [
+      {
+        "start": 807,
+        "end": 820,
+        "category": "person"
+      },
+      {
+        "start": 895,
+        "end": 908,
+        "category": "person"
+      },
+      {
+        "start": 834,
+        "end": 851,
+        "category": "person"
+      },
+      {
+        "start": 922,
+        "end": 939,
+        "category": "person"
+      },
+      {
+        "start": 859,
+        "end": 870,
+        "category": "organization"
+      },
+      {
+        "start": 947,
+        "end": 958,
+        "category": "organization"
+      }
+    ]
+  },
+  "case-16-35": {
+    "language": "cs",
+    "bytes": 1086,
+    "gold": [
+      {
+        "start": 911,
+        "end": 924,
+        "category": "person"
+      },
+      {
+        "start": 999,
+        "end": 1012,
+        "category": "person"
+      },
+      {
+        "start": 938,
+        "end": 955,
+        "category": "person"
+      },
+      {
+        "start": 1026,
+        "end": 1043,
+        "category": "person"
+      },
+      {
+        "start": 963,
+        "end": 974,
+        "category": "organization"
+      },
+      {
+        "start": 1051,
+        "end": 1062,
+        "category": "organization"
+      }
+    ]
+  },
+  "case-17-00": {
+    "language": "cs",
+    "bytes": 148,
+    "gold": [
+      {
+        "start": 20,
+        "end": 33,
+        "category": "person"
+      },
+      {
+        "start": 94,
+        "end": 107,
+        "category": "person"
+      },
+      {
+        "start": 45,
+        "end": 60,
+        "category": "person"
+      },
+      {
+        "start": 119,
+        "end": 134,
+        "category": "person"
+      },
+      {
+        "start": 69,
+        "end": 73,
+        "category": "location"
+      },
+      {
+        "start": 143,
+        "end": 147,
+        "category": "location"
+      }
+    ]
+  },
+  "case-17-27": {
+    "language": "cs",
+    "bytes": 850,
+    "gold": [
+      {
+        "start": 722,
+        "end": 735,
+        "category": "person"
+      },
+      {
+        "start": 796,
+        "end": 809,
+        "category": "person"
+      },
+      {
+        "start": 747,
+        "end": 762,
+        "category": "person"
+      },
+      {
+        "start": 821,
+        "end": 836,
+        "category": "person"
+      },
+      {
+        "start": 771,
+        "end": 775,
+        "category": "location"
+      },
+      {
+        "start": 845,
+        "end": 849,
+        "category": "location"
+      }
+    ]
+  },
+  "case-17-31": {
+    "language": "cs",
+    "bytes": 954,
+    "gold": [
+      {
+        "start": 826,
+        "end": 839,
+        "category": "person"
+      },
+      {
+        "start": 900,
+        "end": 913,
+        "category": "person"
+      },
+      {
+        "start": 851,
+        "end": 866,
+        "category": "person"
+      },
+      {
+        "start": 925,
+        "end": 940,
+        "category": "person"
+      },
+      {
+        "start": 875,
+        "end": 879,
+        "category": "location"
+      },
+      {
+        "start": 949,
+        "end": 953,
+        "category": "location"
+      }
+    ]
+  },
+  "case-17-35": {
+    "language": "cs",
+    "bytes": 1058,
+    "gold": [
+      {
+        "start": 930,
+        "end": 943,
+        "category": "person"
+      },
+      {
+        "start": 1004,
+        "end": 1017,
+        "category": "person"
+      },
+      {
+        "start": 955,
+        "end": 970,
+        "category": "person"
+      },
+      {
+        "start": 1029,
+        "end": 1044,
+        "category": "person"
+      },
+      {
+        "start": 979,
+        "end": 983,
+        "category": "location"
+      },
+      {
+        "start": 1053,
+        "end": 1057,
+        "category": "location"
+      }
+    ]
+  },
+  "case-18-00": {
+    "language": "en",
+    "bytes": 162,
+    "gold": [
+      {
+        "start": 20,
+        "end": 32,
+        "category": "person"
+      },
+      {
+        "start": 101,
+        "end": 113,
+        "category": "person"
+      },
+      {
+        "start": 49,
+        "end": 62,
+        "category": "person"
+      },
+      {
+        "start": 130,
+        "end": 143,
+        "category": "person"
+      },
+      {
+        "start": 63,
+        "end": 74,
+        "category": "organization"
+      },
+      {
+        "start": 144,
+        "end": 155,
+        "category": "organization"
+      }
+    ]
+  },
+  "case-18-27": {
+    "language": "en",
+    "bytes": 864,
+    "gold": [
+      {
+        "start": 722,
+        "end": 734,
+        "category": "person"
+      },
+      {
+        "start": 803,
+        "end": 815,
+        "category": "person"
+      },
+      {
+        "start": 751,
+        "end": 764,
+        "category": "person"
+      },
+      {
+        "start": 832,
+        "end": 845,
+        "category": "person"
+      },
+      {
+        "start": 765,
+        "end": 776,
+        "category": "organization"
+      },
+      {
+        "start": 846,
+        "end": 857,
+        "category": "organization"
+      }
+    ]
+  },
+  "case-18-31": {
+    "language": "en",
+    "bytes": 968,
+    "gold": [
+      {
+        "start": 826,
+        "end": 838,
+        "category": "person"
+      },
+      {
+        "start": 907,
+        "end": 919,
+        "category": "person"
+      },
+      {
+        "start": 855,
+        "end": 868,
+        "category": "person"
+      },
+      {
+        "start": 936,
+        "end": 949,
+        "category": "person"
+      },
+      {
+        "start": 869,
+        "end": 880,
+        "category": "organization"
+      },
+      {
+        "start": 950,
+        "end": 961,
+        "category": "organization"
+      }
+    ]
+  },
+  "case-18-35": {
+    "language": "en",
+    "bytes": 1072,
+    "gold": [
+      {
+        "start": 930,
+        "end": 942,
+        "category": "person"
+      },
+      {
+        "start": 1011,
+        "end": 1023,
+        "category": "person"
+      },
+      {
+        "start": 959,
+        "end": 972,
+        "category": "person"
+      },
+      {
+        "start": 1040,
+        "end": 1053,
+        "category": "person"
+      },
+      {
+        "start": 973,
+        "end": 984,
+        "category": "organization"
+      },
+      {
+        "start": 1054,
+        "end": 1065,
+        "category": "organization"
+      }
+    ]
+  },
+  "case-19-00": {
+    "language": "cs",
+    "bytes": 150,
+    "gold": [
+      {
+        "start": 11,
+        "end": 22,
+        "category": "person"
+      },
+      {
+        "start": 86,
+        "end": 97,
+        "category": "person"
+      },
+      {
+        "start": 34,
+        "end": 46,
+        "category": "organization"
+      },
+      {
+        "start": 109,
+        "end": 121,
+        "category": "organization"
+      },
+      {
+        "start": 68,
+        "end": 73,
+        "category": "location"
+      },
+      {
+        "start": 143,
+        "end": 148,
+        "category": "location"
+      }
+    ]
+  },
+  "case-19-27": {
+    "language": "cs",
+    "bytes": 852,
+    "gold": [
+      {
+        "start": 713,
+        "end": 724,
+        "category": "person"
+      },
+      {
+        "start": 788,
+        "end": 799,
+        "category": "person"
+      },
+      {
+        "start": 736,
+        "end": 748,
+        "category": "organization"
+      },
+      {
+        "start": 811,
+        "end": 823,
+        "category": "organization"
+      },
+      {
+        "start": 770,
+        "end": 775,
+        "category": "location"
+      },
+      {
+        "start": 845,
+        "end": 850,
+        "category": "location"
+      }
+    ]
+  },
+  "case-19-31": {
+    "language": "cs",
+    "bytes": 956,
+    "gold": [
+      {
+        "start": 817,
+        "end": 828,
+        "category": "person"
+      },
+      {
+        "start": 892,
+        "end": 903,
+        "category": "person"
+      },
+      {
+        "start": 840,
+        "end": 852,
+        "category": "organization"
+      },
+      {
+        "start": 915,
+        "end": 927,
+        "category": "organization"
+      },
+      {
+        "start": 874,
+        "end": 879,
+        "category": "location"
+      },
+      {
+        "start": 949,
+        "end": 954,
+        "category": "location"
+      }
+    ]
+  },
+  "case-19-35": {
+    "language": "cs",
+    "bytes": 1060,
+    "gold": [
+      {
+        "start": 921,
+        "end": 932,
+        "category": "person"
+      },
+      {
+        "start": 996,
+        "end": 1007,
+        "category": "person"
+      },
+      {
+        "start": 944,
+        "end": 956,
+        "category": "organization"
+      },
+      {
+        "start": 1019,
+        "end": 1031,
+        "category": "organization"
+      },
+      {
+        "start": 978,
+        "end": 983,
+        "category": "location"
+      },
+      {
+        "start": 1053,
+        "end": 1058,
+        "category": "location"
+      }
+    ]
+  },
+  "case-20-00": {
+    "language": "benign",
+    "bytes": 122,
+    "gold": []
+  },
+  "case-20-27": {
+    "language": "benign",
+    "bytes": 824,
+    "gold": []
+  },
+  "case-20-31": {
+    "language": "benign",
+    "bytes": 928,
+    "gold": []
+  },
+  "case-20-35": {
+    "language": "benign",
+    "bytes": 1032,
+    "gold": []
+  },
+  "case-21-00": {
+    "language": "benign",
+    "bytes": 134,
+    "gold": []
+  },
+  "case-21-27": {
+    "language": "benign",
+    "bytes": 836,
+    "gold": []
+  },
+  "case-21-31": {
+    "language": "benign",
+    "bytes": 940,
+    "gold": []
+  },
+  "case-21-35": {
+    "language": "benign",
+    "bytes": 1044,
+    "gold": []
+  },
+  "case-22-00": {
+    "language": "benign",
+    "bytes": 122,
+    "gold": []
+  },
+  "case-22-27": {
+    "language": "benign",
+    "bytes": 824,
+    "gold": []
+  },
+  "case-22-31": {
+    "language": "benign",
+    "bytes": 928,
+    "gold": []
+  },
+  "case-22-35": {
+    "language": "benign",
+    "bytes": 1032,
+    "gold": []
+  },
+  "tail": {
+    "language": "multilingual-tail",
+    "bytes": 1048576,
+    "gold": [
+      {
+        "start": 1047683,
+        "end": 1047696,
+        "category": "person"
+      },
+      {
+        "start": 1048204,
+        "end": 1048217,
+        "category": "person"
+      },
+      {
+        "start": 1047709,
+        "end": 1047718,
+        "category": "organization"
+      },
+      {
+        "start": 1047750,
+        "end": 1047759,
+        "category": "organization"
+      },
+      {
+        "start": 1047797,
+        "end": 1047806,
+        "category": "organization"
+      },
+      {
+        "start": 1047847,
+        "end": 1047856,
+        "category": "organization"
+      },
+      {
+        "start": 1047911,
+        "end": 1047920,
+        "category": "organization"
+      },
+      {
+        "start": 1047962,
+        "end": 1047971,
+        "category": "organization"
+      },
+      {
+        "start": 1048017,
+        "end": 1048026,
+        "category": "organization"
+      },
+      {
+        "start": 1047721,
+        "end": 1047726,
+        "category": "location"
+      },
+      {
+        "start": 1047728,
+        "end": 1047740,
+        "category": "person"
+      },
+      {
+        "start": 1048157,
+        "end": 1048169,
+        "category": "person"
+      },
+      {
+        "start": 1047763,
+        "end": 1047769,
+        "category": "location"
+      },
+      {
+        "start": 1048196,
+        "end": 1048202,
+        "category": "location"
+      },
+      {
+        "start": 1047771,
+        "end": 1047783,
+        "category": "person"
+      },
+      {
+        "start": 1048254,
+        "end": 1048266,
+        "category": "person"
+      },
+      {
+        "start": 1047810,
+        "end": 1047816,
+        "category": "location"
+      },
+      {
+        "start": 1048297,
+        "end": 1048303,
+        "category": "location"
+      },
+      {
+        "start": 1047818,
+        "end": 1047831,
+        "category": "person"
+      },
+      {
+        "start": 1048305,
+        "end": 1048318,
+        "category": "person"
+      },
+      {
+        "start": 1047860,
+        "end": 1047865,
+        "category": "location"
+      },
+      {
+        "start": 1048348,
+        "end": 1048353,
+        "category": "location"
+      },
+      {
+        "start": 1047867,
+        "end": 1047890,
+        "category": "person"
+      },
+      {
+        "start": 1048355,
+        "end": 1048378,
+        "category": "person"
+      },
+      {
+        "start": 1047924,
+        "end": 1047936,
+        "category": "location"
+      },
+      {
+        "start": 1047938,
+        "end": 1047950,
+        "category": "person"
+      },
+      {
+        "start": 1048462,
+        "end": 1048474,
+        "category": "person"
+      },
+      {
+        "start": 1047953,
+        "end": 1047959,
+        "category": "location"
+      },
+      {
+        "start": 1048486,
+        "end": 1048492,
+        "category": "location"
+      },
+      {
+        "start": 1047999,
+        "end": 1048005,
+        "category": "person"
+      },
+      {
+        "start": 1048529,
+        "end": 1048535,
+        "category": "person"
+      },
+      {
+        "start": 1048008,
+        "end": 1048014,
+        "category": "location"
+      },
+      {
+        "start": 1048541,
+        "end": 1048547,
+        "category": "location"
+      },
+      {
+        "start": 1048036,
+        "end": 1048047,
+        "category": "person"
+      },
+      {
+        "start": 1048050,
+        "end": 1048061,
+        "category": "person"
+      },
+      {
+        "start": 1048087,
+        "end": 1048099,
+        "category": "organization"
+      },
+      {
+        "start": 1048102,
+        "end": 1048112,
+        "category": "location"
+      },
+      {
+        "start": 1048119,
+        "end": 1048137,
+        "category": "event"
+      },
+      {
+        "start": 1048179,
+        "end": 1048194,
+        "category": "address"
+      },
+      {
+        "start": 1048235,
+        "end": 1048245,
+        "category": "address"
+      },
+      {
+        "start": 1048280,
+        "end": 1048295,
+        "category": "address"
+      },
+      {
+        "start": 1048329,
+        "end": 1048346,
+        "category": "address"
+      },
+      {
+        "start": 1048408,
+        "end": 1048446,
+        "category": "address"
+      },
+      {
+        "start": 1048486,
+        "end": 1048519,
+        "category": "address"
+      },
+      {
+        "start": 1048541,
+        "end": 1048573,
+        "category": "address"
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+   Compiling copy-for-ai-desktop v0.1.0 (/Users/tsnyrch/my-projects/copy-for-ai/crates/desktop)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.70s
+warning: the following packages contain code that will be rejected by a future version of Rust: block v0.1.6
+note: to see what the problems were, use the option `--future-incompat-report`, or run `cargo report future-incompatibilities --id 1`
+     Running unittests src/main.rs (target/debug/deps/copy_for_ai_desktop-7486e15d72f0113d)
+
+running 20 tests
+test application::ner::tests::real_cache_reuses_only_success_and_forget_cancels_inflight_inference ... ignored, requires the installed, verified FP32 model
+test application::history::tests::bounded_metadata_records_each_terminal_state_once_and_forgets_active_work ... ok
+test application::history::tests::scalar_diagnostics_and_failure_survive_only_in_memory_history ... ok
+test application::detection_cache::tests::exact_input_configuration_and_forget_epoch_are_required ... ok
+test application::detection_cache::tests::oversized_capacity_bypasses_cache_without_changing_detection ... ok
+test application::settings::tests::persists_scalar_preferences_and_rejects_unexpected_content ... ok
+test application::statistics::tests::lifetime_survives_history_eviction_restart_and_explicit_reset ... ok
+test application::ner::tests::mailbox_discards_cancelled_and_superseded_generations ... ok
+test application::tests::cancelling_a_queued_worker_does_not_load_or_commit_a_model ... ok
+test application::detection_cache::tests::cached_model_ranges_are_reapplied_to_current_rules_and_sessions ... ok
+test application::ner::tests::model_free_restoration_invalidates_cache_without_waiting_for_model_lock ... ok
+test application::tests::worker_draft_is_discarded_after_rules_or_vault_change ... ok
+test ui::screens::shield::tests::preview_auto_restore_old_sessions_and_forget ... ok
+test ui::screens::shield::tests::settings_action_without_editor_focus_preserves_work_in_progress ... ok
+test ui::screens::shield::paste_tests::clipboard_completion_ignores_target_but_rejects_changed_clipboard_and_revision ... ok
+test ui::screens::shield::tests::stale_and_changed_input_detection_cannot_create_mapping ... ok
+test application::tests::background_handoff_commits_a_complete_mebibyte_without_copying_the_vault_again ... ok
+test ui::screens::shield::paste_tests::shortcut_uses_current_clipboard_and_restores_known_and_mixed_tokens ... ok
+test ui::screens::shield::paste_tests::final_paste_rejects_cancel_target_clipboard_permission_modifiers_and_stale_vault ... ok
+test ui::screens::shield::long_tests::complete_mebibyte_reaches_gpui_after_worker_acceptance ... ok
+
+test result: ok. 19 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 1.60s
+

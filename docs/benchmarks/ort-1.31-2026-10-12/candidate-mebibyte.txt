@@ -1,0 +1,9 @@
+load verify_ms=2021 model_ms=602
+2026-10-12 20:22:15.952 benchmark[83035:37959782] NetworkStorageDB:_openDBReadConnections: failed to open read connection to DB @ /Users/tsnyrch/Library/Caches/benchmark/Cache.db.  Error=14. Cause=unable to open database file
+2026-10-12 20:22:15.952 benchmark[83035:37959782] The read-connection to the DB=/Users/tsnyrch/Library/Caches/benchmark/Cache.db is NOT valid.  Unable to determine schema version.
+2026-10-12 20:22:15.952 benchmark[83035:37959782] NetworkStorageDB:_openDBWriteConnections: failed to open write connection to DB @ /Users/tsnyrch/Library/Caches/benchmark/Cache.db.  Error=14. Cause=unable to open database file
+2026-10-12 20:22:15.952 benchmark[83035:37959782] DEBUG: there is no SQL cache DB located at /Users/tsnyrch/Library/Caches/benchmark/Cache.db.
+2026-10-12 20:22:15.952 benchmark[83035:37959782] DEBUG: there is no SQL cache DB located at /Users/tsnyrch/Library/Caches/benchmark/Cache.db-shm.
+2026-10-12 20:22:15.952 benchmark[83035:37959782] DEBUG: there is no SQL cache DB located at /Users/tsnyrch/Library/Caches/benchmark/Cache.db-wal.
+run=0 bytes=1048576 status=ok detect_ms=93356 windows=1143 inferred=1143 reused=0 window_ms=11 tokenize_ms=34 pre_ms=19 infer_ms=93185 decode_ms=94 entities=26471 core_ms=31 restore_ms=5 bytes_s=11232
+cancel_ms=315 cancelled=true

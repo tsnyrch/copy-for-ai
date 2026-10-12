@@ -1,0 +1,43 @@
+{
+  "target_met": false,
+  "accepted_candidates": [],
+  "reference_100k_warm_ms": 8800,
+  "candidates": [
+    {
+      "name": "A",
+      "detect_100k_ms": 9741,
+      "lost_gold_masking": 0,
+      "gained_gold_masking": 0,
+      "uncovered_gold": 36,
+      "new_benign_core_ranges": 0,
+      "accepted": false
+    },
+    {
+      "name": "B",
+      "detect_100k_ms": 10523,
+      "lost_gold_masking": 0,
+      "gained_gold_masking": 0,
+      "uncovered_gold": 36,
+      "new_benign_core_ranges": 0,
+      "accepted": false
+    },
+    {
+      "name": "C",
+      "detect_100k_ms": 15918,
+      "lost_gold_masking": 0,
+      "gained_gold_masking": 0,
+      "uncovered_gold": 36,
+      "new_benign_core_ranges": 2,
+      "accepted": false
+    },
+    {
+      "name": "nym",
+      "detect_100k_ms": 5049,
+      "lost_gold_masking": 16,
+      "gained_gold_masking": 6,
+      "uncovered_gold": 46,
+      "new_benign_core_ranges": 0,
+      "accepted": false
+    }
+  ]
+}

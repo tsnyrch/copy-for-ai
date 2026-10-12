@@ -1,0 +1,9 @@
+{
+  "exit_code": 134,
+  "contracting_dimensions": [
+    2,
+    1024
+  ],
+  "corrected_cpu_status": 1,
+  "gpu_status": 0
+}

@@ -1,0 +1,6 @@
+load verify_ms=38110 model_ms=1660
+run=0 bytes=1024 status=ok detect_ms=198 windows=2 window_ms=5 pre_ms=3 infer_ms=188 decode_ms=0 entities=35 core_ms=1 restore_ms=0 bytes_s=5150
+run=1 bytes=1024 status=ok detect_ms=195 windows=2 window_ms=3 pre_ms=3 infer_ms=187 decode_ms=0 entities=35 core_ms=0 restore_ms=0 bytes_s=5244
+cancel_ms=202 cancelled=false
+       41.07 real        41.10 user         0.70 sys
+time: sysctl kern.clockrate: Operation not permitted

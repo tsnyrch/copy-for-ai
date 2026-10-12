@@ -1,0 +1,235 @@
+{
+  "verified_date": "2026-10-12",
+  "models": [
+    {
+      "repo": "urchade/gliner_multi-v2.1",
+      "revision": "443d26d654e0324125a96bebd8e796c14ff2efe6",
+      "card": {
+        "license": "apache-2.0",
+        "language": [
+          "multilingual"
+        ],
+        "library_name": "gliner",
+        "datasets": [
+          "urchade/pile-mistral-v0.1"
+        ],
+        "pipeline_tag": "token-classification"
+      },
+      "files": [
+        {
+          "path": "model.safetensors",
+          "bytes": null,
+          "sha256": null
+        }
+      ],
+      "source": "https://huggingface.co/api/models/urchade/gliner_multi-v2.1/revision/443d26d654e0324125a96bebd8e796c14ff2efe6?blobs=true"
+    },
+    {
+      "repo": "onnx-community/gliner_multi-v2.1",
+      "revision": "6ddaeb9413b0e71ad8457da1aab378a165b24058",
+      "card": {
+        "base_model": "urchade/gliner_multi-v2.1",
+        "library_name": "transformers.js"
+      },
+      "files": [
+        {
+          "path": "onnx/model.onnx",
+          "bytes": 1157129714,
+          "sha256": "57af7f3d8d72a3ca4e5619c247344b4b5ee362a5ebcf307c0634d67b65e721c0"
+        },
+        {
+          "path": "onnx/model_bnb4.onnx",
+          "bytes": 893933650,
+          "sha256": "3c54cf1332d491f7f4057504df4ac78a78712874aca1c5731330430e0c55259b"
+        },
+        {
+          "path": "onnx/model_fp16.onnx",
+          "bytes": 579717643,
+          "sha256": "9cec3c771bfa7e886e029cd013326b13ad7d18f58fac33824f43c106fbdfe920"
+        },
+        {
+          "path": "onnx/model_int8.onnx",
+          "bytes": 349120924,
+          "sha256": "995058c82c5f570601dd8a0ba74ee60a392f764268bc5f628455e44dd3b476ec"
+        },
+        {
+          "path": "onnx/model_q4.onnx",
+          "bytes": 893933650,
+          "sha256": "3c54cf1332d491f7f4057504df4ac78a78712874aca1c5731330430e0c55259b"
+        },
+        {
+          "path": "onnx/model_q4f16.onnx",
+          "bytes": 471795362,
+          "sha256": "11d5f4f5a720931d91429867fc1df22fc507f1878a321ada77a47afa424ff3dc"
+        },
+        {
+          "path": "onnx/model_quantized.onnx",
+          "bytes": 349120924,
+          "sha256": "995058c82c5f570601dd8a0ba74ee60a392f764268bc5f628455e44dd3b476ec"
+        },
+        {
+          "path": "onnx/model_uint8.onnx",
+          "bytes": 349120961,
+          "sha256": "615a7a36da389066de2bf52a77015577123f9eca870f98f3de99d5cb10e1c48d"
+        },
+        {
+          "path": "tokenizer.json",
+          "bytes": 16331948,
+          "sha256": "914bd3c8fb7b525af9e23b60d0ec7b1248ddb2b99014efd9c02ebeb022f8cab7"
+        }
+      ],
+      "source": "https://huggingface.co/api/models/onnx-community/gliner_multi-v2.1/revision/6ddaeb9413b0e71ad8457da1aab378a165b24058?blobs=true"
+    },
+    {
+      "repo": "knowledgator/gliner-x-small",
+      "revision": "d51a0984d11084a55f9df3899d9dbf7704f580f5",
+      "card": {
+        "license": "apache-2.0",
+        "language": [
+          "multilingual",
+          "da",
+          "sv",
+          "no",
+          "cs",
+          "pl",
+          "lt",
+          "et",
+          "lv",
+          "es",
+          "fi",
+          "en",
+          "de",
+          "fr",
+          "ro",
+          "it",
+          "pt",
+          "nl",
+          "ar",
+          "zh",
+          "hi",
+          "uk",
+          "sl"
+        ],
+        "library_name": "gliner",
+        "datasets": [
+          "knowledgator/gliner-multilingual-synthetic",
+          "lang-uk/UberText-NER-Silver"
+        ],
+        "pipeline_tag": "token-classification",
+        "tags": [
+          "NER",
+          "GLiNER",
+          "information extraction",
+          "encoder",
+          "entity recognition",
+          "multilingual"
+        ]
+      },
+      "files": [
+        {
+          "path": "model.bf16.safetensors",
+          "bytes": 600365888,
+          "sha256": "28774652f7abd9f181240c612bd22f684dc5dc2414d772f3d87e7aca978f8a3b"
+        },
+        {
+          "path": "model.fp16.safetensors",
+          "bytes": 600365784,
+          "sha256": "59c10cc98e311d675729f0a7d608f8cfd0370b1188b5b8ce11990c1be0221fbd"
+        },
+        {
+          "path": "model.safetensors",
+          "bytes": 1200717568,
+          "sha256": "1e76d96c92b1ab012c1db4ce675e0dca5ebea589d4350e844fe3496e643c3e68"
+        },
+        {
+          "path": "onnx/model.onnx",
+          "bytes": 688773285,
+          "sha256": "6b349feedf138431e22be9bc26221511e2774503517c8713c0531bee499d4164"
+        },
+        {
+          "path": "onnx/model_quantized.onnx",
+          "bytes": 172716978,
+          "sha256": "d76b3349fd4bfe44573221c0912ed459f432d14317552fdc65935dabcb833c4a"
+        },
+        {
+          "path": "tokenizer.json",
+          "bytes": 16335050,
+          "sha256": "619d3790cf59a0e50afdf04239db19093568fbd8d806963e35d54a8fb71d099c"
+        }
+      ],
+      "source": "https://huggingface.co/api/models/knowledgator/gliner-x-small/revision/d51a0984d11084a55f9df3899d9dbf7704f580f5?blobs=true"
+    },
+    {
+      "repo": "gliner-community/gliner_small-v2.5",
+      "revision": "f227d3cd637bd4e6757ae143935316d062393341",
+      "card": {
+        "license": "apache-2.0",
+        "language": [
+          "multilingual"
+        ],
+        "library_name": "gliner",
+        "datasets": [
+          "urchade/pile-mistral-v0.1"
+        ],
+        "pipeline_tag": "token-classification"
+      },
+      "files": [
+        {
+          "path": "model.bf16.safetensors",
+          "bytes": 332065520,
+          "sha256": "25a633c03236faa2f1560e107994a53672bee12293f9fa562023d9a07cc411b3"
+        },
+        {
+          "path": "model.fp16.safetensors",
+          "bytes": 332065392,
+          "sha256": "d444ff406b27affc07e3165b454c3adc9f25f228c81ede197a7b806f49d12c74"
+        },
+        {
+          "path": "tokenizer.json",
+          "bytes": 8649232,
+          "sha256": null
+        }
+      ],
+      "source": "https://huggingface.co/api/models/gliner-community/gliner_small-v2.5/revision/f227d3cd637bd4e6757ae143935316d062393341?blobs=true"
+    },
+    {
+      "repo": "fastino/gliner2.5-multi-v1",
+      "revision": "cf5593a5d45e3bbf204b9df621b13b1c0cf25ee3",
+      "card": {
+        "library_name": "transformers",
+        "license": "apache-2.0",
+        "language": [
+          "multilingual",
+          "en"
+        ],
+        "pipeline_tag": "schema-extraction",
+        "tags": [
+          "gliner2",
+          "Text classification",
+          "Named Entity Recognition",
+          "Relation Extraction",
+          "Intent classification",
+          "Sentiment Analysis",
+          "Topic classification",
+          "Structured extraction",
+          "Json extraction",
+          "information-extraction",
+          "boundary-extraction"
+        ]
+      },
+      "files": [
+        {
+          "path": "model.safetensors",
+          "bytes": 1149461028,
+          "sha256": "c1ff4ec0bc00031c15530b8f3c33d3677f27949e6a0cb52e1247a6224b6c5395"
+        },
+        {
+          "path": "tokenizer.json",
+          "bytes": 16035853,
+          "sha256": "c62446df87ae18ec98b133f8f84fc449a07cc89bbf8ef192a4cb5f9c53777a7a"
+        }
+      ],
+      "source": "https://huggingface.co/api/models/fastino/gliner2.5-multi-v1/revision/cf5593a5d45e3bbf204b9df621b13b1c0cf25ee3?blobs=true"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "runtime": "1.24.4",
+  "provider": "CPUExecutionProvider",
+  "threads": 8,
+  "fixtures": [
+    "cs-256",
+    "ja-256"
+  ],
+  "candidates": [
+    {
+      "path": "/private/tmp/copy-ai-speed-2026-10-13/graph-candidates/C/model.onnx",
+      "status": "session_initialization_failed",
+      "error_type": "Fail",
+      "error": "onnxruntime.capi.onnxruntime_pybind11_state.Fail: [ONNXRuntimeError] : 1 : FAIL : Exception during initialization: /Users/cloudtest/vss/_work/1/s/onnxruntime/core/graph/graph_utils.cc:30 int onnxruntime::graph_utils::GetIndexFromName(const Node &, const std::string &, bool) itr != node_args.end() was false. Attempting to get index by a name which does not exist:InsertedPrecisionFreeCast_/token_rep_layer/bert_layer/model/encoder/layer.11/output/LayerNorm/Constant_output_0for node: /token_rep_layer/bert_layer/model/embeddings/LayerNorm/Mul/SimplifiedLayerNormFusion/"
+    }
+  ],
+  "logit_gate": "not run; candidate session failed initialization",
+  "raw_log": "/private/tmp/copy-ai-speed-2026-10-13/fp16-smoke-1.24.4.txt"
+}

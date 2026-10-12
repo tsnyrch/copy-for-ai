@@ -1,0 +1,58 @@
+{
+  "case": "case-13-00",
+  "synthetic_only": true,
+  "gpu_predictions": 1,
+  "mps_fallback": "0",
+  "tolerance_unchanged": 0.0001,
+  "input_bytes": 214,
+  "windows": 1,
+  "original_tokens": 32,
+  "trimmed_empty_tokens": 0,
+  "process_completed": false,
+  "process_error_code": "trained_coreml_cpu_delta_exceeds_1e_minus_4",
+  "delta": {
+    "all_positions": {
+      "positions": 2048,
+      "max_abs": 0.0001062154769897461,
+      "argmax_mismatch": 0
+    },
+    "real_original_tokens": {
+      "positions": 32,
+      "max_abs": 8.344650268554688e-07,
+      "argmax_mismatch": 0
+    },
+    "owned_nonempty_original_tokens": {
+      "positions": 32,
+      "max_abs": 8.344650268554688e-07,
+      "argmax_mismatch": 0
+    },
+    "trimmed_empty_original_tokens": {
+      "positions": 0,
+      "max_abs": null,
+      "argmax_mismatch": 0
+    },
+    "real_specials": {
+      "positions": 2,
+      "max_abs": 1.6391277313232422e-07,
+      "argmax_mismatch": 0
+    },
+    "real_padding": {
+      "positions": 222,
+      "max_abs": 0.0001062154769897461,
+      "argmax_mismatch": 0
+    },
+    "unscored_dummy_rows": {
+      "positions": 1792,
+      "max_abs": 0.0001062154769897461,
+      "argmax_mismatch": 0
+    }
+  },
+  "largest_delta_coordinates": [
+    0,
+    54,
+    8
+  ],
+  "checkpoint_sha256": "918636493f4cd7428c672c44bb3ea472033f5243cf17e3223f226c3b4773c5eb",
+  "training_report_sha256": "d21e593ec6dc6bedf3d77c1b8fb2c2bdb638eed4e27385726d9a7654a765adbd",
+  "diagnostic_completed": true
+}

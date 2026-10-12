@@ -1,0 +1,149 @@
+{
+  "audit_date": "2026-10-13",
+  "scope": "original production GLiNER; read-only source audit plus standalone core preflight; no original-model parallel benchmark run",
+  "production_changes": false,
+  "core_limit_probe": {
+    "project": "/private/tmp/copy-ai-window-parallel-2026-10-13/core-limit-probe",
+    "source": "/private/tmp/copy-ai-window-parallel-2026-10-13/core-limit-probe/src/main.rs",
+    "manifest": "/private/tmp/copy-ai-window-parallel-2026-10-13/core-limit-probe/Cargo.toml",
+    "lockfile": "/private/tmp/copy-ai-window-parallel-2026-10-13/core-limit-probe/Cargo.lock",
+    "command": "cargo run --offline --quiet --manifest-path /private/tmp/copy-ai-window-parallel-2026-10-13/core-limit-probe/Cargo.toml --target-dir /private/tmp/copy-ai-window-parallel-2026-10-13/core-limit-probe/target",
+    "input_bytes": 52428800,
+    "synthetic_utf8": true,
+    "result": "InputTooLarge",
+    "matched_typed_error": "copy_for_ai_core::Error::InputTooLarge",
+    "elapsed_ns": 166,
+    "timing_scope": "single Vault.direction call; excludes allocation; not a performance benchmark",
+    "ner_invoked": false,
+    "ner_dependency": false,
+    "actual_anonymization_or_round_trip": false
+  },
+  "preflight_sources": [
+    {
+      "path": "/Users/tsnyrch/my-projects/copy-for-ai/crates/desktop/src/ui/screens/shield_processing.rs",
+      "lines": "35-43,66",
+      "finding": "workflow.direction error returns before NerService.process"
+    },
+    {
+      "path": "/Users/tsnyrch/my-projects/copy-for-ai/crates/desktop/src/application/workflow.rs",
+      "lines": "151-153",
+      "finding": "WorkflowSnapshot.direction delegates to Vault.direction"
+    },
+    {
+      "path": "/Users/tsnyrch/my-projects/copy-for-ai/crates/core/src/vault.rs",
+      "lines": "59-75",
+      "finding": "first check_input rejects any input over 32 MiB; plain anonymization is additionally limited to 1 MiB"
+    },
+    {
+      "path": "/Users/tsnyrch/my-projects/copy-for-ai/crates/desktop/src/application/ner.rs",
+      "lines": "137-141,169-181",
+      "finding": "independent service direction preflight precedes state lock and model loading"
+    },
+    {
+      "path": "/Users/tsnyrch/my-projects/copy-for-ai/crates/ner/src/lib.rs",
+      "lines": "170-182",
+      "finding": "direct NER API rejects inputs over 1 MiB before window preparation and inference"
+    }
+  ],
+  "resource_limits": {
+    "source": "/Users/tsnyrch/my-projects/copy-for-ai/crates/core/src/lib.rs:17-37",
+    "anonymization_input_bytes": 1048576,
+    "restore_input_and_output_bytes": 33554432,
+    "vault_original_bytes": 8388608,
+    "unique_vault_mappings": 4096,
+    "core_candidates": 2097152,
+    "ner_detected_entities": 1048576,
+    "custom_rules": 256,
+    "sessions": 16,
+    "ner_distinct_cached_subword_ids": 4194304,
+    "ner_deadline_seconds": 900,
+    "preparation_memory": "O(all lexical units) words vector plus O(distinct cached subword IDs); not a bounded document stream",
+    "raising_only_input_limit_is_sufficient": false,
+    "notes": [
+      "50 MiB currently fails before NER; this does not demonstrate 50 MiB anonymization",
+      "core new-mapping and original-byte capacities are checked before mutation",
+      "full candidate collection, overlap resolution, output materialization and exact round trip would also require a reviewed large-input design"
+    ]
+  },
+  "original_windowing": {
+    "sources": [
+      "/Users/tsnyrch/my-projects/copy-for-ai/crates/ner/src/chunks.rs:24-94,103-129",
+      "/Users/tsnyrch/my-projects/copy-for-ai/crates/ner/src/lib.rs:218-305",
+      "/Users/tsnyrch/my-projects/copy-for-ai/crates/ner/src/config.rs:44-54"
+    ],
+    "default_token_budget_including_prompt": 256,
+    "allowed_token_budget": [64, 480],
+    "default_batch_size": 1,
+    "model_probability_threshold": 0.4,
+    "threshold_source": "/Users/tsnyrch/my-projects/copy-for-ai/crates/ner/src/lib.rs:133-135",
+    "allowed_batch_size": [1, 2],
+    "default_intra_threads": "min(available_parallelism,8)",
+    "allowed_threads": [1, 8],
+    "max_tokenizer_unit_unicode_characters": 128,
+    "max_overlap_lexical_units": 24,
+    "max_overlap_fraction_of_text_token_budget": "1/3",
+    "model_span_max_width_lexical_units": 12,
+    "window_cache_admission_limit": 64,
+    "cached_spans_per_window_limit": 4096,
+    "execution": "sequential prepare/encode/run/decode/merge loop",
+    "deduplication": "exact global byte start,end,category",
+    "preserve_for_comparison": "original weights, tokenizer, prompt labels, threshold, budget, overlap, per-window tensors and deterministic merge order"
+  },
+  "coordinator_and_cancellation": {
+    "source": "/Users/tsnyrch/my-projects/copy-for-ai/crates/desktop/src/application/ner.rs:33-38,58-65,91-110,137-141,169-239",
+    "state_lock": "Arc<Mutex<NerState>> held across original model inference and core processing; serializes service operations",
+    "ui_thread_blocked": false,
+    "worker": "smol::unblock",
+    "cancel_mechanism": "atomic generation and cache epoch; stale progress/results rejected",
+    "native_run_interrupted_today": false,
+    "native_run_options_terminate_api_available": true,
+    "terminate_api_source": "/Users/tsnyrch/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ort-2.0.0-rc.9/src/session/run_options.rs:274-276",
+    "protected_paste_checks_source": "/Users/tsnyrch/my-projects/copy-for-ai/crates/desktop/src/ui/screens/shield_processing.rs:232-248,281-323",
+    "parallel_candidate_requirement": "shared generation/deadline; bounded in-flight work; no new scheduling after cancellation; discard stale outputs and do not paste"
+  },
+  "ort": {
+    "rust_binding_version": "2.0.0-rc.9",
+    "production_native_runtime_version": "1.20",
+    "builder_source": "/Users/tsnyrch/my-projects/copy-for-ai/crates/ner/src/lib.rs:100-115",
+    "configured": "intra-op threads and Level3 graph optimization",
+    "explicit_inter_op_threads_configured": false,
+    "explicit_parallel_execution_configured": false,
+    "default_graph_execution": "sequential",
+    "defaults_source": "/Users/tsnyrch/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ort-2.0.0-rc.9/src/session/builder/impl_options.rs:49-77",
+    "run_receiver": "&self",
+    "session_send_sync": true,
+    "session_api_source": "/Users/tsnyrch/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ort-2.0.0-rc.9/src/session/mod.rs:199,518-521",
+    "shared_non_cpu_session_safe_to_assume": false,
+    "binding_warning": "source warns that Sync concurrency segfaults with CUDA, DirectML and apparently non-CPU execution providers",
+    "proposed_shared_session_provider": "CPUExecutionProvider only"
+  },
+  "proposed_original_cpu_candidates": {
+    "run": false,
+    "model": "original verified FP32 GLiNER",
+    "sequence": [
+      {"concurrent_runs": 1, "intra_threads": 8, "role": "sequential control"},
+      {"concurrent_runs": 2, "intra_threads": 4, "role": "first shared CPU session candidate"},
+      {"concurrent_runs": 4, "intra_threads": 2, "role": "second candidate only if first justifies it"}
+    ],
+    "design": "prepare original windows once, bound queued batches, independent owned tensors/contexts per run, share one CPU session, merge in original window order",
+    "memory_note": "shared session avoids duplicating weights; concurrent activations still grow; multiple sessions would duplicate resident model and thread pools",
+    "acceptance": "measure complete-document wall time and peak resources, then exact original-range/category parity, quality/core/round-trip and cancellation; tensor throughput alone is insufficient"
+  },
+  "historical_original_apple_candidate": {
+    "report": "/private/tmp/copy-ai-apple-2026-10-13/b8-fp32-gate.json",
+    "script": "/Users/tsnyrch/my-projects/copy-for-ai/scripts/benchmark-apple-batch-probe.py:52-83",
+    "architecture": "CoreML FP32 original encoder B8 plus original ONNX CPU tail",
+    "measured_wall_ms_per_valid_window": 31.103164059459232,
+    "measured_encoder_ms_per_valid_window": 21.500419312360464,
+    "measured_cpu_tail_ms_per_valid_window": 9.518268248939421,
+    "proof_scope": "tensor screening; not document windowing/core/round-trip/native UI or hardware runtime trace",
+    "proposed_change": "encoder batch n+1 overlaps CPU-tail batch n with double buffer and queue capacity 1",
+    "proposal_run": false,
+    "ideal_steady_state_estimate_ms_per_window": 21.500419312360464,
+    "ideal_estimated_speedup_approximate": 1.45,
+    "estimate_assumptions": "perfect overlap, unchanged stage times, no resource contention or extra transfer/merge overhead",
+    "historical_original_1mib_windows": 1143,
+    "ideal_estimate_1mib_inference_seconds": 24.575,
+    "ten_second_complete_operation_proven": false
+  }
+}

@@ -1,0 +1,736 @@
+{
+  "status": "exported_requires_parity_and_runtime_checks",
+  "stage": "complete",
+  "sequence_length": 256,
+  "input_shapes": {
+    "input_ids": [
+      1,
+      256
+    ],
+    "attention_mask": [
+      1,
+      256
+    ]
+  },
+  "trace_input_dtype": "int64",
+  "coreml_input_dtype": "int32",
+  "output_shape": [
+    1,
+    256,
+    512
+  ],
+  "precision": "float16",
+  "minimum_deployment_target": "macOS15",
+  "compute_units": "ALL",
+  "offline": true,
+  "weights_loaded_from_pinned_onnx": true,
+  "tracer_check_enabled": false,
+  "parity_verified": false,
+  "runtime_compilation_verified": false,
+  "versions": {
+    "torch": "2.7.0",
+    "gliner": "0.2.21",
+    "transformers": "4.51.3",
+    "coremltools": "9.0"
+  },
+  "warnings": [
+    {
+      "category": "TracerWarning",
+      "message": "Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!"
+    },
+    {
+      "category": "TracerWarning",
+      "message": "Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!"
+    },
+    {
+      "category": "TracerWarning",
+      "message": "Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!"
+    },
+    {
+      "category": "TracerWarning",
+      "message": "Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!"
+    },
+    {
+      "category": "TracerWarning",
+      "message": "Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!"
+    },
+    {
+      "category": "TracerWarning",
+      "message": "Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!"
+    },
+    {
+      "category": "TracerWarning",
+      "message": "Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!"
+    },
+    {
+      "category": "TracerWarning",
+      "message": "Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!"
+    },
+    {
+      "category": "TracerWarning",
+      "message": "Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!"
+    },
+    {
+      "category": "TracerWarning",
+      "message": "Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!"
+    },
+    {
+      "category": "TracerWarning",
+      "message": "Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!"
+    },
+    {
+      "category": "TracerWarning",
+      "message": "Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!"
+    },
+    {
+      "category": "TracerWarning",
+      "message": "Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!"
+    },
+    {
+      "category": "TracerWarning",
+      "message": "Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!"
+    },
+    {
+      "category": "TracerWarning",
+      "message": "Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!"
+    },
+    {
+      "category": "TracerWarning",
+      "message": "Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!"
+    },
+    {
+      "category": "TracerWarning",
+      "message": "Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!"
+    },
+    {
+      "category": "TracerWarning",
+      "message": "Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!"
+    },
+    {
+      "category": "TracerWarning",
+      "message": "Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!"
+    },
+    {
+      "category": "TracerWarning",
+      "message": "Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!"
+    },
+    {
+      "category": "TracerWarning",
+      "message": "Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!"
+    },
+    {
+      "category": "TracerWarning",
+      "message": "Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!"
+    },
+    {
+      "category": "TracerWarning",
+      "message": "Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!"
+    },
+    {
+      "category": "TracerWarning",
+      "message": "Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "divide by zero encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "overflow encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "invalid value encountered in matmul"
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "divide by zero encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "overflow encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "invalid value encountered in matmul"
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "divide by zero encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "overflow encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "invalid value encountered in matmul"
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "divide by zero encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "overflow encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "invalid value encountered in matmul"
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "divide by zero encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "overflow encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "invalid value encountered in matmul"
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "divide by zero encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "overflow encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "invalid value encountered in matmul"
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "divide by zero encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "overflow encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "invalid value encountered in matmul"
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "divide by zero encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "overflow encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "invalid value encountered in matmul"
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "divide by zero encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "overflow encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "invalid value encountered in matmul"
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "divide by zero encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "overflow encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "invalid value encountered in matmul"
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "divide by zero encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "overflow encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "invalid value encountered in matmul"
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "divide by zero encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "overflow encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "invalid value encountered in matmul"
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "divide by zero encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "overflow encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "invalid value encountered in matmul"
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "divide by zero encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "overflow encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "invalid value encountered in matmul"
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "divide by zero encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "overflow encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "invalid value encountered in matmul"
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "divide by zero encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "overflow encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "invalid value encountered in matmul"
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "divide by zero encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "overflow encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "invalid value encountered in matmul"
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "divide by zero encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "overflow encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "invalid value encountered in matmul"
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "divide by zero encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "overflow encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "invalid value encountered in matmul"
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "divide by zero encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "overflow encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "invalid value encountered in matmul"
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "divide by zero encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "overflow encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "invalid value encountered in matmul"
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "divide by zero encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "overflow encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "invalid value encountered in matmul"
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "divide by zero encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "overflow encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "invalid value encountered in matmul"
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "divide by zero encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "overflow encountered in matmul"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "invalid value encountered in matmul"
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "overflow encountered in cast"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "overflow encountered in cast"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "overflow encountered in cast"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "overflow encountered in cast"
+    },
+    {
+      "category": "RuntimeWarning",
+      "message": "overflow encountered in cast"
+    },
+    {
+      "category": "ResourceWarning",
+      "message": "Implicitly cleaning up <TemporaryDirectory '/var/folders/ld/j256fb5n2cn3sj4xsf25y8rr0000gn/T/tmprxyqzwv8'>"
+    }
+  ],
+  "converter_shims": [
+    {
+      "operator": "aten::sqrt",
+      "promotion": "integer_or_bool_to_fp32; floating_inputs_unchanged",
+      "reason": "CoreML sqrt rejects integer inputs; PyTorch promotes them to its default floating dtype",
+      "coremltools_version": "9.0",
+      "promoted_nodes": [
+        {
+          "name": "scale.1",
+          "input_dtype": "int32"
+        },
+        {
+          "name": "scale.5",
+          "input_dtype": "int32"
+        },
+        {
+          "name": "scale.9",
+          "input_dtype": "int32"
+        },
+        {
+          "name": "scale.13",
+          "input_dtype": "int32"
+        },
+        {
+          "name": "scale.17",
+          "input_dtype": "int32"
+        },
+        {
+          "name": "scale.21",
+          "input_dtype": "int32"
+        },
+        {
+          "name": "scale.25",
+          "input_dtype": "int32"
+        },
+        {
+          "name": "scale.29",
+          "input_dtype": "int32"
+        },
+        {
+          "name": "scale.33",
+          "input_dtype": "int32"
+        },
+        {
+          "name": "scale.37",
+          "input_dtype": "int32"
+        },
+        {
+          "name": "scale.41",
+          "input_dtype": "int32"
+        },
+        {
+          "name": "scale.45",
+          "input_dtype": "int32"
+        },
+        {
+          "name": "scale.49",
+          "input_dtype": "int32"
+        },
+        {
+          "name": "scale.53",
+          "input_dtype": "int32"
+        },
+        {
+          "name": "scale.57",
+          "input_dtype": "int32"
+        },
+        {
+          "name": "scale.61",
+          "input_dtype": "int32"
+        },
+        {
+          "name": "scale.65",
+          "input_dtype": "int32"
+        },
+        {
+          "name": "scale.69",
+          "input_dtype": "int32"
+        },
+        {
+          "name": "scale.73",
+          "input_dtype": "int32"
+        },
+        {
+          "name": "scale.77",
+          "input_dtype": "int32"
+        },
+        {
+          "name": "scale.81",
+          "input_dtype": "int32"
+        },
+        {
+          "name": "scale.85",
+          "input_dtype": "int32"
+        },
+        {
+          "name": "scale.89",
+          "input_dtype": "int32"
+        },
+        {
+          "name": "scale.93",
+          "input_dtype": "int32"
+        },
+        {
+          "name": "scale.97",
+          "input_dtype": "int32"
+        },
+        {
+          "name": "scale.101",
+          "input_dtype": "int32"
+        },
+        {
+          "name": "scale.105",
+          "input_dtype": "int32"
+        },
+        {
+          "name": "scale.109",
+          "input_dtype": "int32"
+        },
+        {
+          "name": "scale.113",
+          "input_dtype": "int32"
+        },
+        {
+          "name": "scale.117",
+          "input_dtype": "int32"
+        },
+        {
+          "name": "scale.121",
+          "input_dtype": "int32"
+        },
+        {
+          "name": "scale.125",
+          "input_dtype": "int32"
+        },
+        {
+          "name": "scale.129",
+          "input_dtype": "int32"
+        },
+        {
+          "name": "scale.133",
+          "input_dtype": "int32"
+        },
+        {
+          "name": "scale.137",
+          "input_dtype": "int32"
+        },
+        {
+          "name": "scale.141",
+          "input_dtype": "int32"
+        }
+      ]
+    }
+  ],
+  "weights": {
+    "artifacts": {
+      "models/gliner-multi/model.onnx": "57af7f3d8d72a3ca4e5619c247344b4b5ee362a5ebcf307c0634d67b65e721c0",
+      "/private/tmp/copy-ai-apple-2026-10-13/configs/gliner-config.json": "e25f61d91620df84aae8076811ee592e926e94d341b82e7bc1be359718f83017",
+      "/private/tmp/copy-ai-apple-2026-10-13/configs/encoder-config.json": "bcffcd343dc5efa5ef2d5a58d2b405eed108f01cc45b48d0a907b333ec41801f",
+      "models/gliner-multi/tokenizer.json": "914bd3c8fb7b525af9e23b60d0ec7b1248ddb2b99014efd9c02ebeb022f8cab7"
+    },
+    "onnx_initializers": 219,
+    "pytorch_parameters": 224,
+    "missing_parameters": [],
+    "unused_initializers": [],
+    "identity_aliases": 24,
+    "loaded": true,
+    "vocabulary_size": 250105,
+    "entity_marker_id": 250103,
+    "nonpersistent_buffers": [
+      {
+        "name": "token_rep_layer.bert_layer.model.embeddings.position_ids",
+        "shape": [
+          1,
+          512
+        ],
+        "dtype": "torch.int64",
+        "constructor": "torch.arange(config.max_position_embeddings).expand((1, -1))",
+        "regenerated": true
+      }
+    ]
+  },
+  "shape_specializations": [
+    {
+      "function": "transformers.models.deberta_v2.modeling_deberta_v2.build_rpos",
+      "assumption": "self_attention_query_and_key_lengths_equal_static_bucket",
+      "sequence_length": 256,
+      "operation": "return_original_relative_pos; no_tensor_value_specialization",
+      "calls": 12
+    }
+  ],
+  "output_path": "/private/tmp/copy-ai-apple-2026-10-13/encoder-256-fp16.mlpackage",
+  "diagnostic_output_characters": 2519,
+  "elapsed_seconds": 15.99641654099105
+}

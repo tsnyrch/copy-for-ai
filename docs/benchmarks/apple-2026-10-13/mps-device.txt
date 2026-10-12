@@ -1,0 +1,2 @@
+{'mps_built': True, 'mps_available': True}
+gpu_tensor_ok

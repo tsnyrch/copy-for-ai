@@ -1,0 +1,245 @@
+{
+  "date": "2026-10-13",
+  "target": {
+    "input_bytes": 1048576,
+    "max_seconds": 10
+  },
+  "hardware": {
+    "cpu": "Apple M5",
+    "physical_cores": 10,
+    "memory_bytes": 34359738368,
+    "os": "macOS 27.0.1 (26A434)",
+    "architecture": "arm64"
+  },
+  "rust": "1.99.0 (Homebrew)",
+  "python_probe": "3.13",
+  "python_libraries": {
+    "onnx": "1.20.1",
+    "onnxruntime": "1.24.4",
+    "tokenizers": "0.22.2"
+  },
+  "rust_runtime": "1.31.0",
+  "threads": 8,
+  "gliner": {
+    "threshold": 0.4,
+    "token_budget": 256,
+    "batch": 1,
+    "max_width": 12,
+    "labels": 8
+  },
+  "nym": {
+    "revision": "4348999cd3c2e20c49615e9af7c6bbb45b64cd85",
+    "url": "https://huggingface.co/Wismut/nym-pii-multilingual-small",
+    "threshold": 0.5,
+    "window_tokens": 480,
+    "overlap": 64,
+    "model_sha256": "60c2ae1a5992e43d4022a29dcc81cc45250bdb08fd2ee472cfb4d8800bbe87aa",
+    "tokenizer_sha256": "c299144e68dfec1dc536204a7ae3712710c5c6cade9269a83f5042250d47d8de",
+    "config_sha256": "3f07065571e22bb73eba28ddb1fae4509c0cf703762e3bfa7a6ab2111cf7cb88"
+  },
+  "corpus_100k_sha256": "64d637eeae06f00f69251b80fb78f01489e41225d393c66b94d13849ebbdd0cf",
+  "quality": {
+    "documents": 93,
+    "gold_occurrences": 421,
+    "languages": [
+      "cs",
+      "en",
+      "de",
+      "fr",
+      "ru",
+      "ja",
+      "zh"
+    ],
+    "includes_mixed_utf8_mebibyte_tail": true
+  },
+  "limits": [
+    "single sequential speed screening; no controlled percentiles",
+    "Nym and Rust runtime versions differ",
+    "no new varied mebibyte speed run after smaller gates failed",
+    "no native UI or permission or system paste evidence"
+  ],
+  "files": {
+    "A-100k.txt": {
+      "bytes": 1516,
+      "sha256": "1ea4c16af34a7ef74a59ebdd8e114a1ca9ffb9bf5cd584d4e81c24a25a88ef73"
+    },
+    "A-core-quality.json": {
+      "bytes": 14934,
+      "sha256": "00c08374ccd0fbf4d971e5a3649fa6f53b1cd82ca30fa75a5cf31db1700248e5"
+    },
+    "A-core.txt.gz": {
+      "bytes": 264759,
+      "sha256": "ab358fc8120650397505301386d49fd376376dfdb94276a2134a1ce0d3cb3f94"
+    },
+    "A-graph-manifest.json": {
+      "bytes": 6891,
+      "sha256": "3cffa083ba980c82b93425916f18ccfd119130839379808c0cca1ebe47509b7e"
+    },
+    "A-quality.json": {
+      "bytes": 14933,
+      "sha256": "0fdaab2315a144ec1f9c21447d5e1e0b11364277fee6634be419b15e2ad377bb"
+    },
+    "A-quality.txt.gz": {
+      "bytes": 266187,
+      "sha256": "2ee22b20252c24bfbc8705ffc0c465d99b8ee5e6b49de3c68eedf20c0e2be865"
+    },
+    "B-100k.txt": {
+      "bytes": 1518,
+      "sha256": "f63f381eb44a2bdb9e9f580a1d47a6ff016462e5da37c45a39b27138cb925a70"
+    },
+    "B-core-quality.json": {
+      "bytes": 14934,
+      "sha256": "00c08374ccd0fbf4d971e5a3649fa6f53b1cd82ca30fa75a5cf31db1700248e5"
+    },
+    "B-core.txt.gz": {
+      "bytes": 264759,
+      "sha256": "9d9461e8a9a732c9466400d6d19702141b991e27c9e18f9682425a1ab0887644"
+    },
+    "B-graph-manifest.json": {
+      "bytes": 7178,
+      "sha256": "849bfa918d39258bdf6ca297dc69c96bf78d52e78b186f45d192b4bb3662e3c1"
+    },
+    "B-quality.json": {
+      "bytes": 14933,
+      "sha256": "0fdaab2315a144ec1f9c21447d5e1e0b11364277fee6634be419b15e2ad377bb"
+    },
+    "B-quality.txt.gz": {
+      "bytes": 266554,
+      "sha256": "27069063ffaf1fcf2c66127458eb23dd4579816bf21f79c35c5b0242532e6d3f"
+    },
+    "C-100k.txt": {
+      "bytes": 1517,
+      "sha256": "468d17e74ef62c1f4a46a154f7309d6e4b3bd7ed60e26a520aeefadb2099935f"
+    },
+    "C-core-quality.json": {
+      "bytes": 15222,
+      "sha256": "35880eaaa9fdd6529c894815913a13d202673f0c7b613751709383a03da61ae5"
+    },
+    "C-core.txt.gz": {
+      "bytes": 264530,
+      "sha256": "4e3622b18ee06af5856b0cf49b453ea227f462716a31c6c9d86f119dc4f211b3"
+    },
+    "C-graph-manifest.json": {
+      "bytes": 4381,
+      "sha256": "763489b8accf611d3db8b48d9dfb5af6cdd9b3980c683dcb372f8a25be2ff907"
+    },
+    "C-quality.json": {
+      "bytes": 15163,
+      "sha256": "257ac3e8b15776ab6bb4f9c72ae3a484ab70aa1cc5d9d6630aa19133ba46998b"
+    },
+    "C-quality.txt.gz": {
+      "bytes": 260385,
+      "sha256": "42a89f9a50bb318d9bbbf5474187eb72d7737ac8ddc916759503a7f9a1978a2b"
+    },
+    "baseline-100k.txt": {
+      "bytes": 1514,
+      "sha256": "2f0a50114e377ef911d8b9e5e1b9ca39f06ee090a1b108158672f9d5530fe7fc"
+    },
+    "baseline-core.txt.gz": {
+      "bytes": 264766,
+      "sha256": "a937f10522258fba4b294511d0ceb8f4c4b90860a97bba6087909333c471df62"
+    },
+    "baseline-quality.txt.gz": {
+      "bytes": 266197,
+      "sha256": "24a957e18a2c2d5f88149af80d030e230d0b32147d5b1a1f05c734924ac0b7fb"
+    },
+    "clippy.txt": {
+      "bytes": 160,
+      "sha256": "265f7823db437b05c430bba9a59ae442d015013496de4aca94e63edda6e7137b"
+    },
+    "core-gate-manifest.json": {
+      "bytes": 424,
+      "sha256": "d3bea5ba372db8102ae6663e86b4b420631f4e909a26c2277438d2de737fb92a"
+    },
+    "core-validator-source.rs": {
+      "bytes": 7014,
+      "sha256": "942ae056ec30c94a9c4539acdc00a749fb0df3b1f256eb49262782d073b2e9ef"
+    },
+    "fp16-smoke-1.24.4.json": {
+      "bytes": 1072,
+      "sha256": "604c11ba9f0b7b6e47173a81cdee53a33e7d7e095b6298a83fb0418090cc7d5d"
+    },
+    "gold-manifest.json": {
+      "bytes": 45510,
+      "sha256": "0de44d8d89384340109c07514b40abf64e0603dbdef1a9db0a7eaacb11ec7d49"
+    },
+    "graph-gate-1.24.4.json": {
+      "bytes": 29491,
+      "sha256": "9235bf88e68a860658542f54bde4b3b9c55db35074e76a4f07e9d040962e2a02"
+    },
+    "nym-core-quality.json": {
+      "bytes": 18788,
+      "sha256": "f4b61f6e2705c24f220bb8893710638ebe1ee92e4c1e09b2ee4cbd98d787f95b"
+    },
+    "nym-core-validation.txt": {
+      "bytes": 4021,
+      "sha256": "87d202c450ec58f6bd4e887879d15c8b6ef7065638e069ab0fd0a63748207282"
+    },
+    "nym-core.txt.gz": {
+      "bytes": 5254,
+      "sha256": "df62b8226f765612adaff1ca4971ee0ff0dd1a3e3df54782ea3f07a70282192b"
+    },
+    "nym-perf-480.txt.gz": {
+      "bytes": 22961,
+      "sha256": "7dfd1a95888dc838c487b596756cd6aab47422b4ff7df670fc81bd292a16ac2f"
+    },
+    "nym-perf-core-validation.txt": {
+      "bytes": 49,
+      "sha256": "faa93137bf52e3590364f246545db8dd0219779925a70f378356bab1a22d9f1c"
+    },
+    "nym-perf-progress.txt": {
+      "bytes": 184,
+      "sha256": "985abcec8ce9a2c38b7617dbc5ebd4001f8df641bba67b42c456a1e1619c6bdc"
+    },
+    "nym-progress.txt": {
+      "bytes": 16387,
+      "sha256": "972613d6c8110c2edff04301d6423c8d19469db02eafa291266db6bddcab8583"
+    },
+    "nym-quality-480.json": {
+      "bytes": 18589,
+      "sha256": "58b712efd34a3873d194fef92b20e15693b9dec6fafa81e757303c054b9a70a4"
+    },
+    "nym-quality-480.txt.gz": {
+      "bytes": 6101,
+      "sha256": "14b83f955bc2ee2e200531b6fa730967d915ed31a7130d23fe1f14dd9fd5c76b"
+    },
+    "runtime-quality-manifest.json": {
+      "bytes": 887,
+      "sha256": "3da1df7e7ebb31245061217cefcf5c6ecb7d95790d5607203cde2fe3c89353a0"
+    },
+    "runtime-speed-manifest.json": {
+      "bytes": 885,
+      "sha256": "48d979ef98bb67110a63b0455b4348229286d8a79e090c20e10e64491dc70760"
+    },
+    "rust-probe-source.tar.gz": {
+      "bytes": 43658,
+      "sha256": "6174159b87e8c072bff1aa3fedd52ac458bf920c4265713295532ae0729f962f"
+    },
+    "source-manifest.json": {
+      "bytes": 2982,
+      "sha256": "3fbdbdc40c081f519fe97407f3a8b618eb35ce5a6778e107a2d488cd88188505"
+    },
+    "summary.json": {
+      "bytes": 960,
+      "sha256": "02b72a56e5c92796aaa46dc4a3bcfffb67f2a24bfcfbf834aced92a385e94197"
+    }
+  },
+  "scripts": {
+    "scripts/benchmark-speed.py": "84e560c91e962cd31fc52c9df7467b950ed41e42e9c09ecd80c6fc33ff46c84f",
+    "scripts/benchmark-graph.py": "3573a56b899e50317f5b3213b1e00e89dc0c2c3d4079ec24808f998cdb46d097",
+    "scripts/nym_probe.py": "f181856a653f21cc75af50f8d0b93343d6f37ec6402c8915cfc2f34d00cd01d8",
+    "scripts/prepare-graph-probe.py": "e434f3fccf7e9093b4e1e91dc19326cc74d241481c92ce0d89b3f347b42fa314",
+    "scripts/evaluate-graph-probe.py": "ebd828fb249a54dc376435a62e624353c51e0a252d93626ccf8bbfe9384108d5",
+    "scripts/prepare-fp16-probe.py": "d1f5ec24468a2a66eb04ce5fe268cf7a42ffc39ffde4e6d11061042199691260"
+  },
+  "checks": {
+    "cargo_fmt_all": "passed",
+    "cargo_clippy_ner_all_targets": "passed",
+    "python_syntax": "passed",
+    "core_nym_round_trip_documents": 94,
+    "graph_index": "refreshed",
+    "final_core_gate_documents": 465,
+    "new_benign_ranges_compared": true,
+    "range_stage_mismatch_rejected": true
+  }
+}

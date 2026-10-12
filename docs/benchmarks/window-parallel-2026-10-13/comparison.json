@@ -1,0 +1,213 @@
+{
+  "all_completed_variants_match": true,
+  "cross_variant_checks": [
+    "input sha256",
+    "exact ordered byte spans and categories",
+    "token count",
+    "valid window count",
+    "all tokens owned exactly once",
+    "tail covered",
+    "all FP32 outputs finite",
+    "window reuse=0"
+  ],
+  "rows": [
+    {
+      "file": "process-1m.json",
+      "executor": "process",
+      "batch": 8,
+      "workers": 1,
+      "bytes": 1048576,
+      "runs": 3,
+      "samples_wall_ms": [
+        4785.365832969546,
+        5166.391500039026,
+        4957.509791012853
+      ],
+      "median_wall_ms": 4957.509791012853,
+      "tokens": 211003,
+      "valid_windows": 951,
+      "encoded_windows": 952,
+      "spans": 20456,
+      "span_sha256": "6fcc5287370a931588fa28f6d9add36a12c6908a3a34b50355d788ce444587b1",
+      "sampled_aggregate_peak_rss_bytes": 2240446464,
+      "sum_individual_process_peak_rss_bytes": 3681927168,
+      "input_sha256": "32fd95c29f21da53df49927d6cc8f26bba537d3c738884bdefa48e634ade62c8"
+    },
+    {
+      "file": "process-1m.json",
+      "executor": "process",
+      "batch": 8,
+      "workers": 2,
+      "bytes": 1048576,
+      "runs": 3,
+      "samples_wall_ms": [
+        8104.71750004217,
+        5917.372249998152,
+        5913.901541032828
+      ],
+      "median_wall_ms": 5917.372249998152,
+      "tokens": 211003,
+      "valid_windows": 951,
+      "encoded_windows": 952,
+      "spans": 20456,
+      "span_sha256": "6fcc5287370a931588fa28f6d9add36a12c6908a3a34b50355d788ce444587b1",
+      "sampled_aggregate_peak_rss_bytes": 2785755136,
+      "sum_individual_process_peak_rss_bytes": 4667686912,
+      "input_sha256": "32fd95c29f21da53df49927d6cc8f26bba537d3c738884bdefa48e634ade62c8"
+    },
+    {
+      "file": "process-1m.json",
+      "executor": "process",
+      "batch": 8,
+      "workers": 4,
+      "bytes": 1048576,
+      "runs": 3,
+      "samples_wall_ms": [
+        6917.787790996954,
+        6390.956000017468,
+        6792.212833010126
+      ],
+      "median_wall_ms": 6792.212833010126,
+      "tokens": 211003,
+      "valid_windows": 951,
+      "encoded_windows": 952,
+      "spans": 20456,
+      "span_sha256": "6fcc5287370a931588fa28f6d9add36a12c6908a3a34b50355d788ce444587b1",
+      "sampled_aggregate_peak_rss_bytes": 5425283072,
+      "sum_individual_process_peak_rss_bytes": 7780401152,
+      "input_sha256": "32fd95c29f21da53df49927d6cc8f26bba537d3c738884bdefa48e634ade62c8"
+    },
+    {
+      "file": "batch16-1m.json",
+      "executor": "process",
+      "batch": 16,
+      "workers": 1,
+      "bytes": 1048576,
+      "runs": 3,
+      "samples_wall_ms": [
+        4380.479415995069,
+        4354.174999985844,
+        4460.270458017476
+      ],
+      "median_wall_ms": 4380.479415995069,
+      "tokens": 211003,
+      "valid_windows": 951,
+      "encoded_windows": 960,
+      "spans": 20456,
+      "span_sha256": "6fcc5287370a931588fa28f6d9add36a12c6908a3a34b50355d788ce444587b1",
+      "sampled_aggregate_peak_rss_bytes": 2047361024,
+      "sum_individual_process_peak_rss_bytes": 3573612544,
+      "input_sha256": "32fd95c29f21da53df49927d6cc8f26bba537d3c738884bdefa48e634ade62c8"
+    },
+    {
+      "file": "batch32-1m.json",
+      "executor": "process",
+      "batch": 32,
+      "workers": 1,
+      "bytes": 1048576,
+      "runs": 3,
+      "samples_wall_ms": [
+        6313.198999967426,
+        6808.697291999124,
+        7375.646790955216
+      ],
+      "median_wall_ms": 6808.697291999124,
+      "tokens": 211003,
+      "valid_windows": 951,
+      "encoded_windows": 960,
+      "spans": 20456,
+      "span_sha256": "6fcc5287370a931588fa28f6d9add36a12c6908a3a34b50355d788ce444587b1",
+      "sampled_aggregate_peak_rss_bytes": 2095988736,
+      "sum_individual_process_peak_rss_bytes": 3491872768,
+      "input_sha256": "32fd95c29f21da53df49927d6cc8f26bba537d3c738884bdefa48e634ade62c8"
+    },
+    {
+      "file": "thread-batch8-1m.json",
+      "executor": "thread",
+      "batch": 8,
+      "workers": 1,
+      "bytes": 1048576,
+      "runs": 3,
+      "samples_wall_ms": [
+        4901.313958980609,
+        4741.8465000228025,
+        4966.002249973826
+      ],
+      "median_wall_ms": 4901.313958980609,
+      "tokens": 211003,
+      "valid_windows": 951,
+      "encoded_windows": 952,
+      "spans": 20456,
+      "span_sha256": "6fcc5287370a931588fa28f6d9add36a12c6908a3a34b50355d788ce444587b1",
+      "sampled_aggregate_peak_rss_bytes": 1602125824,
+      "sum_individual_process_peak_rss_bytes": 2083454976,
+      "input_sha256": "32fd95c29f21da53df49927d6cc8f26bba537d3c738884bdefa48e634ade62c8"
+    },
+    {
+      "file": "thread-batch16-1m-fixed.json",
+      "executor": "thread",
+      "batch": 16,
+      "workers": 1,
+      "bytes": 1048576,
+      "runs": 3,
+      "samples_wall_ms": [
+        4122.887959005311,
+        4093.861916975584,
+        3991.521207964979
+      ],
+      "median_wall_ms": 4093.861916975584,
+      "tokens": 211003,
+      "valid_windows": 951,
+      "encoded_windows": 960,
+      "spans": 20456,
+      "span_sha256": "6fcc5287370a931588fa28f6d9add36a12c6908a3a34b50355d788ce444587b1",
+      "sampled_aggregate_peak_rss_bytes": 1614413824,
+      "sum_individual_process_peak_rss_bytes": 2088157184,
+      "input_sha256": "32fd95c29f21da53df49927d6cc8f26bba537d3c738884bdefa48e634ade62c8"
+    },
+    {
+      "file": "thread-batch8-50m.json",
+      "executor": "thread",
+      "batch": 8,
+      "workers": 1,
+      "bytes": 52428800,
+      "runs": 1,
+      "samples_wall_ms": [
+        271509.21916699735
+      ],
+      "median_wall_ms": 271509.21916699735,
+      "tokens": 10662245,
+      "valid_windows": 48028,
+      "encoded_windows": 48032,
+      "spans": 996940,
+      "span_sha256": "39ca5b1250eef9a9ec575b64a4e36bab1a5ece0869bf2a1e06597f871e0c4021",
+      "sampled_aggregate_peak_rss_bytes": 5617025024,
+      "sum_individual_process_peak_rss_bytes": 7461158912,
+      "input_sha256": "1684417aee48dfbdd3313e4b105e3d4b4dd817a7d2d3a961736b8f8f81b41a9a"
+    },
+    {
+      "file": "thread-batch16-50m.json",
+      "executor": "thread",
+      "batch": 16,
+      "workers": 1,
+      "bytes": 52428800,
+      "runs": 1,
+      "samples_wall_ms": [
+        261525.66612500232
+      ],
+      "median_wall_ms": 261525.66612500232,
+      "tokens": 10662245,
+      "valid_windows": 48028,
+      "encoded_windows": 48032,
+      "spans": 996940,
+      "span_sha256": "39ca5b1250eef9a9ec575b64a4e36bab1a5ece0869bf2a1e06597f871e0c4021",
+      "sampled_aggregate_peak_rss_bytes": 2444050432,
+      "sum_individual_process_peak_rss_bytes": 5402066944,
+      "input_sha256": "1684417aee48dfbdd3313e4b105e3d4b4dd817a7d2d3a961736b8f8f81b41a9a"
+    }
+  ],
+  "same_harness_b16_time_reduction_percent": {
+    "1048576": 16.474195466004417,
+    "52428800": 3.677058581150594
+  }
+}

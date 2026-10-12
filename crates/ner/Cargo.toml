@@ -1,0 +1,26 @@
+[package]
+name = "copy-for-ai-ner"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+repository.workspace = true
+description.workspace = true
+
+[features]
+coreml = ["ort/coreml"]
+runtime-probe = ["ort/load-dynamic"]
+
+[dependencies]
+copy-for-ai-core.workspace = true
+gline-rs = "=1.1.0"
+composable = "=1.0.0"
+ort = "=2.0.0-rc.9"
+ndarray = "0.16"
+regex.workspace = true
+sha2 = "0.10"
+thiserror.workspace = true
+zeroize.workspace = true
+
+[lints]
+workspace = true
