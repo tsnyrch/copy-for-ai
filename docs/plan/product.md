@@ -34,8 +34,14 @@ thread using atomic rename and serialized snapshots. Forced exit may lose the
 latest pending snapshot. An unreadable file is not overwritten automatically;
 explicit forgetting permits reset. Save failures are reported.
 
-The Ink + Emerald design uses dark blue navigation, an emerald primary action,
-contrasting status colors, system typography and clean panels in both themes.
+The xsnyrch design system uses the selected Signal Orange / Ink / Warm Paper
+palette, embedded Roboto (400/500, with 300 for large metrics), 36px actions,
+5px control and 8px panel radii. The light theme uses warm canvas and white
+surfaces; a derived dark companion preserves system/light/dark preferences.
+Orange actions use ink text for contrast; success, warning and failure retain
+separate semantic colors. At widths below 960px, navigation becomes horizontal
+and editors stack. The native minimum width is 640px; History has a local
+horizontal scroll to preserve table columns.
 
 ## macOS commands
 

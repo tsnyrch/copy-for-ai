@@ -6,6 +6,168 @@ not today's suite. Synthetic multilingual data and byte-exact raw/source archive
 remain in their original languages. Historical screenshots show the UI of the
 build captured, not evidence of the current English interface.
 
+## Local landing preparation and review — 2026-10-29
+
+Scope: the Signal Orange design, embedded font/license, Settings crash repair,
+responsive navigation regression and accompanying synthetic screenshots/plans,
+plus the new generic `.agents/skills/land/SKILL.md` workflow.
+
+Inspected the complete pending application diff, new test/helper, font
+provenance/license and documentation. Review found no additional blocking
+correctness, privacy or integration issue. No application source changed during
+this landing preparation; earlier automated/native results below remain
+implementation evidence, not new test runs.
+
+Fresh local checks:
+
+- `cargo fmt --all -- --check`: passed. Exact formatter invocation is defined
+  in `.github/workflows/ci.yml`; toolchain and style are defined in
+  `rust-toolchain.toml` and `rustfmt.toml`.
+- Diff whitespace check: passed.
+- Bundled Roboto SHA-256 matches its recorded provenance.
+- Land skill YAML, invocation restriction and Land metadata were validated.
+
+Under the user's explicit local-first policy, no application tests, build,
+remote CI, fetch or push were run during this landing preparation. Existing
+test and native evidence is preserved below; permissions and actual system
+paste were not newly verified. The configured publication remote is
+`https://github.com/tsnyrch/copy-for-ai.git`, with `main` as the intended branch.
+Any push requires separate user confirmation. Local remote-tracking refs were
+not treated as proof of the live remote state.
+
+## Settings crash and responsive-layout regression — 2026-10-29
+
+The user reported a reproducible `hover style already set` panic on opening
+Settings. The earlier migration checks did not cover painting Settings after
+the final hover adjustment. The new rendered navigation test reproduced that
+exact panic before the fix: GPUI Kit's Button already registers its own hover
+style, so a second element-level `.hover(...)` conflicts. Selected Settings
+navigation now configures its existing `ButtonCustomVariant` instead.
+
+The resize test also found History expanding the entire compact page to 760px
+inside a 640px viewport (scroll-region origin x = -60px). The main compact content
+now has an explicit full-window width; History's table can exceed that width only
+inside its local scroll region. The shell declares its keyboard tab group.
+The accepted Signal Orange appearance and processing/permission logic are unchanged.
+
+`tests/ui/navigation.rs` paints real GPUI components and dispatches pointer,
+keyboard and scroll events using synthetic, temporary preview state. It checks:
+
+- All four main navigation items and all seven Settings sections at widths
+  **640, 768, 959, 960, 1024, 1120 and 1440px**, with a 700px content height,
+  in both Light and Dark modes.
+- Settings changes without panic, preservation of retained editor entities,
+  their synthetic text and an ongoing busy state.
+- Tab traversal (after initial focus) and Enter activation of Appearance.
+- Vertical scroll reaching the last General row and horizontal History scroll
+  revealing the final column.
+- On-screen navigation, footer, editors and process/cancel controls; nonoverlapping
+  editors; usable editor/history height; chart and legend containment.
+
+Checks run:
+
+- `cargo fmt --all -- --check`: passed.
+- `cargo test -p copy-for-ai-desktop`: **20 passed, one real-model test ignored**.
+- After extending the scroll assertions, the focused
+  `cargo test -p copy-for-ai-desktop settings_navigation_and_resize_preserve_editors -- --nocapture`
+  passed.
+- `cargo clippy -p copy-for-ai-desktop --all-targets -- -D warnings`: passed.
+- `cargo build -p copy-for-ai-desktop`: passed.
+- Core/CLI/model suites and benchmarks were not rerun for these UI-only repairs.
+  The unrelated upstream `block` 0.1.6 future-compatibility notice remains.
+
+Native checks: ran the exact `cargo run` command and separately
+`cargo run -- --settings-preview`. Both created native windows and remained
+running without panic during bounded six-second checks. Only the owned process
+groups were stopped afterward. The default launch read ordinary preferences;
+no processing, clipboard operation or user settings mutation was invoked.
+
+Added `--compact-preview`, effective only with an existing debug preview mode,
+to open a 640 × 700 content-area window without Accessibility automation.
+Native light-theme visual inspection completed for:
+
+- [Settings, 1120 × 820](../evidence/signal-orange-settings-desktop-2026-10-29.png).
+- [Settings, 640 × 700](../evidence/signal-orange-settings-compact-2026-10-29.png).
+- [Workspace, 640 × 700](../evidence/signal-orange-workspace-compact-2026-10-29.png).
+
+These are native screenshots of isolated previews with temporary preferences,
+disabled shortcuts and synthetic data, not a mockup or inference-quality proof.
+The short Settings viewport intentionally scrolls: its bottom row's scroll
+reachability is verified by the headless wheel-event regression.
+
+In this follow-up, screen-capture preflight returned true, but `screencapture -l`
+still failed. ScreenCaptureKit with AppKit initialization captured only the
+owned, actual application window (excluding GPUI's hidden helper window).
+`AXIsProcessTrusted()` remained false. No Accessibility permission was requested
+or granted. Physical keyboard/clicks/resize, dark native screenshots, VoiceOver,
+login registration and actual system paste remain unverified. No user clipboard,
+existing app instance or System Settings were controlled.
+
+## xsnyrch Signal Orange design migration — 2026-10-29
+
+Implementation: native GPUI light palette from the selected Signal Orange seed,
+application-derived dark companion, one semantic palette for custom surfaces and
+Kit tokens, embedded Roboto, shared control geometry and responsive composition
+across Workspace, History, Statistics and Settings. Original identity assets and
+processing/clipboard/permission logic are unchanged. The source specification
+and derived colors are separated in the [design contract](../design/signal-orange.md).
+Codebase-memory MCP was unavailable in this turn; file and local dependency
+source inspection were used instead. No structural graph reindex was available.
+
+| Automated check | Result |
+| --- | --- |
+| `cargo fmt --all -- --check` | Passed. |
+| `cargo test -p copy-for-ai-core -p copy-for-ai-cli` | Passed: 22 core and two CLI tests. |
+| `cargo test -p copy-for-ai-desktop` | Passed: 19 tests; one opt-in real-model test ignored. |
+| `cargo check -p copy-for-ai-desktop` | Passed. |
+| `cargo clippy --workspace --all-targets -- -D warnings` | Passed. |
+| `cargo build -p copy-for-ai-desktop` | Passed: native arm64 macOS debug executable. |
+
+The broad checks above precede the final selected-navigation hover contrast
+adjustment. After that adjustment, `cargo fmt --all -- --check`,
+`cargo clippy -p copy-for-ai-desktop --all-targets -- -D warnings`,
+`cargo build -p copy-for-ai-desktop` and `git diff --check` passed. Behavioral
+suites were not repeated for that hover-only change. The existing upstream
+`block` 0.1.6 future-compatibility notice remains; application lint warnings were
+not suppressed. No model tests or benchmarks were added/run for this visual change.
+
+Font: downloaded the unmodified, pinned google/fonts Roboto variable TTF and
+verified SHA-256 against the recorded value. CoreText reads family Roboto, weight
+axis 100–900 and width axis 75–100; the synthetic Latin/Czech sample has glyph
+coverage. Font and full OFL notice are embedded; no font installation or runtime
+network requirement.
+
+Exact opaque sRGB checks:
+
+- Ink on orange action: **5.88:1**; hover **5.30:1**; pressed **4.83:1**.
+- Light secondary text on white / warm canvas: **6.08 / 5.53:1**.
+- Light accent text on accent wash: **4.72:1**; dark: **8.42:1**.
+- Light control border on white / warm canvas: **3.84 / 3.49:1**.
+- Light focus on white / warm canvas: **5.25 / 4.77:1**.
+- Dark control border on surface / canvas: **4.53 / 5.10:1**;
+  dark focus: **9.59 / 10.79:1**.
+- Success/warning/danger labels on their 10% status washes: light
+  **6.16 / 5.75 / 5.52:1**; dark **8.13 / 8.75 / 7.19:1**.
+
+The matrix also checked main/secondary text on both surfaces and neutral hover
+in both modes. It found accent text on neutral hover at 4.36:1, so selected
+navigation retains its accent wash on hover. These are calculated color pairs,
+not a rendered-component/disabled-state or WCAG audit.
+
+Native launch: ran only the newly built executable with `--ui-preview`, temporary
+preferences/totals, synthetic input/history and disabled shortcuts. macOS reported
+its 1120px window and the process remained running without startup errors. Window-
+only `screencapture` failed (`could not create image from window`);
+`AXIsProcessTrusted()` returned false. Closed only that owned preview afterward.
+No screenshot or visual confirmation is available. The user's production instance,
+clipboard, mappings, permissions and System Settings were not changed.
+
+Not verified live: light/dark visual states, 640px and desktop reflow, long text,
+200% zoom, Tab/Enter/Space, focus visibility, screen-reader announcements and
+actual system paste. No Accessibility permission request/grant, login registration,
+release packaging, install, signing or notarization. Headless tests and native
+launch do not prove native interaction, cross-process paste or anonymity.
+
 ## English repository preparation — 2026-10-28
 
 Implemented English UI, CLI, domain/model/platform errors, preview text, README,

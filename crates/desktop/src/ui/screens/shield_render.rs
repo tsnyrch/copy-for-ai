@@ -1,9 +1,12 @@
 use super::{MainTab, ShieldView};
-use crate::ui::{components::editor_panel, theme::Palette};
+use crate::ui::{
+    components::{action_button, editor_panel},
+    theme::Palette,
+};
 use gpui_kit::{
     component::{
         Disableable,
-        button::{Button, ButtonCustomVariant, ButtonVariants},
+        button::{ButtonCustomVariant, ButtonVariants},
     },
     prelude::*,
     *,
@@ -29,8 +32,9 @@ impl MainTab {
 }
 
 impl Render for ShieldView {
-    fn render(&mut self, _: &mut Window, cx: &mut Context<Self>) -> impl IntoElement {
+    fn render(&mut self, window: &mut Window, cx: &mut Context<Self>) -> impl IntoElement {
         let palette = Palette::current(cx);
+        let compact = window.viewport_size().width < px(960.);
         let navigation = [
             MainTab::Text,
             MainTab::History,
@@ -41,20 +45,40 @@ impl Render for ShieldView {
         .enumerate()
         .map(|(index, target)| {
             let selected = target == self.tab;
-            Button::new(("main-tab", index))
-                .w_full()
-                .h(px(44.))
-                .rounded_lg()
+            action_button(("main-tab", index))
+                .debug_selector(move || format!("main-{index}"))
+                .when(!compact, |button| button.w_full())
+                .when(compact, |button| button.flex_1())
+                .accessibility_label(if selected {
+                    format!("{} · current page", target.label())
+                } else {
+                    target.label().to_owned()
+                })
                 .custom(
                     ButtonCustomVariant::new(cx)
-                        .color(rgb(if selected { 0x176C64 } else { 0x101D2C }).into())
-                        .foreground(rgb(0xEAF1F6).into())
-                        .hover(rgb(0x254A52).into())
-                        .active(rgb(0x176C64).into()),
+                        .color(if selected {
+                            palette.accent_wash
+                        } else {
+                            palette.surface
+                        })
+                        .foreground(if selected {
+                            palette.accent_ink
+                        } else {
+                            palette.muted
+                        })
+                        .hover(if selected {
+                            palette.accent_wash
+                        } else {
+                            palette.hover
+                        })
+                        .active(palette.accent_wash),
                 )
+                .when(selected, |button| {
+                    button.border_l_2().border_color(palette.primary)
+                })
                 .label(target.label())
                 .font_weight(if selected {
-                    FontWeight::SEMIBOLD
+                    FontWeight::MEDIUM
                 } else {
                     FontWeight::NORMAL
                 })
@@ -68,72 +92,101 @@ impl Render for ShieldView {
         })
         .collect::<Vec<_>>();
         let content = match self.tab {
-            MainTab::Text => self.render_workspace(cx).into_any_element(),
+            MainTab::Text => self.render_workspace(compact, cx).into_any_element(),
             MainTab::History => self.render_history(cx).into_any_element(),
-            MainTab::Statistics => self.render_statistics(cx).into_any_element(),
+            MainTab::Statistics => self.render_statistics(compact, cx).into_any_element(),
             MainTab::Settings => self.render_settings(cx).into_any_element(),
         };
         div()
+            .tab_group()
             .size_full()
             .flex()
+            .when(compact, |shell| shell.flex_col())
             .bg(palette.canvas)
             .text_color(palette.ink)
-            .text_size(px(15.))
+            .text_size(px(14.))
+            .line_height(px(22.))
             .child(
                 div()
-                    .w(px(220.))
                     .flex_shrink_0()
                     .flex()
-                    .flex_col()
+                    .when(!compact, |sidebar| {
+                        sidebar.w(px(240.)).flex_col().border_r_1()
+                    })
+                    .when(compact, |sidebar| {
+                        sidebar.w_full().flex_wrap().items_center().border_b_1()
+                    })
                     .gap_3()
-                    .p_5()
-                    .bg(rgb(0x101D2C))
-                    .text_color(rgb(0xEAF1F6))
-                    .child(img("branding/logo.png").w(px(44.)).h(px(44.)).mb_2())
+                    .p_4()
+                    .bg(palette.surface)
+                    .border_color(palette.border)
+                    .child(img("branding/logo.png").w(px(32.)).h(px(32.)))
                     .child(
                         div()
-                            .text_size(px(22.))
-                            .font_weight(FontWeight::BOLD)
+                            .when(compact, |title| title.w_full().flex_1())
+                            .text_size(px(18.))
+                            .line_height(px(24.))
+                            .font_weight(FontWeight::MEDIUM)
                             .child("Copy for AI"),
                     )
+                    .when(!compact, |sidebar| {
+                        sidebar.child(
+                            div()
+                                .text_sm()
+                                .text_color(palette.muted)
+                                .mb_6()
+                                .child("Local text protection"),
+                        )
+                    })
                     .child(
                         div()
-                            .text_sm()
-                            .text_color(rgb(0x9CAFBD))
-                            .mb_6()
-                            .child("Local text protection"),
+                            .flex()
+                            .gap_2()
+                            .w_full()
+                            .when(!compact, |nav| nav.flex_col())
+                            .children(navigation),
                     )
-                    .children(navigation)
-                    .child(div().flex_1())
-                    .child(
-                        div()
-                            .text_sm()
-                            .font_weight(FontWeight::SEMIBOLD)
-                            .text_color(rgb(0x62D9BF))
-                            .child("Local only"),
-                    )
-                    .child(
-                        div()
-                            .text_xs()
-                            .text_color(rgb(0x9CAFBD))
-                            .child(format!("Version {}", env!("CARGO_PKG_VERSION"))),
-                    ),
+                    .when(!compact, |sidebar| {
+                        sidebar
+                            .child(div().flex_1())
+                            .child(
+                                div()
+                                    .text_sm()
+                                    .font_weight(FontWeight::MEDIUM)
+                                    .child("Local only"),
+                            )
+                            .child(
+                                div()
+                                    .text_xs()
+                                    .text_color(palette.muted)
+                                    .child(format!("Version {}", env!("CARGO_PKG_VERSION"))),
+                            )
+                    }),
             )
             .child(
                 div()
                     .flex_1()
                     .min_w_0()
                     .min_h_0()
+                    .when(compact, |content| content.w_full())
+                    .max_w(px(1440.))
+                    .mx_auto()
                     .flex()
                     .flex_col()
-                    .p_6()
-                    .gap_5()
+                    .px(px(if compact { 20. } else { 36. }))
+                    .py_6()
+                    .gap_6()
                     .child(
                         div()
                             .flex()
+                            .flex_shrink_0()
                             .items_center()
+                            .when(compact, |header| header.flex_col().items_start())
                             .justify_between()
                             .gap_4()
+                            .pb_4()
+                            .border_b_1()
+                            .border_color(palette.border)
                             .child(
                                 div()
                                     .flex()
@@ -141,8 +194,9 @@ impl Render for ShieldView {
                                     .gap_1()
                                     .child(
                                         div()
-                                            .text_size(px(30.))
-                                            .font_weight(FontWeight::SEMIBOLD)
+                                            .text_size(px(18.))
+                                            .line_height(px(24.))
+                                            .font_weight(FontWeight::NORMAL)
                                             .child(self.tab.label()),
                                     )
                                     .child(
@@ -156,19 +210,22 @@ impl Render for ShieldView {
                                 header.child(
                                     div()
                                         .flex()
+                                        .flex_wrap()
                                         .items_center()
                                         .gap_2()
                                         .when(self.busy, |row| {
                                             row.child(
-                                                Button::new("cancel").label("Cancel").on_click(
-                                                    cx.listener(|this, _, _, cx| {
+                                                action_button("cancel")
+                                                    .debug_selector(|| "cancel".into())
+                                                    .label("Cancel")
+                                                    .on_click(cx.listener(|this, _, _, cx| {
                                                         this.cancel_processing(cx)
-                                                    }),
-                                                ),
+                                                    })),
                                             )
                                         })
                                         .child(
-                                            Button::new("process-clipboard")
+                                            action_button("process-clipboard")
+                                                .debug_selector(|| "process-clipboard".into())
                                                 .label("Process to clipboard")
                                                 .disabled(self.busy || self.quitting)
                                                 .on_click(cx.listener(|this, _, window, cx| {
@@ -176,11 +233,9 @@ impl Render for ShieldView {
                                                 })),
                                         )
                                         .child(
-                                            Button::new("anonymize")
+                                            action_button("anonymize")
+                                                .debug_selector(|| "process-input".into())
                                                 .primary()
-                                                .h(px(42.))
-                                                .rounded_lg()
-                                                .font_weight(FontWeight::SEMIBOLD)
                                                 .label(if self.busy {
                                                     "Processing…"
                                                 } else {
@@ -197,7 +252,10 @@ impl Render for ShieldView {
                     .child(content)
                     .child(
                         div()
+                            .debug_selector(|| "status-bar".into())
                             .flex()
+                            .flex_shrink_0()
+                            .flex_wrap()
                             .items_center()
                             .justify_between()
                             .gap_4()
@@ -208,10 +266,11 @@ impl Render for ShieldView {
                                 div()
                                     .flex_1()
                                     .text_sm()
+                                    .min_w(px(220.))
                                     .text_color(if self.error {
                                         palette.danger
                                     } else {
-                                        palette.success
+                                        palette.muted
                                     })
                                     .child(self.status.clone()),
                             )
@@ -229,11 +288,12 @@ impl Render for ShieldView {
 }
 
 impl ShieldView {
-    fn render_workspace(&self, cx: &Context<Self>) -> impl IntoElement {
+    fn render_workspace(&self, compact: bool, cx: &Context<Self>) -> impl IntoElement {
         let palette = Palette::current(cx);
         div()
             .flex()
-            .gap_5()
+            .when(compact, |editors| editors.flex_col())
+            .gap_6()
             .w_full()
             .flex_1()
             .min_h_0()
@@ -241,7 +301,7 @@ impl ShieldView {
                 "Input",
                 "source-text",
                 &self.input,
-                Button::new("load")
+                action_button("load")
                     .label("Load clipboard")
                     .disabled(self.busy)
                     .on_click(cx.listener(|this, _, window, cx| this.load_clipboard(window, cx))),
@@ -251,7 +311,7 @@ impl ShieldView {
                 "Output",
                 "result-text",
                 &self.output,
-                Button::new("copy")
+                action_button("copy")
                     .label("Copy")
                     .disabled(
                         self.busy

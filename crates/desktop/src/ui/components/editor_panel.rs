@@ -17,7 +17,7 @@ pub fn editor_panel(
         .min_w_0()
         .min_h_0()
         .overflow_hidden()
-        .rounded_xl()
+        .rounded(px(8.))
         .border_1()
         .border_color(palette.border)
         .bg(palette.surface)
@@ -30,8 +30,9 @@ pub fn editor_panel(
                 .gap_2()
                 .child(
                     div()
-                        .text_size(px(18.))
-                        .font_weight(FontWeight::SEMIBOLD)
+                        .text_size(px(16.))
+                        .line_height(px(24.))
+                        .font_weight(FontWeight::MEDIUM)
                         .child(label),
                 )
                 .child(action),
@@ -39,9 +40,10 @@ pub fn editor_panel(
         .child(
             div()
                 .id(id)
+                .debug_selector(|| id.into())
                 .flex_1()
                 .min_h_0()
                 .overflow_hidden()
-                .child(Textarea::new(state).h_full().w_full()),
+                .child(Textarea::new(state).aria_label(label).h_full().w_full()),
         )
 }

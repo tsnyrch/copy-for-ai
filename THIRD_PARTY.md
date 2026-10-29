@@ -10,6 +10,11 @@ relicense dependencies, pretrained weights or bundled third-party assets.
 | Zed GPUI (`gpui-pre`) | 0.3.9 | Apache-2.0 |
 | gline-rs | 1.1.0 | Apache-2.0 |
 | GLiNER multilingual ONNX export | `6ddaeb9413b0e71ad8457da1aab378a165b24058` | Apache-2.0 |
+| Roboto (bundled variable TrueType font) | google/fonts `1c627bfa375fc51cf86fabeca4f6e08a95f0aa5c` | SIL Open Font License 1.1 |
+
+Roboto's [source and checksum](crates/desktop/assets/fonts/README.md) and
+[full license](crates/desktop/assets/fonts/OFL.txt) accompany the asset. The font
+and its license are embedded in the app; the license is available in Settings → About.
 
 The three Rust dependency declarations above were checked against the locally
 resolved crate manifests on 2026-10-28. Model provenance and pinned hashes are

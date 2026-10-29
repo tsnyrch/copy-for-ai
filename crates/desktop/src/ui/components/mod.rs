@@ -3,6 +3,9 @@ mod rule_editor;
 pub use editor_panel::editor_panel;
 pub use rule_editor::rule_editor;
 
+mod action_button;
+pub use action_button::action_button;
+
 mod settings_row;
 pub use settings_row::settings_row;
 

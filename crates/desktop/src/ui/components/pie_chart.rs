@@ -60,4 +60,5 @@ pub fn pie_chart(values: [(u64, Hsla); 3], empty: Hsla) -> impl IntoElement {
     )
     .w(px(240.))
     .h(px(240.))
+    .flex_shrink_0()
 }

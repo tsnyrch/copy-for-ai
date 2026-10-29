@@ -1,7 +1,7 @@
+use super::action_button;
 use copy_for_ai_core::EntityKind;
 use gpui_kit::component::{
     ActiveTheme, Disableable,
-    button::Button,
     input::{Input, InputState},
 };
 use gpui_kit::{prelude::*, *};
@@ -16,37 +16,46 @@ pub fn rule_editor(
     cx: &App,
 ) -> impl IntoElement {
     div()
-        .rounded_lg()
-        .border_1()
-        .border_color(cx.theme().border)
-        .p_3()
         .flex()
         .flex_col()
-        .gap_2()
+        .gap_3()
         .child(
             div()
                 .text_sm()
-                .font_weight(FontWeight::SEMIBOLD)
+                .font_weight(FontWeight::MEDIUM)
                 .child("Custom sensitive terms"),
         )
         .child(
             div()
                 .flex()
+                .flex_wrap()
                 .gap_2()
                 .items_center()
-                .child(div().flex_1().child(Input::new(input)))
                 .child(
-                    Button::new("kind")
+                    div().flex_1().min_w(px(200.)).child(
+                        Input::new(input)
+                            .aria_label("Custom sensitive term")
+                            .h(px(36.)),
+                    ),
+                )
+                .child(
+                    action_button("kind")
                         .label(kind.tag())
                         .disabled(busy)
                         .on_click(on_cycle),
                 )
                 .child(
-                    Button::new("add-rule")
+                    action_button("add-rule")
                         .label("Add")
                         .disabled(busy)
                         .on_click(on_add),
                 ),
+        )
+        .child(
+            div()
+                .text_xs()
+                .text_color(cx.theme().muted_foreground)
+                .child("Exact, case-sensitive whole-word matches. Terms stay in memory."),
         )
         .child(
             div()

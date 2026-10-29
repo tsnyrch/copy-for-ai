@@ -7,7 +7,9 @@ pub fn settings_row(
     cx: &App,
 ) -> impl IntoElement {
     div()
+        .debug_selector(|| label.into())
         .flex()
+        .flex_wrap()
         .items_center()
         .justify_between()
         .gap_4()
@@ -15,15 +17,11 @@ pub fn settings_row(
         .child(
             div()
                 .flex_1()
+                .min_w(px(220.))
                 .flex()
                 .flex_col()
                 .gap_1()
-                .child(
-                    div()
-                        .text_sm()
-                        .font_weight(FontWeight::SEMIBOLD)
-                        .child(label),
-                )
+                .child(div().text_sm().font_weight(FontWeight::MEDIUM).child(label))
                 .child(
                     div()
                         .text_sm()

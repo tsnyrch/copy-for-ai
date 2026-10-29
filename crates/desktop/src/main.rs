@@ -18,6 +18,7 @@ fn main() {
     let preview = redesign_preview
         || settings_preview
         || (cfg!(debug_assertions) && std::env::args().any(|arg| arg == "--ui-preview"));
+    let compact_preview = preview && std::env::args().any(|arg| arg == "--compact-preview");
     let app = gpui_kit::application().with_assets(ui::assets::Assets);
     app.on_reopen(|cx| {
         if let Some(handle) = cx.windows().first().copied() {
@@ -29,6 +30,14 @@ fn main() {
     });
     app.run(move |cx| {
         gpui_kit::init(cx);
+        if let Err(error) =
+            cx.text_system()
+                .add_fonts(vec![std::borrow::Cow::Borrowed(include_bytes!(
+                    "../assets/fonts/Roboto.ttf"
+                ))])
+        {
+            eprintln!("Could not load the bundled UI font: {error}");
+        }
         cx.bind_keys([
             KeyBinding::new("cmd-q", Quit, None),
             KeyBinding::new("cmd-,", OpenSettings, None),
@@ -42,10 +51,14 @@ fn main() {
         let options = WindowOptions {
             window_bounds: Some(WindowBounds::Windowed(Bounds::centered(
                 None,
-                size(px(1120.), px(820.)),
+                if compact_preview {
+                    size(px(640.), px(700.))
+                } else {
+                    size(px(1120.), px(820.))
+                },
                 cx,
             ))),
-            window_min_size: Some(size(px(900.), px(700.))),
+            window_min_size: Some(size(px(640.), px(700.))),
             titlebar: Some(TitlebarOptions {
                 title: Some(
                     if preview {

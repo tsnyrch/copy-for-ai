@@ -1,5 +1,53 @@
 # Milestones and delivery
 
+## Local-first landing workflow — 2026-10-29
+
+Added a reusable, language-independent project Land skill. It discovers the
+project's formatter, reviews the complete change, preserves unrelated work and
+merges locally. Tests require an explicit request; unmet mandatory test gates
+require asking rather than bypassing them. Clear conflicts may be resolved
+automatically, while ambiguous conflicts require the user's decision. Every
+push to the verified `origin` destination requires separate confirmation.
+
+The Signal Orange implementation and Settings/responsive repair are prepared
+for local landing together with this workflow. Local completion is distinct
+from remote publication; verification.md records the checks actually performed.
+
+## Settings and responsive-layout repair — 2026-10-29
+
+Fixed the reported Settings panic by configuring hover through GPUI Kit's button
+variant rather than registering a second element hover style. Fixed compact
+History expanding the whole page beyond the window: the compact main content
+is width-constrained and only the table scrolls horizontally. Declared the shell's
+keyboard tab group; retained the accepted Signal Orange visual style.
+
+Added rendered pointer/keyboard/scroll regression coverage across four main
+pages, seven Settings sections, seven widths and both themes, including busy
+controls and retained editors. Desktop suite: 20 passed, one model test ignored.
+Formatter, desktop Clippy and native build passed. Native default/Settings launches
+passed; light desktop Settings and compact Settings/Workspace screenshots were
+visually inspected. Debug `--compact-preview` enables repeatable minimum-window
+checks without changing ordinary preferences. See verification.md for exact
+commands, screenshots and the remaining native interaction/permission/paste limits.
+
+## xsnyrch Signal Orange design migration — 2026-10-29
+
+Implemented the user-selected Signal Orange / Ink / Warm Paper theme in native
+GPUI, replacing Ink + Emerald. Shared semantic palette and Kit token mapping,
+embedded Roboto with OFL notice in About, 36px shared actions, quieter headings,
+8px panels, underlined Settings navigation and neutral Appearance selection.
+Dark/system preferences remain supported with a derived dark companion.
+
+Workspace, History, Statistics and Settings retain their existing workflows.
+Below 960px, navigation/header/editors recompose; cards/rows wrap and History
+keeps all columns via local horizontal scrolling. Native minimum width is 640px.
+Original Copy for AI identity assets, inference, storage and paste logic are
+unchanged. [Design contract](../design/signal-orange.md).
+
+Automated checks and native launch completed; screenshot/Accessibility access
+was unavailable. Native visual, resize, keyboard/focus, screen-reader, permission
+and actual paste acceptance are not claimed. See verification.md.
+
 ## English repository preparation — 2026-10-28
 
 Implemented English README, agent instructions, plans, benchmark reports, native

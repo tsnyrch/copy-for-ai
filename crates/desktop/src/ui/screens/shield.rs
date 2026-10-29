@@ -268,6 +268,10 @@ mod long_tests;
 #[path = "../../../tests/ui/protected_paste.rs"]
 mod paste_tests;
 
+#[cfg(test)]
+#[path = "../../../tests/ui/navigation.rs"]
+mod navigation_tests;
+
 #[path = "shield_preview.rs"]
 mod preview;
 

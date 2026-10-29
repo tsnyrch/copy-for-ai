@@ -68,10 +68,11 @@ impl ShieldView {
                     .child(
                         div().w(px(100.)).child(
                             div()
-                                .rounded_md()
+                                .rounded(px(10.))
                                 .px_2()
-                                .py_1()
+                                .py(px(1.))
                                 .text_xs()
+                                .line_height(px(18.))
                                 .text_color(color)
                                 .bg(color.opacity(0.1))
                                 .child(status),
@@ -93,20 +94,21 @@ impl ShieldView {
                         div()
                             .w(px(56.))
                             .text_right()
-                            .font_weight(FontWeight::SEMIBOLD)
+                            .font_weight(FontWeight::MEDIUM)
                             .child(entry.replacements.to_string()),
                     )
             })
             .collect::<Vec<_>>();
         div().flex().flex_col().gap_4().flex_1().min_h_0()
             .child(div().text_sm().text_color(palette.muted).child(format!("{} completed · {} cancelled · {} failed · {} replacements", summary.completed, summary.cancelled, summary.failed, summary.replacements)))
-            .child(div().flex().flex_col().flex_1().min_h_0().bg(palette.surface).rounded_xl().border_1().border_color(palette.border).overflow_hidden()
-                .child(div().flex().gap_4().px_4().py_3().text_xs().font_weight(FontWeight::SEMIBOLD).text_color(palette.muted).border_b_1().border_color(palette.border)
+            .child(div().id("history-table-scroll").debug_selector(|| "history-table-scroll".into()).flex().flex_col().flex_1().min_h_0().min_w_0().overflow_x_scroll()
+                .child(div().flex().flex_col().flex_1().min_h_0().min_w(px(760.)).bg(palette.surface).rounded(px(8.)).border_1().border_color(palette.border).overflow_hidden()
+                .child(div().flex().gap_4().px_4().py_3().text_xs().font_weight(FontWeight::MEDIUM).text_color(palette.muted).border_b_1().border_color(palette.border)
                     .child(div().w(px(76.)).child("Time · UTC")).child(div().flex_1().child("Direction"))
                     .child(div().w(px(100.)).child("Status")).child(div().w(px(72.)).text_right().child("Duration"))
-                    .child(div().w(px(92.)).text_right().child("Input")).child(div().w(px(56.)).text_right().child("Replacements")))
-                .child(div().id("session-history").flex_1().min_h_0().overflow_y_scroll().children(rows)
-                    .when(self.history.entries().is_empty(), |table| table.child(div().p_8().text_center().text_color(palette.muted).child("No operations yet. Your first operation will appear here.")))))
+                    .child(div().w(px(92.)).text_right().child("Input")).child(div().debug_selector(|| "replacement-column".into()).w(px(56.)).text_right().child("Replacements")))
+                .child(div().id("session-history").debug_selector(|| "session-history".into()).flex_1().min_h_0().overflow_y_scroll().children(rows)
+                    .when(self.history.entries().is_empty(), |table| table.child(div().p_8().text_center().text_color(palette.muted).child("No operations yet. Your first operation will appear here."))))))
             .child(div().text_xs().text_color(palette.muted).child("Last 100 operations in this run, metadata in memory only. Lifetime totals are in Statistics."))
     }
 }

@@ -2,13 +2,16 @@ use super::ShieldView;
 use crate::{
     application::{Appearance, LICENSE_TEXT},
     platform::login::LoginStatus,
-    ui::components::settings_row,
+    ui::{
+        components::{action_button, settings_row},
+        theme::Palette,
+    },
 };
 use gpui_kit::component::Disableable;
 use gpui_kit::{
     component::{
         ActiveTheme,
-        button::{Button, ButtonVariants},
+        button::{ButtonCustomVariant, ButtonVariants},
         switch::Switch,
     },
     prelude::*,
@@ -54,6 +57,7 @@ impl SettingsPage {
 impl ShieldView {
     pub(super) fn render_settings(&self, cx: &mut Context<Self>) -> impl IntoElement {
         let theme = cx.theme();
+        let palette = Palette::current(cx);
         let preferences = self.settings.preferences();
         let page = self.settings_page;
         let navigation = [
@@ -68,10 +72,23 @@ impl ShieldView {
         .into_iter()
         .enumerate()
         .map(|(index, target)| {
-            Button::new(("settings-page", index))
+            action_button(("settings-page", index))
+                .debug_selector(|| target.label().into())
                 .label(target.label())
-                .when(target == page, |button| button.primary())
-                .when(target != page, |button| button.ghost())
+                .ghost()
+                .rounded(px(0.))
+                .when(target == page, |button| {
+                    button
+                        .custom(
+                            ButtonCustomVariant::new(cx)
+                                .color(palette.canvas)
+                                .foreground(palette.accent_ink)
+                                .hover(palette.accent_wash)
+                                .active(palette.accent_wash),
+                        )
+                        .border_b_2()
+                        .border_color(palette.primary)
+                })
                 .on_click(cx.listener(move |this, _, _, cx| {
                     this.settings_page = target;
                     cx.notify();
@@ -82,6 +99,7 @@ impl ShieldView {
             .rounded_lg()
             .border_1()
             .border_color(theme.border)
+            .bg(palette.surface)
             .p_4()
             .flex()
             .flex_col()
@@ -118,11 +136,17 @@ impl ShieldView {
                 .into_iter()
                 .enumerate()
                 .map(|(index, (appearance, label))| {
-                    Button::new(("appearance-choice", index))
+                    action_button(("appearance-choice", index))
                         .label(label)
                         .disabled(self.preferences_busy)
                         .when(preferences.appearance() == appearance, |button| {
-                            button.primary()
+                            button.custom(
+                                ButtonCustomVariant::new(cx)
+                                    .color(palette.ink)
+                                    .foreground(palette.surface)
+                                    .hover(palette.ink)
+                                    .active(palette.ink),
+                            )
                         })
                         .on_click(cx.listener(move |this, _, window, cx| {
                             this.save_preferences(
@@ -161,7 +185,7 @@ impl ShieldView {
                                     .child(rule.value().to_owned()),
                             )
                             .child(
-                                Button::new(("remove-rule", index))
+                                action_button(("remove-rule", index))
                                     .ghost()
                                     .label("Remove")
                                     .disabled(self.busy)
@@ -184,16 +208,16 @@ impl ShieldView {
             }
             SettingsPage::Data => {
                 content = content
-                    .child(settings_row("New session", "Older local markers can still be restored. Input and output are kept.", Button::new("new-session").label("New session").disabled(self.busy).on_click(cx.listener(|this, _, _, cx| {
+                    .child(settings_row("New session", "Older local markers can still be restored. Input and output are kept.", action_button("new-session").label("New session").disabled(self.busy).on_click(cx.listener(|this, _, _, cx| {
                         match this.workflow.new_session() { Ok(()) => this.notice("New session created.", cx), Err(error) => this.fail(error.to_string(), cx) }
                     })), cx))
-                    .child(settings_row("Forget everything", "Clears editors, sessions, custom terms, history and lifetime statistics. Keeps ordinary preferences.", Button::new("forget").danger().label(if self.confirm_forget { "Confirm forgetting" } else { "Forget everything" }).on_click(cx.listener(|this, _, window, cx| this.forget(window, cx))), cx))
-                    .child(settings_row("Clipboard processing", "The same workflow without system paste; changes only the clipboard.", Button::new("process-clipboard").label("Process clipboard").disabled(self.busy).on_click(cx.listener(|this, _, window, cx| this.process_clipboard(window, cx))), cx))
+                    .child(settings_row("Forget everything", "Clears editors, sessions, custom terms, history and lifetime statistics. Keeps ordinary preferences.", action_button("forget").danger().outline().label(if self.confirm_forget { "Confirm forgetting" } else { "Forget everything" }).on_click(cx.listener(|this, _, window, cx| this.forget(window, cx))), cx))
+                    .child(settings_row("Clipboard processing", "The same workflow without system paste; changes only the clipboard.", action_button("process-clipboard").label("Process clipboard").disabled(self.busy).on_click(cx.listener(|this, _, window, cx| this.process_clipboard(window, cx))), cx))
                     .child(div().text_xs().text_color(theme.muted_foreground).child(format!("Session {} · {} sessions · {} entries", self.workflow.scope(), self.workflow.session_count(), self.workflow.entity_count())));
             }
             SettingsPage::Applications => {
                 content = content
-                    .child(div().text_sm().font_weight(FontWeight::SEMIBOLD).child("TODO · automatic detection of selected apps"))
+                    .child(div().text_sm().font_weight(FontWeight::MEDIUM).child("TODO · automatic detection of selected apps"))
                     .child(div().text_sm().text_color(theme.muted_foreground).child("Planned in roadmap M5. No apps or terminal processes are monitored yet, and ordinary Cmd+V is not intercepted."));
                 for (index, label) in ["Zed", "Delta", "Codex", "Claude"].into_iter().enumerate() {
                     content = content.child(settings_row(
@@ -210,14 +234,17 @@ impl ShieldView {
             SettingsPage::Updates => {
                 content = content
                     .child(settings_row("Current version", "Updates are currently manual. No signed release source is configured.", div().text_sm().child(env!("CARGO_PKG_VERSION")), cx))
-                    .child(settings_row("Update check", "TODO · verified release source, package signature and safe updates preserving the current session.", Button::new("check-updates").label("Check for updates").disabled(true), cx));
+                    .child(settings_row("Update check", "TODO · verified release source, package signature and safe updates preserving the current session.", action_button("check-updates").label("Check for updates").disabled(true), cx));
             }
             SettingsPage::About => {
                 content = content
-                    .child(div().text_lg().font_weight(FontWeight::BOLD).child(format!("Copy for AI {}", env!("CARGO_PKG_VERSION"))))
+                    .child(div().text_size(px(18.)).font_weight(FontWeight::MEDIUM).child(format!("Copy for AI {}", env!("CARGO_PKG_VERSION"))))
                     .child(div().text_sm().text_color(theme.muted_foreground).child("Standalone native app. User text, mappings and history stay in memory; only ordinary preferences and aggregate statistics without document content are saved to disk."))
                     .child(div().text_sm().child("App license: MIT. Models and dependencies have their own licenses."))
-                    .child(div().id("mit-license").text_xs().text_color(theme.muted_foreground).child(LICENSE_TEXT));
+                    .child(div().id("mit-license").text_xs().text_color(theme.muted_foreground).child(LICENSE_TEXT))
+                    .child(div().text_sm().font_weight(FontWeight::MEDIUM).child("Roboto · SIL Open Font License 1.1"))
+                    .child(div().id("font-license").text_xs().text_color(theme.muted_foreground)
+                        .child(include_str!("../../../assets/fonts/OFL.txt")));
             }
         }
         div()
@@ -231,16 +258,14 @@ impl ShieldView {
                     .flex()
                     .flex_wrap()
                     .gap_1()
-                    .p_1()
-                    .rounded_lg()
-                    .bg(theme.background)
-                    .border_1()
+                    .border_b_1()
                     .border_color(theme.border)
                     .children(navigation),
             )
             .child(
                 div()
                     .id("settings-content")
+                    .debug_selector(|| "settings-content".into())
                     .flex_1()
                     .min_w_0()
                     .min_h_0()
@@ -250,8 +275,9 @@ impl ShieldView {
                     .gap_3()
                     .child(
                         div()
-                            .text_size(px(20.))
-                            .font_weight(FontWeight::SEMIBOLD)
+                            .text_size(px(16.))
+                            .line_height(px(24.))
+                            .font_weight(FontWeight::MEDIUM)
                             .child(page.label()),
                     )
                     .child(
